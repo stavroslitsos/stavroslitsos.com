@@ -558,6 +558,20 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
 .booking-box h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: .9rem; }
 .booking-box p { color: var(--muted); max-width: 50ch; margin: 0 auto 1.9rem; line-height: 1.6; }
 
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.location-card {
+  background: var(--pale-blue);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.location-card h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: .5rem; }
+.location-card p { color: var(--muted); margin-bottom: 1.6rem; }
+
 /* ===== Footer ===== */
 .site-footer { background: var(--navy-deep); color: var(--text-on-dark-dim); padding: 5rem 0 2rem; }
 .footer-inner { max-width: var(--container); margin: 0 auto; padding: 0 2rem; }
@@ -606,7 +620,7 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   .header-cta { display: none; }
   .menu-toggle { display: flex; position: relative; z-index: 101; }
   .menu-toggle.is-open span { background: var(--text-on-dark); }
-  .bio-grid, .services-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .bio-grid, .services-grid, .contact-grid, .location-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .bio-media .bio-image { aspect-ratio: 16 / 10; }
   .services-media .services-image { position: static; aspect-ratio: 16 / 10; }
   .article-grid { grid-template-columns: 1fr; gap: 2.5rem; }
