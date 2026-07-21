@@ -4,16 +4,25 @@
 Statisk HTML/CSS/JS-nettside, ingen rammeverk. Designet er kopiert i layout/seksjonsoppsett/bildeplassering fra [jankristian.no](https://www.jankristian.no/) (referansenettside for en kiropraktor), men fargeskjemaet er endret fra rødt/bordeaux til **blått/hvitt**, og alt identifiserende innhold (firmanavn, bilder, kontaktinfo, sitater) er erstattet med tydelige plassholdere siden originalinnholdet tilhører en annen, reell virksomhet.
 
 **Filstruktur:**
-- [index.html](index.html) — hele siden (header/nav, hero, "hvem er vi"-seksjon, artikkelgrid, sitatkarusell, footer)
+- [index.html](index.html) — forsiden (header/nav, hero, bio-teaser, artikkel-teaser, sitatkarusell, footer)
+- [tjenester.html](tjenester.html) — tjenesteliste (bilde + liste med "+"-ikoner) + CTA
+- [priser.html](priser.html) — priser gruppert i kategorier
+- [kontakt.html](kontakt.html) — kontaktinfo + skjema (skjemaet er ikke koblet til noen mottaker ennå, se `script.js`)
+- [biografi.html](biografi.html) — full bio-tekst + punktliste "Jeg hjelper deg med"
+- [aktuelt.html](aktuelt.html) — full blogglisting (6 plassholderartikler + "Eldre innlegg")
+- [helsepersonell.html](helsepersonell.html) — infoside for samarbeidspartnere
+- [booking.html](booking.html) — plassholder for bookingsystem (embed kommer senere)
 - [style.css](style.css) — designtokens øverst (`:root`), navy/hvit/lyseblå palett
-- [script.js](script.js) — header scroll-state, mobilmeny, sitatkarusell (autoplay + piler/dots)
-- [images/](images/) — tom, venter på brukerens egne bilder
+- [script.js](script.js) — header scroll-state, mobilmeny, sitatkarusell (kun forsiden), kontaktskjema-placeholder
+- [images/](images/) — 18 bilder lastet inn (se README.md for detaljer og status på hvilke som gjenstår å koble inn)
 
-**Seksjonsrekkefølge (identisk med referansen):**
+**Sidestruktur:** Alle undersider deler samme header/footer og navigasjon (nav-lenkene peker til egne HTML-filer, ikke ankere). Aktiv side vises med understrek via `aria-current="page"` på nav-lenken. Header er solid (hvit) som standard på alle sider; kun forsiden (`<body class="has-hero">`) har den gjennomsiktige hero-varianten som blir hvit ved scroll (`.is-scrolled`).
+
+**Forsidens seksjonsrekkefølge (identisk med referansen):**
 1. Fast/sticky header — transparent over hero, blir hvit med navy tekst ved scroll (`.is-scrolled`)
 2. Hero — fullskjerms bildeplassholder med mørk navy-gradient, stor stablet overskrift, cream/hvit pilleknapp
-3. Bio-seksjon — bilde + tekst side om side, "Hvem er [Navn]?"
-4. "Aktuelt nå" — 3-kolonners artikkelgrid + "Flere artikler"-lenke
+3. Bio-teaser — bilde + tekst side om side, "Hvem er [Navn]?", lenke til biografi.html
+4. "Aktuelt nå"-teaser — 3-kolonners artikkelgrid + "Flere artikler"-lenke til aktuelt.html
 5. Sitatkarusell — mørk navy bakgrunn, autoplay hvert 6. sekund, piler + dots
 6. Footer — mørk navy, logo + 3 lenkekolonner (Lenker/Kontakt/Sosiale medier)
 
@@ -28,24 +37,19 @@ Statisk HTML/CSS/JS-nettside, ingen rammeverk. Designet er kopiert i layout/seks
 
 **Lokal visning:** `python3 -m http.server 8743` fra prosjektmappen, deretter åpne `http://localhost:8743`. (Merk: å åpne `index.html` direkte som `file://` fungerer ikke pålitelig i forhåndsvisnings-nettleseren her — bruk en lokal server.)
 
-## Status
+**Live nettside:** https://stavroslitsos.github.io/stavroslitsos.com/ (GitHub Pages, aktiv)
+**GitHub-repo:** https://github.com/stavroslitsos/stavroslitsos.com (eget, separat repo — **ikke** samme som `sykkelutleie`-repoet til sykkelsiden). Ingen lokal git-auth satt opp (`git push` feiler med "could not read Username"); filene ble lastet opp via GitHub sin nettbaserte "Upload files"-side, kjørt gjennom nettleser-automatisering (Claude in Chrome).
+**Custom domain:** ikke satt opp ennå — kjører foreløpig på standard `github.io`-adressen.
 
-**Sist oppdatert:** 2026-07-19
+## Status og fast regel for økter
 
-**Gjort:**
-- Analyserte jankristian.no i detalj (DOM-struktur, seksjonstemaer, fargepalett via CSS custom properties, bilde-/seksjonsplassering).
-- Bygget hele nettsiden med identisk layout/seksjonsrekkefølge, men i blå/hvit fargeprofil istedenfor rød/bordeaux.
-- Verifiserte i nettleser: hero, bio-seksjon, artikkelgrid (3 kolonner), sitatkarusell (autoplay + navigasjon) og footer rendrer og fungerer korrekt.
-- Opprettet lokalt git-repo (`git init`), ingen GitHub-repo opprettet ennå.
+Prosjektstatusen ("hva som er gjort" / "neste steg") holdes **kun** i
+[README.md](README.md), ikke her — README.md er maskin-uavhengig og leses av
+enhver økt/verktøy på enhver datamaskin (Dropbox-synket), mens CLAUDE.md kun
+lastes automatisk av Claude Code selv.
 
-**Neste steg:**
-- Brukeren fyller inn eget innhold (firmanavn, tekst, kontaktinfo) og bytter ut plassholderbildene.
-- Opprette GitHub-repo og publisere via GitHub Pages — samme fremgangsmåte som ble brukt for sykkelutleie-siden (`Claude nettside sykkel`-prosjektet): ingen lokal git-auth er satt opp, så opplasting skjer via GitHub sin web-opplasting i nettleseren, ikke `git push`. Se `../Claude nettside sykkel/CLAUDE.md` for detaljert fremgangsmåte (registrering av repo, custom domain via Domeneshop, DNS-oppsett).
-
-## Fast regel for økter
-
-Når brukeren sier «nå avslutter jeg økten» (eller lignende formulering), skal Status-seksjonen over **alltid** oppdateres med:
-- Hva som ble gjort i økten.
-- Hva som gjenstår / neste steg.
-
-Når en ny økt starter, les Status-seksjonen og fortsett arbeidet derfra uten at brukeren trenger å forklare noe på nytt.
+Når brukeren sier «nå avslutter jeg økten» (eller lignende formulering), skal
+"Status"-seksjonen i README.md **alltid** oppdateres med hva som ble gjort og
+hva som gjenstår / neste steg. Når en ny økt starter (på samme eller annen
+maskin), les README.md og fortsett arbeidet derfra uten at brukeren trenger å
+forklare noe på nytt.
