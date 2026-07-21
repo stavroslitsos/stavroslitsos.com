@@ -24,41 +24,52 @@ mainNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Testimonial carousel
+// Testimonial carousel (only present on the homepage)
 const track = document.getElementById('testimonialTrack');
-const dotsWrap = document.getElementById('testimonialDots');
-const prevBtn = document.getElementById('prevTestimonial');
-const nextBtn = document.getElementById('nextTestimonial');
-const slides = Array.from(track.children);
-let current = 0;
-let autoplayTimer;
+if (track) {
+  const dotsWrap = document.getElementById('testimonialDots');
+  const prevBtn = document.getElementById('prevTestimonial');
+  const nextBtn = document.getElementById('nextTestimonial');
+  const slides = Array.from(track.children);
+  let current = 0;
+  let autoplayTimer;
 
-slides.forEach((_, i) => {
-  const dot = document.createElement('button');
-  dot.setAttribute('aria-label', `Vis sitat ${i + 1}`);
-  dot.addEventListener('click', () => goTo(i));
-  dotsWrap.appendChild(dot);
-});
-const dots = Array.from(dotsWrap.children);
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.setAttribute('aria-label', `Vis sitat ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
 
-function goTo(index) {
-  slides[current].classList.remove('is-active');
-  dots[current].classList.remove('is-active');
-  current = (index + slides.length) % slides.length;
-  slides[current].classList.add('is-active');
-  dots[current].classList.add('is-active');
+  function goTo(index) {
+    slides[current].classList.remove('is-active');
+    dots[current].classList.remove('is-active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('is-active');
+    dots[current].classList.add('is-active');
+  }
+
+  function startAutoplay() {
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  prevBtn.addEventListener('click', () => { goTo(current - 1); startAutoplay(); });
+  nextBtn.addEventListener('click', () => { goTo(current + 1); startAutoplay(); });
+
+  goTo(0);
+  startAutoplay();
 }
 
-function startAutoplay() {
-  clearInterval(autoplayTimer);
-  autoplayTimer = setInterval(() => goTo(current + 1), 6000);
+// Contact form (static site — no backend wired up yet)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Dette skjemaet er ikke koblet til noen mottaker ennå. Koble det til en skjematjeneste (f.eks. Formspree eller Web3Forms), eller bruk e-postlenken over.');
+  });
 }
-
-prevBtn.addEventListener('click', () => { goTo(current - 1); startAutoplay(); });
-nextBtn.addEventListener('click', () => { goTo(current + 1); startAutoplay(); });
-
-goTo(0);
-startAutoplay();
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
