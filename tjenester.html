@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tjenester | Ditt Firma</title>
+<meta name="description" content="Oversikt over tjenestene dere tilbyr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">✛</span>
+      <span class="logo-text">Ditt Firma</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="aktuelt.html">Aktuelt</a>
+      <a href="tjenester.html" aria-current="page">Tjenester</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="biografi.html">Biografi</a>
+      <a href="priser.html">Priser</a>
+      <a href="helsepersonell.html">For helsepersonell</a>
+    </nav>
+
+    <a href="booking.html" class="btn btn-pill btn-light header-cta">Booking <span class="arrow">➔</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Åpne meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="section-inner">
+      <p class="eyebrow">Hva vi tilbyr</p>
+      <h1>Mine tjenester</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner services-grid">
+      <div class="services-media">
+        <div class="services-image placeholder-image" role="img" aria-label="Plassholder for bilde av tjeneste"></div>
+      </div>
+
+      <div>
+        <div class="services-list">
+          <div class="service-item"><span class="plus">+</span> Tjeneste 1</div>
+          <div class="service-item"><span class="plus">+</span> Tjeneste 2</div>
+          <div class="service-item"><span class="plus">+</span> Tjeneste 3</div>
+          <div class="service-item"><span class="plus">+</span> Tjeneste 4</div>
+          <div class="service-item"><span class="plus">+</span> Tjeneste 5</div>
+          <div class="service-item"><span class="plus">+</span> Tjeneste 6</div>
+        </div>
+
+        <div class="services-outro">
+          <h2 style="font-size:1.4rem; font-weight:800; color:var(--navy); margin-bottom:.9rem;">Hvorfor velge oss?</h2>
+          <p>Skriv kort om hvorfor kundene bør velge akkurat dere, og inviter dem til å ta kontakt hvis de er usikre på hvilken tjeneste som passer best.</p>
+          <div class="cta-row">
+            <a href="kontakt.html" class="text-link">Kontakt <span class="arrow">➔</span></a>
+            <a href="booking.html" class="btn btn-pill" style="background:var(--navy); color:var(--text-on-dark);">Booking <span class="arrow">➔</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-mark">✛</span>
+        <span class="logo-text">Ditt Firma</span>
+        <p class="footer-tagline">Kort beskrivelse eller slagord for firmaet.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Lenker</h4>
+        <a href="aktuelt.html">Aktuelt</a>
+        <a href="tjenester.html">Tjenester</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="biografi.html">Biografi</a>
+        <a href="priser.html">Priser</a>
+        <a href="helsepersonell.html">For helsepersonell</a>
+        <a href="booking.html">Booking</a>
+        <a href="#">Ofte stilte spørsmål</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:+4700000000">+47 000 00 000</a>
+        <a href="mailto:hei@dittdomene.no">hei@dittdomene.no</a>
+        <p>Din gate 1, 0000 Din by</p>
+        <p class="footer-hours-label">Åpningstider:</p>
+        <p class="footer-hours">mandag–fredag 09:00–16:00<br>lørdag og søndag stengt</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sosiale medier</h4>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Ditt Firma. Alle rettigheter reservert.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
