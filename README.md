@@ -143,6 +143,13 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
     `.hero-credentials`-stil i style.css): "Spes. klinisk ortopedisk medisin
     (OMI)", "Spes. ultralyddiagnostikk og injeksjonsbehandling", "Klinikk i
     Oslo og Nesbru". Verifisert på desktop + mobil.
+- **2026-07-22 (kveld) – ren synk-sjekk, ingen nye endringer:** bekreftet at
+  denne maskinen (Dropbox-synket arbeidsmappe) er 100 % i synk med
+  `origin/main` (`git diff origin/main` tomt). Alt arbeidet fra økten på den
+  andre maskinen samme dag (se punktet over) var allerede hentet inn via
+  Dropbox+git — ingenting å committe. Viste brukeren skjermbilder av live
+  siden (forside, biografi) til bekreftelse. Ingen kodeendringer denne
+  økten.
 
 **Ikke ferdig / kjente hull:**
 - **Custom domain er bevisst ikke koblet opp ennå** (venter til delingsfasen
