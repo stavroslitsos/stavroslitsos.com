@@ -136,6 +136,13 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
     automatisk, og siden serveres nå på
     **https://stavroslitsos.github.io/stavroslitsos.com/** (verifisert live,
     alle bilder laster med HTTP 200). Dette er delingslenken.
+  - **Endret hero-overskriften på forsiden** (commit `898c392`): fjernet det
+    dobbelte navnet (stod både i header-logoen og som kjempeoverskrift).
+    Hero viser nå rollen **FAGANSVARLIG MANUELLTERAPEUT** som stor overskrift,
+    med spesialiseringene under i mindre, lesbar punktliste (ny
+    `.hero-credentials`-stil i style.css): "Spes. klinisk ortopedisk medisin
+    (OMI)", "Spes. ultralyddiagnostikk og injeksjonsbehandling", "Klinikk i
+    Oslo og Nesbru". Verifisert på desktop + mobil.
 
 **Ikke ferdig / kjente hull:**
 - **Custom domain er bevisst ikke koblet opp ennå** (venter til delingsfasen
