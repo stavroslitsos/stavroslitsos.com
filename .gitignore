@@ -1,0 +1,11 @@
+# Lokal Claude Code dev-config (maskin-spesifikk)
+.claude/
+
+# macOS
+.DS_Store
+
+# Kildebilder / råmateriale som IKKE brukes direkte av siden.
+# Kun images/web/ (de faktiske nettsidebildene) skal versjoneres.
+images/*
+!images/web/
+images/web/.DS_Store
