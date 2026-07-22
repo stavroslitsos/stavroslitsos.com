@@ -53,15 +53,26 @@ python3 -m http.server 8743
 
 ## Live nettside og repo
 
-- **Live:** https://stavroslitsos.github.io/stavroslitsos.com/ (GitHub Pages, aktiv)
+- **Live (deling):** https://stavroslitsos.github.io/stavroslitsos.com/
+  (GitHub Pages, aktiv — dette er lenken som deles med venner/bekjente for
+  tilbakemelding i denne fasen)
 - **GitHub-repo:** https://github.com/stavroslitsos/stavroslitsos.com (eget, separat repo —
   **ikke** samme som `sykkelutleie`-repoet til sykkelsiden)
-- **Git-auth:** ikke satt opp lokalt (`git push` feiler med "could not read Username").
-  Filer må derfor lastes opp via GitHub sin nettbaserte "Upload files"-side
-  (kjørt gjennom nettleser-automatisering/Claude in Chrome), inntil lokal
-  git-auth eventuelt settes opp.
-- **Custom domain:** ikke satt opp ennå — kjører foreløpig på standard
-  `github.io`-adressen.
+- **Git-auth (2026-07-22):** nå satt opp lokalt via GitHub CLI. `gh` er
+  installert i `~/.local/bin/gh` (last ned på nytt fra
+  github.com/cli/cli/releases hvis mappen mangler på en annen maskin), og
+  autentisert med `gh auth login --web` mot kontoen `stavroslitsos` (token i
+  macOS-keyring, scope `repo`). **`git push origin main` fungerer nå direkte**
+  — ikke lenger behov for GitHub sin web-opplasting/nettleser-automatisering.
+  Kjør `export PATH="$HOME/.local/bin:$PATH"` først hvis `git`/`gh` ikke finner
+  credential-helperen.
+- **Custom domain:** kjøpt (`stavroslitsos.com`, Domeneshop) men **bevisst
+  ikke koblet opp ennå** — CNAME-fila er fjernet fra repoet med vilje slik at
+  siden serveres på `github.io`-adressen i delingsfasen. Kobles opp helt til
+  slutt (se "Neste steg").
+- **Bildehåndtering i git:** kun `images/web/` versjoneres (bildene siden
+  faktisk bruker). Råmateriale/kildebilder ellers i `images/` og lokal
+  `.claude/`-config er `.gitignore`-t.
 
 ## Faste regler for Claude (gjelder på alle maskiner, uavhengig av økt)
 
@@ -101,25 +112,38 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 - Alle `.placeholder-image`-divs er byttet ut med ekte `<img>`-tagger som
   peker til `images/web/` (hero, portrett, biografi-portrett, tjenester,
   6 aktuelt-bilder).
-- Kjøpt eget domene **stavroslitsos.com** (hos Domeneshop) og lagt til
-  `CNAME`-fil i repoet.
-- Mye av dette ble lastet opp **direkte via GitHub sitt nettgrensesnitt**
-  (ikke via lokal `git push`, siden lokal git-auth fortsatt ikke er satt
-  opp) — GitHub-repoet (`origin/main`) har derfor en helt egen, mye lengre
-  commit-historikk (mange "Create X" / "Update X"-commits) enn den lokale
-  `.git`-historikken i denne Dropbox-mappen (som stopper på `67eb25c`).
-  **Lokal git og GitHub-repoet har med andre ord divergert** — de må
-  avstemmes (se "Neste steg").
+- Kjøpt eget domene **stavroslitsos.com** (hos Domeneshop).
+- **2026-07-22 – git avstemt, autentisering satt opp, bilder pushet, side
+  live på github.io:**
+  - Satt opp ordentlig git-auth lokalt (GitHub CLI, se "Live nettside og
+    repo" over). Slutt på web-opplasting.
+  - Løste den divergerte historikken: arbeidsmappen (Dropbox-synket) viste
+    seg å være **nyere** enn GitHub (ekte bilder i alle 6 aktuelt-kort,
+    "Henvisning"-navn, canonical-URLer mot stavroslitsos.com), mens GitHub lå
+    bak. Kjørte `git reset --mixed origin/main` (beholdt arbeidsmappen, la meg
+    på toppen av den ekte GitHub-historikken) og laget én ren commit
+    (`8aef649`). Sikkerhetskopi av gammel lokal historikk ligger i grenen
+    `backup-local-pre-sync`.
+  - Pushet `images/web/` (10 bilder) til GitHub — bildene vises nå live.
+  - **Fjernet MAGNAT/House of Health-logoer** fra bildene med presis
+    inpainting (ikke sladding): `portrett.jpg`, `tjenester.jpg`,
+    `aktuelt-1.jpg` (MAGNAT) og `biografi-portrett.jpg` (House of Health).
+  - **Byttet hero-bilde** til et ultralydundersøkelse-bilde av Stavros
+    (`images/web/hero.jpg`, fra `IMG_5406.heic`). Det gamle "armer ut i
+    trening"-bildet (MAGNAT fjernet) ble flyttet til tjenester-siden
+    (`tjenester.jpg`).
+  - Fjernet `CNAME`-fila → GitHub Pages tømte custom domain-innstillingen
+    automatisk, og siden serveres nå på
+    **https://stavroslitsos.github.io/stavroslitsos.com/** (verifisert live,
+    alle bilder laster med HTTP 200). Dette er delingslenken.
 
 **Ikke ferdig / kjente hull:**
-- **Bildene i `images/web/` er ikke pushet til GitHub** (bekreftet med
-  `git ls-tree -r origin/main` — ingen `images/`-mappe der). Siden på GitHub
-  Pages refererer til `images/web/hero.jpg` osv., så **når domenet kobles
-  opp vil bildene mangle** med mindre `images/`-mappen lastes opp også.
-- **Custom domain er ikke koblet opp ennå**: `https://stavroslitsos.com`
-  viser Domeneshop sin "domenet er parkert"-side — DNS peker ikke mot
-  GitHub Pages ennå (mangler A-records/CNAME hos Domeneshop + aktivering i
-  GitHub Pages-innstillingene).
+- **Custom domain er bevisst ikke koblet opp ennå** (venter til delingsfasen
+  er over). `https://stavroslitsos.com` viser fortsatt Domeneshop sin
+  "parkert"-side. For å koble opp senere: legg CNAME-fila tilbake (innhold
+  `stavroslitsos.com`), sett DNS hos Domeneshop (A-records mot GitHub Pages
+  sine IP-er + `www` CNAME mot `stavroslitsos.github.io`), og legg inn custom
+  domain i repoets Pages-innstillinger.
 - **Gjenstående plassholdertekst** (bekreftet med `grep` i alle `.html`-filer):
   - Footer-tagline "Kort beskrivelse eller slagord for firmaet." på **alle**
     sider.
@@ -137,22 +161,17 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   - Ingen telefonnummer er lagt inn noe sted.
 - `images/`-mappen har fortsatt 2 ubrukelige macOS alias-filer
   (`PrP behandling-alias`, `Promo-alias`) som peker til en ødelagt sti i en
-  annen, delt Dropbox-mappe (`1. House of Health/…`) — kan slettes.
+  annen, delt Dropbox-mappe (`1. House of Health/…`) — kan slettes. (Ligger
+  utenfor git nå, siden kun `images/web/` versjoneres.)
 - Kontaktskjemaet på `kontakt.html` er ikke koblet til noen mottaker ennå
   (har en synlig merknad om dette + anbefaling om Formspree/Web3Forms).
 
-**Neste steg (i anbefalt rekkefølge):**
-1. **Avstem lokal git mot GitHub** — avgjør om GitHub-versjonen (nyere,
-   flere små commits) eller den lokale arbeidsmappen skal være
-   utgangspunktet, siden historikken har divergert. Innholdet i
-   arbeidsmappen her ser ut til å stemme godt overens med det som er live.
-2. **Last opp `images/`-mappen til GitHub** slik at bildene faktisk vises på
-   siden.
-3. **Sett opp DNS hos Domeneshop** mot GitHub Pages og aktiver custom domain
-   i repo-innstillingene, så `stavroslitsos.com` slutter å vise
-   parkeringssiden.
-4. Fyll inn de gjenstående plassholderne over (footer-tagline, forsidens
+**Neste steg:**
+1. **Del github.io-lenken** med venner/bekjente og samle tilbakemeldinger.
+2. Fyll inn de gjenstående plassholderne over (footer-tagline, forsidens
    bio-lede og artikkelkort-titler, 6 aktuelt-artikler, 4 sitater, sosiale
    medier-lenker, evt. telefonnummer).
-5. Koble kontaktskjemaet til en reell mottaker.
-6. Slett de 2 ubrukelige alias-filene i `images/`.
+3. Koble kontaktskjemaet til en reell mottaker.
+4. **Til slutt:** koble opp custom domain `stavroslitsos.com` (se "kjente
+   hull" over for fremgangsmåte).
+5. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
