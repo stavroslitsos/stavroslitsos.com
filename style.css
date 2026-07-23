@@ -273,21 +273,22 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   font-weight: 900;
   text-transform: uppercase;
   color: var(--text-on-dark);
-  font-size: clamp(2.6rem, 7vw, 5.6rem);
-  line-height: .98;
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  line-height: 1;
   letter-spacing: -.01em;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.1rem;
 }
 .hero-credentials {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: .4rem;
-  margin-bottom: 2.2rem;
+  gap: .35rem;
+  margin-bottom: 1.8rem;
   color: var(--text-on-dark);
-  font-size: clamp(1rem, 1.9vw, 1.3rem);
+  font-size: clamp(.95rem, 1.3vw, 1.1rem);
   font-weight: 600;
   line-height: 1.35;
+  max-width: 34rem;
 }
 .hero-credentials li {
   padding-left: 1.4rem;
@@ -402,6 +403,13 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   text-transform: uppercase;
   color: var(--text-on-dark-dim);
 }
+.testimonial cite a {
+  color: var(--text-on-dark-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .15s ease;
+}
+.testimonial cite a:hover { color: var(--text-on-dark); }
 .testimonial-controls {
   display: flex;
   align-items: center;
