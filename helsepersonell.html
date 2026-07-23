@@ -33,32 +33,147 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Stavros Litsos",
-  "description": "Manuellterapeut med klinikker i Oslo og Nesbru.",
-  "url": "https://stavroslitsos.com/",
-  "email": "stav.li@hotmail.com",
-  "areaServed": ["Oslo", "Nesbru"],
-  "medicalSpecialty": "Physical Therapy",
-  "location": [
+  "@graph": [
     {
-      "@type": "Place",
-      "name": "Stavros Litsos – Oslo",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Fjordalléen 16",
-        "addressLocality": "Oslo",
-        "addressCountry": "NO"
-      }
+      "@type": "MedicalBusiness",
+      "@id": "https://stavroslitsos.com/#klinikk",
+      "name": "Stavros Litsos – Manuellterapeut",
+      "description": "Manuellterapeut i Oslo og Nesbru. Utredning og behandling av muskel- og skjelettplager, idrettsskader, rygg-, nakke- og skulderplager – med ultralyddiagnostikk og ultralydveiledet injeksjonsbehandling.",
+      "url": "https://stavroslitsos.com/",
+      "email": "stav.li@hotmail.com",
+      "image": "https://stavroslitsos.com/images/web/share.jpg",
+      "areaServed": [
+        "Oslo",
+        "Aker Brygge",
+        "Nesbru",
+        "Asker",
+        "Bærum"
+      ],
+      "medicalSpecialty": "PhysicalTherapy",
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Stavros Litsos – Oslo",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Fjordalléen 16",
+            "addressLocality": "Oslo",
+            "postalCode": "0250",
+            "addressCountry": "NO"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Stavros Litsos – Nesbru",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Holmqvistveien 1",
+            "addressLocality": "Nesbru",
+            "addressCountry": "NO"
+          }
+        }
+      ],
+      "founder": {
+        "@id": "https://stavroslitsos.com/#stavros"
+      },
+      "employee": {
+        "@id": "https://stavroslitsos.com/#stavros"
+      },
+      "sameAs": [
+        "https://www.legelisten.no/manuellterapeuter/34636-stavros-litsos",
+        "https://www.houseofhealth.no/our-team",
+        "https://www.linkedin.com/in/stavros-litsos-691988222/",
+        "https://www.instagram.com/stavroslitsos/",
+        "https://www.tiktok.com/@stavros.litsos"
+      ]
     },
     {
-      "@type": "Place",
-      "name": "Stavros Litsos – Nesbru",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nesbru",
-        "addressCountry": "NO"
-      }
+      "@type": "Person",
+      "@id": "https://stavroslitsos.com/#stavros",
+      "name": "Stavros Litsos",
+      "givenName": "Stavros",
+      "familyName": "Litsos",
+      "jobTitle": "Fagansvarlig manuellterapeut",
+      "description": "Stavros Litsos er autorisert manuellterapeut og fysioterapeut, med mastergrad i idrettsfysiologi og biomekanikk, spesialkompetanse i klinisk ortopedisk medisin (OMI Cyriax) og videreutdanning i ultralyddiagnostikk og injeksjonsbehandling.",
+      "url": "https://stavroslitsos.com/",
+      "image": "https://stavroslitsos.com/images/web/share.jpg",
+      "worksFor": {
+        "@id": "https://stavroslitsos.com/#klinikk"
+      },
+      "knowsAbout": [
+        "Manuellterapi",
+        "Fysioterapi",
+        "Muskel- og skjelettplager",
+        "Idrettsskader",
+        "Ryggplager",
+        "Nakkeplager",
+        "Skulderplager",
+        "Isjias",
+        "Prolaps",
+        "Artrose",
+        "Senebetennelse",
+        "Bursitt",
+        "Frozen shoulder",
+        "Tennisalbue",
+        "Karpaltunnelsyndrom",
+        "Plantar fasciitt",
+        "Akillesplager",
+        "Hodepine",
+        "Ultralyddiagnostikk",
+        "Ultralydveiledet injeksjonsbehandling",
+        "PRP-behandling",
+        "Kortisoninjeksjon",
+        "Hyaluronsyre",
+        "Trykkbølgebehandling",
+        "Klinisk ortopedisk medisin",
+        "Idrettsmedisin",
+        "Rehabilitering",
+        "Biomekanikk"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Autorisasjon",
+          "name": "Manuellterapeut – autorisert helsepersonell (2023)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Autorisasjon",
+          "name": "Fysioterapeut – autorisert helsepersonell (2017)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Mastergrad",
+          "name": "MSc idrettsfysiologi og biomekanikk – Norges idrettshøgskole"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Utdanning",
+          "name": "Manuellterapi – Universitetet i Bergen"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Spesialkompetanse",
+          "name": "Klinisk ortopedisk medisin (OMI Cyriax)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Videreutdanning",
+          "name": "Ultralyddiagnostikk og injeksjonsbehandling"
+        }
+      ],
+      "knowsLanguage": [
+        "no",
+        "en",
+        "el"
+      ],
+      "sameAs": [
+        "https://www.legelisten.no/manuellterapeuter/34636-stavros-litsos",
+        "https://www.houseofhealth.no/our-team",
+        "https://www.linkedin.com/in/stavros-litsos-691988222/",
+        "https://www.instagram.com/stavroslitsos/",
+        "https://www.tiktok.com/@stavros.litsos"
+      ]
     }
   ]
 }

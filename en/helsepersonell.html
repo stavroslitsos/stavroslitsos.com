@@ -33,32 +33,147 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Stavros Litsos",
-  "description": "Manual therapist with clinics in Oslo and Nesbru.",
-  "url": "https://stavroslitsos.com/",
-  "email": "stav.li@hotmail.com",
-  "areaServed": ["Oslo", "Nesbru"],
-  "medicalSpecialty": "Physical Therapy",
-  "location": [
+  "@graph": [
     {
-      "@type": "Place",
-      "name": "Stavros Litsos – Oslo",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Fjordalléen 16",
-        "addressLocality": "Oslo",
-        "addressCountry": "NO"
-      }
+      "@type": "MedicalBusiness",
+      "@id": "https://stavroslitsos.com/#klinikk",
+      "name": "Stavros Litsos – Manual Therapist",
+      "description": "Manual therapist in Oslo and Nesbru. Assessment and treatment of musculoskeletal problems, sports injuries and back, neck and shoulder complaints – with ultrasound diagnostics and ultrasound-guided injection treatment.",
+      "url": "https://stavroslitsos.com/",
+      "email": "stav.li@hotmail.com",
+      "image": "https://stavroslitsos.com/images/web/share.jpg",
+      "areaServed": [
+        "Oslo",
+        "Aker Brygge",
+        "Nesbru",
+        "Asker",
+        "Bærum"
+      ],
+      "medicalSpecialty": "PhysicalTherapy",
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Stavros Litsos – Oslo",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Fjordalléen 16",
+            "addressLocality": "Oslo",
+            "postalCode": "0250",
+            "addressCountry": "NO"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Stavros Litsos – Nesbru",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Holmqvistveien 1",
+            "addressLocality": "Nesbru",
+            "addressCountry": "NO"
+          }
+        }
+      ],
+      "founder": {
+        "@id": "https://stavroslitsos.com/#stavros"
+      },
+      "employee": {
+        "@id": "https://stavroslitsos.com/#stavros"
+      },
+      "sameAs": [
+        "https://www.legelisten.no/manuellterapeuter/34636-stavros-litsos",
+        "https://www.houseofhealth.no/our-team",
+        "https://www.linkedin.com/in/stavros-litsos-691988222/",
+        "https://www.instagram.com/stavroslitsos/",
+        "https://www.tiktok.com/@stavros.litsos"
+      ]
     },
     {
-      "@type": "Place",
-      "name": "Stavros Litsos – Nesbru",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nesbru",
-        "addressCountry": "NO"
-      }
+      "@type": "Person",
+      "@id": "https://stavroslitsos.com/#stavros",
+      "name": "Stavros Litsos",
+      "givenName": "Stavros",
+      "familyName": "Litsos",
+      "jobTitle": "Lead manual therapist",
+      "description": "Stavros Litsos is an authorised manual therapist and physiotherapist, with a master's degree in sports physiology and biomechanics, specialist competence in clinical orthopaedic medicine (OMI Cyriax) and further training in ultrasound diagnostics and injection treatment.",
+      "url": "https://stavroslitsos.com/",
+      "image": "https://stavroslitsos.com/images/web/share.jpg",
+      "worksFor": {
+        "@id": "https://stavroslitsos.com/#klinikk"
+      },
+      "knowsAbout": [
+        "Manual therapy",
+        "Physiotherapy",
+        "Musculoskeletal disorders",
+        "Sports injuries",
+        "Back pain",
+        "Neck pain",
+        "Shoulder pain",
+        "Sciatica",
+        "Disc herniation",
+        "Osteoarthritis",
+        "Tendinopathy",
+        "Bursitis",
+        "Frozen shoulder",
+        "Tennis elbow",
+        "Carpal tunnel syndrome",
+        "Plantar fasciitis",
+        "Achilles tendinopathy",
+        "Headache",
+        "Ultrasound diagnostics",
+        "Ultrasound-guided injection therapy",
+        "PRP treatment",
+        "Corticosteroid injection",
+        "Hyaluronic acid",
+        "Shockwave therapy",
+        "Clinical orthopaedic medicine",
+        "Sports medicine",
+        "Rehabilitation",
+        "Biomechanics"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Authorisation",
+          "name": "Manual therapist – authorised health personnel (2023)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Authorisation",
+          "name": "Physiotherapist – authorised health personnel (2017)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Master's degree",
+          "name": "MSc Sports Physiology and Biomechanics – Norwegian School of Sport Sciences"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Education",
+          "name": "Manual therapy – University of Bergen"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Specialist competence",
+          "name": "Clinical orthopaedic medicine (OMI Cyriax)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Further training",
+          "name": "Ultrasound diagnostics and injection treatment"
+        }
+      ],
+      "knowsLanguage": [
+        "no",
+        "en",
+        "el"
+      ],
+      "sameAs": [
+        "https://www.legelisten.no/manuellterapeuter/34636-stavros-litsos",
+        "https://www.houseofhealth.no/our-team",
+        "https://www.linkedin.com/in/stavros-litsos-691988222/",
+        "https://www.instagram.com/stavroslitsos/",
+        "https://www.tiktok.com/@stavros.litsos"
+      ]
     }
   ]
 }
