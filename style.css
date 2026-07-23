@@ -181,6 +181,21 @@ img { max-width: 100%; display: block; }
 
 .header-cta { flex-shrink: 0; }
 
+.lang-switch {
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .04em;
+  color: var(--navy);
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  padding: .3em .7em;
+  line-height: 1;
+  transition: opacity .15s ease;
+}
+.lang-switch:hover { opacity: .6; }
+
 /* Default header = solid (used on every page except the homepage hero) */
 .site-header {
   background: var(--paper);
@@ -225,6 +240,7 @@ body.has-hero .site-header:not(.is-scrolled) .logo-mark {
   background: var(--text-on-dark);
   color: var(--navy);
 }
+body.has-hero .site-header:not(.is-scrolled) .lang-switch { color: var(--text-on-dark); }
 body.has-hero .site-header:not(.is-scrolled) .header-cta.btn-light {
   background: var(--paper);
   color: var(--navy);
