@@ -53,9 +53,10 @@ python3 -m http.server 8743
 
 ## Live nettside og repo
 
-- **Live (deling):** https://stavroslitsos.github.io/stavroslitsos.com/
-  (GitHub Pages, aktiv — dette er lenken som deles med venner/bekjente for
-  tilbakemelding i denne fasen)
+- **Live:** **https://stavroslitsos.com** (custom domain, HTTPS, aktiv).
+  github.io-adressen (https://stavroslitsos.github.io/stavroslitsos.com/)
+  omdirigerer nå hit.
+- **Engelsk versjon:** https://stavroslitsos.com/en/
 - **GitHub-repo:** https://github.com/stavroslitsos/stavroslitsos.com (eget, separat repo —
   **ikke** samme som `sykkelutleie`-repoet til sykkelsiden)
 - **Git-auth (2026-07-22):** nå satt opp lokalt via GitHub CLI. `gh` er
@@ -66,10 +67,13 @@ python3 -m http.server 8743
   — ikke lenger behov for GitHub sin web-opplasting/nettleser-automatisering.
   Kjør `export PATH="$HOME/.local/bin:$PATH"` først hvis `git`/`gh` ikke finner
   credential-helperen.
-- **Custom domain:** kjøpt (`stavroslitsos.com`, Domeneshop) men **bevisst
-  ikke koblet opp ennå** — CNAME-fila er fjernet fra repoet med vilje slik at
-  siden serveres på `github.io`-adressen i delingsfasen. Kobles opp helt til
-  slutt (se "Neste steg").
+- **Custom domain (2026-07-23): KOBLET OPP OG LIVE.** Siden kjører nå på
+  **https://stavroslitsos.com** (HTTPS, sertifikat godkjent, "Enforce HTTPS"
+  på). DNS hos Domeneshop peker til GitHub Pages: 4 A-oppføringer
+  (185.199.108–111.153), 4 AAAA (2606:50c0:8000–8003::153) på apex, og
+  `www` CNAME → `stavroslitsos.github.io`. CNAME-fila (`stavroslitsos.com`)
+  ligger i repoet. `www` og github.io-adressen omdirigerer (301) til apex.
+  Domenet hadde ingen aktiv e-post (null-MX), så ingenting ble påvirket der.
 - **Bildehåndtering i git:** kun `images/web/` versjoneres (bildene siden
   faktisk bruker). Råmateriale/kildebilder ellers i `images/` og lokal
   `.claude/`-config er `.gitignore`-t.

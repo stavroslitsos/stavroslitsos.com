@@ -39,7 +39,7 @@ Statisk HTML/CSS/JS-nettside, ingen rammeverk. Designet er kopiert i layout/seks
 
 **Live nettside:** https://stavroslitsos.github.io/stavroslitsos.com/ (GitHub Pages, aktiv)
 **GitHub-repo:** https://github.com/stavroslitsos/stavroslitsos.com (eget, separat repo — **ikke** samme som `sykkelutleie`-repoet til sykkelsiden). Ingen lokal git-auth satt opp (`git push` feiler med "could not read Username"); filene ble lastet opp via GitHub sin nettbaserte "Upload files"-side, kjørt gjennom nettleser-automatisering (Claude in Chrome).
-**Custom domain:** ikke satt opp ennå — kjører foreløpig på standard `github.io`-adressen.
+**Custom domain:** koblet opp og live på **https://stavroslitsos.com** (HTTPS aktiv, 2026-07-23). github.io-adressen omdirigerer hit.
 
 ## Status og fast regel for økter
 
