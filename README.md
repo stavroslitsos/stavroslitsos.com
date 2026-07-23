@@ -78,6 +78,46 @@ python3 -m http.server 8743
   faktisk bruker). Råmateriale/kildebilder ellers i `images/` og lokal
   `.claude/`-config er `.gitignore`-t.
 
+## Versjoner av nettsiden (to klinikker vs. kun House of Health)
+
+Prosjektet har to parallelle versjoner. **Live-siden bygges alltid fra
+`main`.**
+
+| Versjon | Hvor | Hva |
+|---|---|---|
+| **Versjon 1: To klinikker** | grenen `main` + taggen `v1-to-klinikker` | Viser både Oslo (House of Health) og Nesbru (Nesbruklinikken). **Dette er det som ligger live nå.** |
+| **Versjon 2: Kun House of Health** | grenen `v2-house-of-health` | Viser visuelt kun Oslo/House of Health. SEO-tekstene i `<head>` nevner fortsatt begge, så Stavros finnes ved søk på begge steder. |
+
+**Bakgrunnen for Versjon 2** (Stavros' begrunnelse): unngå å blande offentlig
+og privat praksis på samme side; "fagansvarlig" stemmer bare for Oslo, ikke
+Nesbru; og prisene gjelder privatpraksis, ikke Nesbru som har avtalerefusjon –
+noe kolleger har reagert på.
+
+**Hva som ble endret i Versjon 2** (35 synlige steder over 16 sider): footer-
+slagord, Nesbru-adresse i footer, hero-punktet ("Klinikk i Oslo og Nesbru" →
+"Aker Brygge, Oslo"), Nesbru-kortet på booking-siden og Nesbru-blokka på
+kontakt-siden. Booking-gridet ble gjort adaptivt (`auto-fit`) så ett kort
+vises pent. `<head>`/SEO er bevisst urørt.
+
+**Kommandoer:**
+```bash
+git checkout v2-house-of-health   # jobb videre på Versjon 2 (påvirker ikke live)
+git checkout main                 # tilbake til Versjon 1 (= live)
+git checkout v1-to-klinikker      # se det frosne øyeblikksbildet av Versjon 1
+```
+
+**Publisere Versjon 2 (når/hvis Stavros vil):**
+```bash
+git checkout main && git merge v2-house-of-health && git push origin main
+```
+
+**Angre og gå tilbake til Versjon 1 – helt identisk:**
+```bash
+git checkout main && git reset --hard v1-to-klinikker && git push --force origin main
+```
+Taggen `v1-to-klinikker` er et frosset øyeblikksbilde og endres aldri, så
+Versjon 1 kan alltid gjenopprettes byte for byte.
+
 ## Faste regler for Claude (gjelder på alle maskiner, uavhengig av økt)
 
 Disse reglene ligger normalt i Claude sitt minnesystem, men det er maskin-/
