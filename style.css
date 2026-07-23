@@ -267,6 +267,7 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 70% 32%;
 }
 .hero-scrim {
   position: absolute;
@@ -281,8 +282,11 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   max-width: var(--container);
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem 6rem;
+  padding: 0 2rem 3rem;
 }
+.hero-content .hero-heading,
+.hero-content .hero-credentials,
+.hero-content .hero-cta { max-width: 34rem; }
 .hero-heading {
   display: flex;
   flex-direction: column;
