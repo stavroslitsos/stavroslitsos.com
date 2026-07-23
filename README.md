@@ -94,7 +94,7 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-22**
+**Sist oppdatert: 2026-07-23**
 
 **Gjort:**
 - Analyserte jankristian.no i detalj og bygget hele nettsiden i blå/hvit
@@ -150,6 +150,62 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   Dropbox+git — ingenting å committe. Viste brukeren skjermbilder av live
   siden (forside, biografi) til bekreftelse. Ingen kodeendringer denne
   økten.
+- **2026-07-23 – stor batch med 14 innsamlede oppgaver fra brukeren
+  (commits `35081d7` og `fb7d9f6`):**
+  1. **Hero-tekst** gjort mindre og forankret nederst til venstre.
+  2. **Hero-bilde** re-beskåret (mer utzoomet) så ultralydskjerm/plakat
+     dominerer og hodet blir mindre (`images/web/hero.jpg`, øvre bånd av
+     `IMG_5406`).
+  3. **Bio-teaser (forsiden):** fjernet "Hvem er vi?"-etiketten, fylt inn
+     ekte bio-tekst (fra House of Health-profilen).
+  4. **Sitatkarusell:** 10 ekte pasientsitater hentet fra Legelisten
+     (snitt 5,0★), kilde er nå "Legelisten"-lenke til profilen. JS lagde
+     dots automatisk.
+  5. **Footer-adresser:** Oslo v/House of Health (Fjordalléen 16,
+     Spaces-bygget 4. et.) + Nesbru v/Nesbruklinikken (Holmqvistveien 1).
+     Også oppdatert på kontakt- og booking-sidene for konsistens.
+  6. **Footer sosiale medier:** Instagram, TikTok, LinkedIn, House of Health,
+     Legelisten med ekte lenker. **Facebook fjernet** (brukeren ga ingen
+     lenke – vurderes ved sluttgjennomgang).
+  7. **Engelsk språkversjon:** hele siden oversatt til engelsk i `en/`-mappe
+     (8 sider), med **NO/EN-språkbryter** i headeren på alle sider,
+     hreflang-alternater og engelske URLer i `sitemap.xml`.
+  8. **Responsivt:** verifisert på mobil (375px) og nettbrett (768px) –
+     hero, mobilmeny og innholdssider fungerer.
+  9. **Aktuelt-siden:** kort 4–6 (var 3 like bilder) fikk distinkte bilder
+     (PRP-blodplate, ultralyd av kne, trening). 6 foreløpige overskrifter
+     lagt inn (brukeren fyller inn selve innleggene senere).
+  10. **Tjenester-siden:** byttet to tjenestelinjer → "Diagnostisk ultralyd
+      og injeksjonsbehandling" og "PRP – injeksjonsbehandling med blodplater".
+  11. **Meny-rekkefølge:** "Kontakt" flyttet bakerst (etter Henvisning, før
+      Booking) i header + footer-Lenker, på alle sider.
+  12. **Biografi:** "Manuellterapeut i Oslo og Nesbru" → "Fagansvarlig
+      Manuellterapeut"; nytt portrettbilde (`Bilde 09.01.2023`).
+  13. **Prisside:** full omstrukturering etter mønster fra jankristian.no
+      (bilde til venstre, Tjenester + Injeksjoner til høyre) med nye priser
+      og en tydelig **disclosure-seksjon** om medikamentell behandling /
+      kortisoninjeksjoner (compliance-hensyn).
+  14. **Tjenester-siden utvidet** med en original seksjon om diagnostisk
+      ultralyd og injeksjonsbehandling (dekker samme temaer som
+      osteraasklinikken.no, men skrevet fra bunnen for å unngå plagiat).
+  - **Fyllte også inn footer-tagline** ("Fagansvarlig manuellterapeut i Oslo
+    og Nesbru.") som erstattet plassholderen på alle sider.
+
+**Avgjørelser tatt underveis som brukeren bør vurdere ved sluttgjennomgang:**
+- **Facebook** fjernet fra sosiale medier (ingen lenke oppgitt). Legg til
+  igjen hvis ønskelig.
+- **Biografi-portrettet** (`Bilde 09.01.2023`) har "House of Health"-logo i
+  øvre høyre hjørne + på skjorta. Brukeren sa "ingen redigering", og HoH er
+  nåværende klinikk, så det står urørt – men kan renses som de andre bildene
+  hvis ønskelig.
+- **Aktuelt-bilder til kort 4–6:** to er stockbilder (PRP-blodprøve fra
+  `images/prp/`, ultralyd fra `images/ultralyd/`), ett er Stavros' eget
+  (renset treningsbilde). Bytt gjerne når ekte innlegg skrives.
+- **Testimonials på engelsk versjon** er oversatt fra de norske
+  originalene (ikke ordrett kildesitat lenger, men lesbart for engelske
+  besøkende).
+- Bio-teaseren på forsiden bruker den fulle House of Health-bio-teksten;
+  kan kortes ned hvis den blir for lang som "teaser".
 
 **Ikke ferdig / kjente hull:**
 - **Custom domain er bevisst ikke koblet opp ennå** (venter til delingsfasen
@@ -158,34 +214,24 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   `stavroslitsos.com`), sett DNS hos Domeneshop (A-records mot GitHub Pages
   sine IP-er + `www` CNAME mot `stavroslitsos.github.io`), og legg inn custom
   domain i repoets Pages-innstillinger.
-- **Gjenstående plassholdertekst** (bekreftet med `grep` i alle `.html`-filer):
-  - Footer-tagline "Kort beskrivelse eller slagord for firmaet." på **alle**
-    sider.
-  - Forsidens bio-teaser: lede-teksten under "Hvem er Stavros Litsos?" er
-    fortsatt plassholder (selve biografi.html-siden har derimot ekte tekst).
-  - Forsidens 3 artikkelkort-overskrifter ("Overskrift på første/andre/
-    tredje artikkel eller nyhet").
-  - Alle 6 overskriftene på `aktuelt.html` ("Overskrift på artikkel eller
-    nyhet 1–6") — bildene for disse er koblet til, inkl. to temaer det ligger
-    ekstra kildebilder til i `images/prp/` og `images/ultralyd/` (trolig
-    tiltenkt artikler om PRP-behandling og ultralydveiledet injeksjon).
-  - Alle 4 sitatene i testimonial-karusellen på forsiden, inkl. kilde.
-  - Sosiale medier-lenker i footer (LinkedIn/Facebook/Instagram) peker
-    fortsatt til `#`.
-  - Ingen telefonnummer er lagt inn noe sted.
-- `images/`-mappen har fortsatt 2 ubrukelige macOS alias-filer
-  (`PrP behandling-alias`, `Promo-alias`) som peker til en ødelagt sti i en
-  annen, delt Dropbox-mappe (`1. House of Health/…`) — kan slettes. (Ligger
-  utenfor git nå, siden kun `images/web/` versjoneres.)
+- **Aktuelt-innleggene er fortsatt "tomme":** overskriftene er på plass
+  (6 stk), men "Les mer"-lenkene peker til `#` – det finnes ingen faktiske
+  artikkelsider ennå. Brukeren skriver innleggene selv senere.
+- **Ingen telefonnummer** er lagt inn noe sted (kun e-post + bookinglenker).
+- **"Ofte stilte spørsmål" / FAQ** i footer peker fortsatt til `#` (ingen
+  FAQ-side finnes).
 - Kontaktskjemaet på `kontakt.html` er ikke koblet til noen mottaker ennå
   (har en synlig merknad om dette + anbefaling om Formspree/Web3Forms).
+- `images/`-mappen har fortsatt 2 ubrukelige macOS alias-filer
+  (`PrP behandling-alias`, `Promo-alias`) — kan slettes. (Ligger utenfor git
+  nå, siden kun `images/web/` versjoneres.)
 
 **Neste steg:**
-1. **Del github.io-lenken** med venner/bekjente og samle tilbakemeldinger.
-2. Fyll inn de gjenstående plassholderne over (footer-tagline, forsidens
-   bio-lede og artikkelkort-titler, 6 aktuelt-artikler, 4 sitater, sosiale
-   medier-lenker, evt. telefonnummer).
-3. Koble kontaktskjemaet til en reell mottaker.
-4. **Til slutt:** koble opp custom domain `stavroslitsos.com` (se "kjente
-   hull" over for fremgangsmåte).
-5. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
+1. **Del github.io-lenken** med venner/bekjente og samle tilbakemeldinger
+   (norsk: `.../stavroslitsos.com/`, engelsk: `.../stavroslitsos.com/en/`).
+2. Gå gjennom "Avgjørelser tatt underveis" over og si fra om noe skal endres.
+3. Skriv de faktiske aktuelt-innleggene (og koble "Les mer" til dem).
+4. Koble kontaktskjemaet til en reell mottaker; evt. legg til telefonnummer.
+5. **Til slutt:** koble opp custom domain `stavroslitsos.com` (legg CNAME-fila
+   tilbake, sett DNS hos Domeneshop, aktiver custom domain i Pages).
+6. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
