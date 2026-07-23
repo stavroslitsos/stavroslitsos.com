@@ -95,6 +95,20 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
    maskiner. `CLAUDE.md` inneholder samme regel som en pekepinn for Claude
    Code spesifikt, men selve statusen skal kun holdes oppdatert **her**, for
    å unngå at de to filene kommer ut av synk.
+4. **LOGO-REGEL (gitt av Stavros 2026-07-23):** All logo/branding som vises i
+   bilder og som **ikke** er House of Health, skal **alltid** redigeres bort –
+   enten til ren flate (inpainting) eller erstattes med House of Health-logo.
+   Gjelder f.eks. **MAGNAT** (tidligere arbeidsgiver) og klesmerker som
+   **Under Armour**. House of Health er nåværende klinikk og skal beholdes.
+   *Hvorfor:* andre virksomheters branding på Stavros' personlige nettside ser
+   uprofesjonelt ut; delvis leger og kritiske kolleger besøker siden.
+   *Hvordan:* sjekk hvert nytt bilde i `images/web/` for ikke-HoH-logoer
+   (skjorte, vegg, utstyr) og fjern dem med presis inpainting (OpenCV
+   `INPAINT_TELEA` er brukt så langt – se tidligere bilder som mal).
+5. **Bump CSS-versjonen ved CSS-endringer:** alle sider lenker til
+   `style.css?v=N`. GitHub Pages cacher i 10 min, så uten versjonsbump tror
+   Stavros at endringen "ikke slo inn". Øk N (f.eks. `?v=4`) på **alle 16
+   sider** (8 norske + 8 i `en/`) hver gang `style.css` endres.
 
 ## Status – hvor arbeidet ble stoppet sist
 
@@ -194,6 +208,49 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
       osteraasklinikken.no, men skrevet fra bunnen for å unngå plagiat).
   - **Fyllte også inn footer-tagline** ("Fagansvarlig manuellterapeut i Oslo
     og Nesbru.") som erstattet plassholderen på alle sider.
+- **2026-07-23 (senere samme dag) – finpuss, domene og delingskort:**
+  - **Nytt hero-bilde:** byttet fra ultralyd-bildet (tatt bakfra) til
+    **skjelett-undersøkelsen** (`IMG_5290`) der Stavros vises tydelig
+    forfra. Han står til høyre, så hero-teksten ligger nede til venstre uten
+    å dekke ham. `object-position: 70% 32%` holder ansiktet i bildet.
+  - **Logo-regel innført (fast regel, se under):** fjernet både **MAGNAT**-
+    og **Under Armour**-logo fra hero-skjorta, og regenererte `aktuelt-1.jpg`
+    fra samme rensede kilde.
+  - **Menyendringer:** "Aktuelt" → **"Faglig"**, "Aktuelt nå" →
+    **"Faglig informasjon"**, "Biografi" → **"Om meg"** flyttet først i
+    menyen. Ny rekkefølge: `Om meg · Faglig · Tjenester · Priser ·
+    Henvisning · Kontakt`. Speilet på engelsk (About me · Articles · …).
+  - **Prisside:** erstattet trykkbølge-bildet med **to temabilder** – ultralyd
+    ved siden av "Tjenester", ultralydveiledet injeksjon ved siden av
+    "Injeksjoner" (ny `.price-block-row`-layout, responsiv).
+  - **Hero-tillegg:** "hos House of Health" lagt inn rett under overskriften
+    (før punktlisten) for å presisere hvor han er fagansvarlig – deretter
+    gjort ~15 % mindre og litt lettere etter ønske.
+  - **CUSTOM DOMAIN KOBLET OPP** – se eget punkt under "Live nettside og repo".
+  - **Delingskort (Open Graph) fikset:** siden hadde **ingen `og:image`**, så
+    Facebook gjettet seg fram til et bilde og mistet det. La inn fast
+    delingsbilde `images/web/share.jpg` (1200×630, laget fra hero) +
+    `og:image:width/height/alt` og `twitter:card=summary_large_image` på alle
+    16 sider. Delingstittelen (`og:title`/`twitter:title`) på forsiden er
+    forkortet til **"Stavros Litsos – Manuellterapeut"** (engelsk: "Stavros
+    Litsos – Manual Therapist"), mens `<title>` beholder "…i Oslo og Nesbru"
+    for nettleserfane og lokal SEO. Verifisert i Facebook Sharing Debugger:
+    kortet viser stort bilde + kort tittel.
+  - **Cache-versjon på CSS:** `style.css?v=3` på alle sider, fordi GitHub
+    setter 10 min cache og brukeren opplevde at endringer "ikke slo inn".
+    **Husk å bumpe versjonen (`?v=4`, `?v=5` …) ved fremtidige CSS-endringer**
+    så brukeren ser dem umiddelbart.
+
+**Viktig funn: Messenger viser ikke bilde i delingskortet (ikke en feil på siden)**
+Brukeren opplevde at lenken delt i Messenger ikke viste bilde. Grundig
+feilsøking viste at **nettsiden er korrekt**: Facebooks egen Sharing Debugger
+henter og viser det komplette kortet med bilde og kort tittel, og
+`facebookexternalhit`-roboten får servert alle og:-taggene (bildet svarer
+HTTP 200 som image/jpeg). Årsaken er at samtalen i Messenger er
+**ende-til-ende-kryptert** – da kan ikke Metas servere lese meldingen og
+lager derfor bare et minimalt tekstkort med domenenavnet. Bildet vises
+normalt i Facebook-innlegg, LinkedIn, X, WhatsApp, e-post og som regel i
+Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
 
 **Avgjørelser tatt underveis som brukeren bør vurdere ved sluttgjennomgang:**
 - **Facebook** fjernet fra sosiale medier (ingen lenke oppgitt). Legg til
@@ -212,12 +269,6 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   kan kortes ned hvis den blir for lang som "teaser".
 
 **Ikke ferdig / kjente hull:**
-- **Custom domain er bevisst ikke koblet opp ennå** (venter til delingsfasen
-  er over). `https://stavroslitsos.com` viser fortsatt Domeneshop sin
-  "parkert"-side. For å koble opp senere: legg CNAME-fila tilbake (innhold
-  `stavroslitsos.com`), sett DNS hos Domeneshop (A-records mot GitHub Pages
-  sine IP-er + `www` CNAME mot `stavroslitsos.github.io`), og legg inn custom
-  domain i repoets Pages-innstillinger.
 - **Aktuelt-innleggene er fortsatt "tomme":** overskriftene er på plass
   (6 stk), men "Les mer"-lenkene peker til `#` – det finnes ingen faktiske
   artikkelsider ennå. Brukeren skriver innleggene selv senere.
@@ -231,11 +282,12 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   nå, siden kun `images/web/` versjoneres.)
 
 **Neste steg:**
-1. **Del github.io-lenken** med venner/bekjente og samle tilbakemeldinger
-   (norsk: `.../stavroslitsos.com/`, engelsk: `.../stavroslitsos.com/en/`).
+1. **Del lenken** – siden er live og ferdig for deling:
+   norsk **https://stavroslitsos.com**, engelsk **https://stavroslitsos.com/en/**.
+   Samle tilbakemeldinger fra venner/bekjente.
 2. Gå gjennom "Avgjørelser tatt underveis" over og si fra om noe skal endres.
-3. Skriv de faktiske aktuelt-innleggene (og koble "Les mer" til dem).
+3. **Skriv de faktiske aktuelt-innleggene** (6 overskrifter er på plass) og
+   koble "Les mer"-lenkene til ekte artikkelsider.
 4. Koble kontaktskjemaet til en reell mottaker; evt. legg til telefonnummer.
-5. **Til slutt:** koble opp custom domain `stavroslitsos.com` (legg CNAME-fila
-   tilbake, sett DNS hos Domeneshop, aktiver custom domain i Pages).
+5. Vurder FAQ-side (footer-lenken peker til `#` i dag).
 6. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
