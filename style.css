@@ -712,3 +712,6 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   .hero-content { padding-bottom: 4rem; }
   .hero-heading { font-size: clamp(1.5rem, 7.4vw, 3rem); }
 }
+
+.article-card h3 a { color: inherit; }
+.article-card h3 a:hover { color: var(--blue-accent); }
