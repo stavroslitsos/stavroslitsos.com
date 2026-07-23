@@ -301,8 +301,8 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
 .hero-affiliation {
   color: var(--text-on-dark);
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(1.05rem, 1.8vw, 1.45rem);
+  font-weight: 600;
+  font-size: clamp(.9rem, 1.5vw, 1.23rem);
   letter-spacing: .01em;
   margin: 0 0 1.2rem;
 }
