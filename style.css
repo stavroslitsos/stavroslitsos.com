@@ -546,6 +546,9 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
 }
 .price-name { color: var(--ink); font-weight: 500; }
 .price-value { font-family: var(--font-heading); font-weight: 800; color: var(--navy); white-space: nowrap; }
+.price-block-row { display: grid; grid-template-columns: .8fr 1fr; gap: 4.5rem; align-items: start; margin-bottom: 3.5rem; }
+.price-block-row:last-child { margin-bottom: 0; }
+.price-media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
 
 /* ===== Kontakt ===== */
 .contact-grid {
@@ -686,7 +689,7 @@ body.has-hero .site-header:not(.is-scrolled) .menu-toggle span { background: var
   .header-cta { display: none; }
   .menu-toggle { display: flex; position: relative; z-index: 101; }
   .menu-toggle.is-open span { background: var(--text-on-dark); }
-  .bio-grid, .services-grid, .contact-grid, .location-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .bio-grid, .services-grid, .contact-grid, .location-grid, .price-block-row { grid-template-columns: 1fr; gap: 2.5rem; }
   .bio-media .bio-image { aspect-ratio: 16 / 10; }
   .services-media .services-image { position: static; aspect-ratio: 16 / 10; }
   .article-grid { grid-template-columns: 1fr; gap: 2.5rem; }
