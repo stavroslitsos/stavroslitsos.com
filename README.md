@@ -85,8 +85,8 @@ Prosjektet har to parallelle versjoner. **Live-siden bygges alltid fra
 
 | Versjon | Hvor | Hva |
 |---|---|---|
-| **Versjon 1: To klinikker** | grenen `main` + taggen `v1-to-klinikker` | Viser både Oslo (House of Health) og Nesbru (Nesbruklinikken). **Dette er det som ligger live nå.** |
-| **Versjon 2: Kun House of Health** | grenen `v2-house-of-health` | Viser visuelt kun Oslo/House of Health. SEO-tekstene i `<head>` nevner fortsatt begge, så Stavros finnes ved søk på begge steder. |
+| **Versjon 2: Kun House of Health** | grenen `main` (+ `v2-house-of-health`) | Viser visuelt kun Oslo/House of Health. SEO i `<head>` nevner fortsatt begge steder. **Dette er det som ligger LIVE nå (publisert 2026-07-23).** |
+| **Versjon 1: To klinikker** | taggen `v1-to-klinikker` | Frosset øyeblikksbilde som viser både Oslo og Nesbru. Kan gjenopprettes byte for byte: `git reset --hard v1-to-klinikker && git push --force origin main`. |
 
 **Bakgrunnen for Versjon 2** (Stavros' begrunnelse): unngå å blande offentlig
 og privat praksis på samme side; "fagansvarlig" stemmer bare for Oslo, ikke
@@ -161,7 +161,48 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-23**
+**Sist oppdatert: 2026-07-24**
+
+**Økt 2026-07-24 (nyeste – les denne først):**
+- **Versjon 2 publisert og live** (kun House of Health/Oslo). Versjon 1 bevart
+  i taggen `v1-to-klinikker`. Se "Versjoner av nettsiden" over.
+- **Utvidet strukturerte data (SEO)** på alle 16 sider: Person-entitet for
+  Stavros med fullt navn, autorisasjoner (manuellterapeut 2023, fysioterapeut
+  2017), mastergrad, OMI Cyriax, 28 fagområder/tilstander, og `sameAs`-lenker
+  (Legelisten, House of Health, LinkedIn, Instagram, TikTok). **Merk:** la
+  bevisst IKKE inn "kiropraktor/lege/ortoped/osteopat/naprapat" som titler på
+  Stavros – det er beskyttede titler han ikke har, og ville vært klagegrunn.
+- **Ny fagartikkel** (norsk + engelsk): *"Manuellterapeut, kiropraktor,
+  osteopat eller naprapat – hva er forskjellen?"*
+  (`manuellterapeut-kiropraktor-osteopat-naprapat.html`). Fakta verifisert mot
+  Helsedirektoratet/Lovdata (osteopat+naprapat autorisert 1. mai 2022;
+  manuellterapeut/kiropraktor har henvisnings- og sykmeldingsrett, ikke de to
+  andre). Treffer søk på de titlene uten å påstå titler han ikke har. Koblet
+  inn som første kort på Faglig + forsiden, lagt i sitemap, med Article-schema.
+  Dette er den FØRSTE ekte artikkelen – de 5 andre Faglig-kortene er fortsatt
+  plassholdere (Les mer → `#`).
+- **5 finpuss-oppgaver:** (1) alle artikkelbilder på Faglig samme ramme
+  (fjernet `height:100%` som lot bildet strekke seg); (2) byttet duplikatbilde;
+  (3) nytt bilde i "Mine tjenester" (K015288, Stavros med ultralyd, HoH-polo);
+  (4) "+" foran tjenestene → "✓" (så det ikke ser klikkbart ut); (5) nye
+  tjenester **Foredrag og kurs / Mentorship-program / Hospitering** lagt til
+  under Mine tjenester OG som egen prisseksjon (6500/foredrag, 6800/mnd,
+  2500/dag). NO + EN.
+- **EXIF-buggen (viktig lærdom):** ett Faglig-bilde ble rotert fordi PIL leser
+  rå-piksler uten å følge kameraets rotasjonsflagg. Rettet med
+  `ImageOps.exif_transpose()`. Fast regel #6 lagt inn i "Faste regler" over –
+  **bruk alltid exif_transpose ved bildebehandling.**
+- **CSS-cacheversjon nå `?v=6`.** (Husk å bumpe ved neste CSS-endring.)
+- **PÅGÅENDE – "finn oss"-video:** Stavros vil ha videoen fra
+  houseofhealth.no/akerbrygge (som viser veien til kontoret) under Oslo-adressen
+  på Kontakt-siden. **Blokkert:** videoen er en DRM-låst, AES-128-kryptert HLS-
+  strøm på Squarespace med signerte/utløpende segmenter – kan ikke hentes/
+  hotlinkes rent (fant kilde-URL, men den utløper og er kryptert). Stavros har
+  ikke originalfila. **Venter på at Stavros skaffer originalvideoen** (f.eks.
+  fra Squarespace-admin) og legger den i prosjektmappen, så selvhoster jeg den
+  med en klikk-for-å-spille-spiller. Alternativ hvis fila ikke kommer: Google
+  Maps-embed under Oslo-adressen.
+
 
 **Gjort:**
 - Analyserte jankristian.no i detalj og bygget hele nettsiden i blå/hvit
@@ -331,12 +372,12 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
   nå, siden kun `images/web/` versjoneres.)
 
 **Neste steg:**
-1. **Del lenken** – siden er live og ferdig for deling:
-   norsk **https://stavroslitsos.com**, engelsk **https://stavroslitsos.com/en/**.
-   Samle tilbakemeldinger fra venner/bekjente.
-2. Gå gjennom "Avgjørelser tatt underveis" over og si fra om noe skal endres.
-3. **Skriv de faktiske aktuelt-innleggene** (6 overskrifter er på plass) og
-   koble "Les mer"-lenkene til ekte artikkelsider.
-4. Koble kontaktskjemaet til en reell mottaker; evt. legg til telefonnummer.
-5. Vurder FAQ-side (footer-lenken peker til `#` i dag).
-6. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
+1. **"Finn oss"-video:** når Stavros har lagt originalvideoen i prosjektmappen,
+   selvhost den med klikk-for-å-spille under Oslo-adressen på Kontakt (NO + EN).
+   Se PÅGÅENDE-punktet over.
+2. **Skriv de resterende Faglig-innleggene** (5 av 6 kort er fortsatt
+   plassholdere med "Les mer" → `#`). Neste naturlige: PRP og ultralyddiagnostikk
+   (treffer mange søk). Bruk artikkelen fra 24.07 som mal (samme oppsett + Article-schema).
+3. Koble kontaktskjemaet til en reell mottaker; evt. legg til telefonnummer.
+4. Vurder FAQ-side (footer-lenken peker til `#` i dag).
+5. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
