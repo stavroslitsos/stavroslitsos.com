@@ -62,12 +62,39 @@ if (track) {
   startAutoplay();
 }
 
-// Contact form (static site — no backend wired up yet)
+// Contact form (Web3Forms)
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  const statusEl = document.getElementById('formStatus');
+  const submitBtn = contactForm.querySelector('.submit-btn');
+  const idleText = statusEl.textContent;
+
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    alert('Dette skjemaet er ikke koblet til noen mottaker ennå. Koble det til en skjematjeneste (f.eks. Formspree eller Web3Forms), eller bruk e-postlenken over.');
+    submitBtn.disabled = true;
+    statusEl.style.color = '';
+    statusEl.textContent = statusEl.dataset.sending;
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(contactForm)
+      });
+      const result = await response.json();
+      if (result.success) {
+        statusEl.textContent = statusEl.dataset.success;
+        statusEl.style.color = '#1a7a3c';
+        contactForm.reset();
+      } else {
+        throw new Error(result.message || 'Web3Forms error');
+      }
+    } catch (err) {
+      statusEl.textContent = statusEl.dataset.error;
+      statusEl.style.color = '#c0392b';
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 }
 
