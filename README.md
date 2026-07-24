@@ -59,14 +59,20 @@ python3 -m http.server 8743
 - **Engelsk versjon:** https://stavroslitsos.com/en/
 - **GitHub-repo:** https://github.com/stavroslitsos/stavroslitsos.com (eget, separat repo —
   **ikke** samme som `sykkelutleie`-repoet til sykkelsiden)
-- **Git-auth (2026-07-22):** nå satt opp lokalt via GitHub CLI. `gh` er
-  installert i `~/.local/bin/gh` (last ned på nytt fra
-  github.com/cli/cli/releases hvis mappen mangler på en annen maskin), og
-  autentisert med `gh auth login --web` mot kontoen `stavroslitsos` (token i
-  macOS-keyring, scope `repo`). **`git push origin main` fungerer nå direkte**
-  — ikke lenger behov for GitHub sin web-opplasting/nettleser-automatisering.
-  Kjør `export PATH="$HOME/.local/bin:$PATH"` først hvis `git`/`gh` ikke finner
-  credential-helperen.
+- **Git-auth:** satt opp via GitHub CLI (`gh`) på **to** maskiner nå (sist
+  2026-07-22, og på nytt 2026-07-25 etter at det viste seg at `gh` ikke var
+  installert på denne maskinen). `gh` installeres uten sudo til
+  `~/.local/bin/gh` (last ned zip fra github.com/cli/cli/releases, arm64 for
+  Apple Silicon), og autentiseres med `gh auth login --web` mot kontoen
+  `stavroslitsos` (token i macOS-keyring, scope `repo`). **`git push origin
+  main` fungerer nå direkte fra begge maskiner** — ikke lenger behov for
+  GitHub sin web-opplasting/nettleser-automatisering. Kjør
+  `export PATH="$HOME/.local/bin:$PATH"` først (lagt til i `~/.zshrc`) hvis
+  `git`/`gh` ikke finner credential-helperen på en ny maskin/økt. **Husk:**
+  hvis en ny maskin har gjort lokale commits mens en annen maskin har
+  pushet via nettleser-metoden, kan historikken divergere — løs med
+  `git merge -X theirs origin/main` (ikke `reset --hard`) og verifiser med
+  `git diff HEAD origin/main` at innholdet faktisk stemmer overens først.
 - **Custom domain (2026-07-23): KOBLET OPP OG LIVE.** Siden kjører nå på
   **https://stavroslitsos.com** (HTTPS, sertifikat godkjent, "Enforce HTTPS"
   på). DNS hos Domeneshop peker til GitHub Pages: 4 A-oppføringer
@@ -161,9 +167,50 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-24**
+**Sist oppdatert: 2026-07-25**
 
-**Økt 2026-07-24 (nyeste – les denne først):**
+**Økt 2026-07-25 (nyeste – les denne først):**
+- **"Finn oss"-video FERDIG:** Stavros la videofilen
+  (`How to find house of health aker brygge.MOV`, 105 MB) i `images/`.
+  Komprimert til 7,7 MB (276×480, `avconvert`-preset `PresetAppleM4ViPod`,
+  macOS-native — ingen ffmpeg tilgjengelig) og lagt inn som selvhostet
+  klikk-for-å-spille `<video>` med poster-bilde under Oslo-adressen på
+  Kontakt (NO + EN). Filene ligger i `images/web/finn-oss-oslo.mp4` +
+  `finn-oss-oslo-poster.jpg`.
+- **Flertall → entall rettet gjennomgående:** Stavros ba om at "vi/oss/vår"
+  endres til "jeg/meg/min" over hele siden siden dette er hans private
+  nettside, ikke en klinikk med flere ansatte. Rettet på alle 16 sider
+  (eyebrows, overskrifter, brødtekst, footer).
+- **GitHub-autentisering (`gh` CLI) satt opp på denne maskinen** — se eget
+  punkt under "Live nettside og repo". Løste også en divergert
+  git-historikk (lokale commits fra før `gh` var satt opp, vs. commits gjort
+  via nettleser-opplasting) med en ren merge, ikke force-push.
+- **Kontaktskjema koblet til Web3Forms (NO + EN) — fungerer nå reelt:**
+  gratis skjematjeneste (250 innsendinger/mnd, ingen kontoopprettelse — bare
+  en API-nøkkel sendt til `stav.li@hotmail.com`). Lagt til telefonfelt
+  (påkrevd, sammen med fornavn/etternavn/e-post/melding). Innsending skjer nå
+  via `fetch()` uten sideomlasting, med status-melding til bruker
+  (sender/suksess/feil) i `script.js`. Testet med en reell testinnsending før
+  push — bekreftet mottatt.
+- **E-postadresse skjult fra rå HTML-kildekode** på alle 18 sider: alle
+  synlige `mailto:`-lenker bygges nå av `script.js` ved sideinnlasting
+  (`.mailto-link`-klasse med `data-user`/`data-domain`), i stedet for å stå
+  rått i markupen. Reduserer enkel e-post-skraping fra spam-bots uten å endre
+  hvordan det ser ut/fungerer for besøkende. **Bevisst urørt:** e-posten i
+  JSON-LD strukturerte data (`"email"`-feltet) — den er ment for søkemotorer,
+  ikke bots, og fjerning ville skadet SEO.
+- **6 nye faglige artikler skrevet og publisert (NO + EN = 12 sider):**
+  *Hva er manuellterapi?*, *McKenzie-metoden for rygg- og nakkeplager*,
+  *Vanlige muskel- og skjelettskader – og prinsippene for god rehabilitering*,
+  *PRP-behandling – blodplateinjeksjon ved slitasje og senelidelser*,
+  *Hvorfor er diagnostikk og målrettet rehabilitering grunnpilaren?*, og
+  *Blood Flow Restriction-trening*. Samme mal som artikkelen fra 24.07
+  (Article-schema, "Slik jobber jeg"-boks, CTA). Alle "Les mer"-lenker på
+  Faglig-siden og forsidens artikkel-teaser (som pekte til `#`) er nå koblet
+  opp. **Alle 6 plassholder-kort er dermed ferdige — Faglig-siden er
+  komplett.**
+
+**Økt 2026-07-24:**
 - **Versjon 2 publisert og live** (kun House of Health/Oslo). Versjon 1 bevart
   i taggen `v1-to-klinikker`. Se "Versjoner av nettsiden" over.
 - **Utvidet strukturerte data (SEO)** på alle 16 sider: Person-entitet for
@@ -359,25 +406,18 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
   kan kortes ned hvis den blir for lang som "teaser".
 
 **Ikke ferdig / kjente hull:**
-- **Aktuelt-innleggene er fortsatt "tomme":** overskriftene er på plass
-  (6 stk), men "Les mer"-lenkene peker til `#` – det finnes ingen faktiske
-  artikkelsider ennå. Brukeren skriver innleggene selv senere.
 - **Ingen telefonnummer** er lagt inn noe sted (kun e-post + bookinglenker).
 - **"Ofte stilte spørsmål" / FAQ** i footer peker fortsatt til `#` (ingen
   FAQ-side finnes).
-- Kontaktskjemaet på `kontakt.html` er ikke koblet til noen mottaker ennå
-  (har en synlig merknad om dette + anbefaling om Formspree/Web3Forms).
 - `images/`-mappen har fortsatt 2 ubrukelige macOS alias-filer
   (`PrP behandling-alias`, `Promo-alias`) — kan slettes. (Ligger utenfor git
   nå, siden kun `images/web/` versjoneres.)
 
 **Neste steg:**
-1. **"Finn oss"-video:** når Stavros har lagt originalvideoen i prosjektmappen,
-   selvhost den med klikk-for-å-spille under Oslo-adressen på Kontakt (NO + EN).
-   Se PÅGÅENDE-punktet over.
-2. **Skriv de resterende Faglig-innleggene** (5 av 6 kort er fortsatt
-   plassholdere med "Les mer" → `#`). Neste naturlige: PRP og ultralyddiagnostikk
-   (treffer mange søk). Bruk artikkelen fra 24.07 som mal (samme oppsett + Article-schema).
-3. Koble kontaktskjemaet til en reell mottaker; evt. legg til telefonnummer.
-4. Vurder FAQ-side (footer-lenken peker til `#` i dag).
-5. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
+1. Vurder FAQ-side (footer-lenken peker til `#` i dag).
+2. Vurder om telefonnummer skal legges til et sted på siden.
+3. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
+
+*(Video, flertall→entall, Web3Forms-skjema, e-post-skjuling og alle 6
+Faglig-artikler — tidligere de store gjenstående punktene — er alle ferdige
+per økt 2026-07-25, se over.)*
