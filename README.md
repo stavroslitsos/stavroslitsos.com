@@ -149,6 +149,15 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
    `style.css?v=N`. GitHub Pages cacher i 10 min, så uten versjonsbump tror
    Stavros at endringen "ikke slo inn". Øk N (f.eks. `?v=4`) på **alle 16
    sider** (8 norske + 8 i `en/`) hver gang `style.css` endres.
+6. **EXIF-ORIENTERING ved bildebehandling (bug rettet 2026-07-24):** Når du
+   åpner et kildebilde med PIL (`Image.open`), **bruk alltid først**
+   `PIL.ImageOps.exif_transpose(im)` før crop/resize. Mange kamerabilder
+   (f.eks. `images/ultralyd bilder_K015296.JPG`, EXIF-orientation 8) lagrer
+   pikslene i landskap + et rotasjonsflagg. Finder/Preview viser dem riktig,
+   men PIL leser rå-piksler uten å rotere → bildet ble stående/rotert feil på
+   siden. `sips -s format jpeg` baker inn orienteringen (trygt), men PIL alene
+   gjør det ikke. Regel: aldri manuell rotasjon – bruk exif_transpose så
+   pikslene matcher det Finder viser.
 
 ## Status – hvor arbeidet ble stoppet sist
 
