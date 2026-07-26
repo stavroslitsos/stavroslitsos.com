@@ -170,6 +170,17 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 **Sist oppdatert: 2026-07-25**
 
 **Økt 2026-07-25 (nyeste – les denne først):**
+- **Besøksstatistikk satt opp — Cloudflare Web Analytics** på alle 30 sider
+  (15 norske + 15 engelske, inkl. de 6 nye Faglig-artiklene). Valgt fordi det
+  er gratis, ikke bruker cookies/fingerprinting, og derfor ikke krever
+  cookie-samtykke-banner (relevant for en helsepersonell-side under norsk
+  personvernlovgivning) — i motsetning til Google Analytics. Satt opp via
+  manuelt JS-snippet (Stavros var selv innlogget i Cloudflare-dashbordet;
+  Claude navigerte resten i Chrome), siden domenet ikke er proxyet gjennom
+  Cloudflare (ingen DNS-endring nødvendig). Token/snippet ligger i
+  `<script data-cf-beacon>` rett etter `script.js` på hver side.
+  **Se statistikk:** logg inn på dash.cloudflare.com → Analytics & Logs →
+  Web Analytics. Kan ta noen minutter før første besøk vises.
 - **"Finn oss"-video FERDIG:** Stavros la videofilen
   (`How to find house of health aker brygge.MOV`, 105 MB) i `images/`.
   Komprimert til 7,7 MB (276×480, `avconvert`-preset `PresetAppleM4ViPod`,
