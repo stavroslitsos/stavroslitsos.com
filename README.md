@@ -167,9 +167,78 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-25**
+**Sist oppdatert: 2026-07-27**
 
-**Økt 2026-07-25 (nyeste – les denne først):**
+**Økt 2026-07-27 (nyeste – les denne først):**
+- **Nyhetsbrev-abonnement satt opp via MailerLite (gratis, 14-dagers trial —
+  se "viktig" under).** Stavros opprettet selv MailerLite-kontoen (Claude kan
+  ikke opprette kontoer for brukeren, kun styre selve oppsettet etterpå).
+  Embed-koden ble hentet ut fra MailerLite-editoren, og fullstendig redesignet
+  (farger/fonter/radius/spacing) til å matche sidens navy/hvit/lyseblå palett,
+  uten å røre den underliggende funksjonelle koden (dobbelt opt-in-skjema,
+  suksess/feil-toggling). Lagt til nederst på Faglig-siden (NO + EN) og
+  senere også **på forsiden, rett under "Flere artikler"-lenken** (etter
+  eksplisitt ønske fra Stavros om bedre synlighet for besøkende som ikke går
+  via Faglig-siden). Lagt til en kort oppfordring under hovedteksten: "Har du
+  forslag til temaer? Send meg gjerne en e-post." — kortet ned til én linje
+  med egen, litt mindre/kursiv stil etter at den først brakk over to linjer.
+  Justerte også selve boks-tittelen ("Få beskjed når jeg publiserer nytt
+  fagstoff") til å få plass på én linje (boks-bredde 700→760px, tittel
+  maks-fontstørrelse 1.9rem→1.65rem).
+- **Debugget "ingen bekreftelsesepost"-problem:** rotårsak var at MailerLite
+  automatisk markerer kontoeierens egen e-post (samme som innlogging) som
+  "verifisert via manual" og hopper over bekreftelsesmailen — ikke en feil i
+  sidens integrasjon. Bekreftet ved å fjerne testabonnenten `stav.li@hotmail.com`
+  og melde på `stavros.litsos@gmail.com` via det ekte, live skjemaet — riktig
+  "Unconfirmed"-status og fungerende dobbelt opt-in-flyt.
+- **Sendt første nyhetsbrev** ("Faglig nyhetsbrev #1 – Manuellterapeut vs.
+  kiropraktor osv.", artikkelen fra 24.07) til de 2 bekreftede abonnentene
+  (`stavros.litsos@gmail.com` og `helenebjerke@yahoo.com` — sistnevnte en
+  ukjent, allerede bekreftet abonnent som Stavros selv godkjente å inkludere).
+- **Bygget en gjenbrukbar artikkel-teaser-e-postmal** i MailerLite
+  ("Artikkel-teaser (bilde + tekst + knapp)" under My templates): tittel +
+  thumbnail-bilde fra artikkelen + kort teaser-tekst + navy CTA-knapp
+  ("Read the full article") + navy footer med kontakt/sosiale medier/
+  avmelding — samme fargepalett som nettsiden. Testet med ekte test-e-post
+  til `stav.li@hotmail.com` i Outlook — renderte korrekt (bilde, tekst og
+  knapp alt synlig). Denne malen bør gjenbrukes for fremtidige
+  artikkel-kunngjøringer i stedet for å bygges fra bunnen.
+- **VIKTIG – fast regel gitt av Stavros:** Nyhetsbrev-e-poster skal **som
+  standard være på norsk**. Engelsk er kun en språkversjon av selve
+  *nettsiden* (`en/`-sidene) — ikke noe som skal sendes som egen e-post til
+  abonnenter, med mindre Stavros eksplisitt ber om det.
+- **VIKTIG – MailerLite er på 14-dagers gratis trial** (startet 2026-07-27).
+  Følg med på om Stavros må oppgradere til betalt plan for at sending skal
+  fortsette å fungere etter trial-perioden.
+- **MailerLite kontostiler (Brand styles) satt til sidens fargepalett:**
+  primær `#0D2B46` (navy), sekundær `#2D6CDF` (blue-accent), heading
+  `#0D2B46`, tekst `#4D5F7A`, kant `#DBE7F9`, bakgrunn `#EEF3FB` — så alle
+  fremtidige maler/skjemaer/landingssider i MailerLite arver riktig
+  merkevare-utseende automatisk, uten å måtte settes manuelt hver gang.
+- **Domene-autentisering (SPF + DKIM) fullført for stavroslitsos.com i
+  MailerLite** — "Sending domains"-status viser nå **"Authenticated"**
+  (grønt). 3 nye DNS-poster lagt til hos Domeneshop (kun additive, rørte
+  ikke eksisterende A/AAAA/CNAME for selve nettsiden, ingen konflikt siden
+  domenet ikke hadde noen eksisterende TXT/MX-poster fra før):
+  - CNAME `litesrv._domainkey` → `litesrv._domainkey.mlsend.com`
+  - TXT `@` → `v=spf1 a mx include:_spf.mlsend.com ?all`
+  - TXT `@` → `mailerlite-domain-verification=76ab217829b9aaed41a3b12f433fc2f0908dfdc0`
+  Bedrer sjansen for at nyhetsbrev havner i innboks fremfor spam.
+  Verifisert direkte mot Googles DNS (8.8.8.8) og i MailerLite-dashbordet.
+  **Merk (nyttig for neste økt):** Claude ble blokkert av en automatisk
+  sikkerhetsklassifiserer fra å skrive direkte i kontobekreftelses- og
+  DNS-datafelt selv med eksplisitt tillatelse fra Stavros i chatten — måtte
+  gi Stavros de eksakte verdiene og la ham selv skrive dem inn/lagre. Dette
+  er en per-sesjon-begrensning, ikke noe som kan omgås; regn med samme
+  mønster ved fremtidige kontoinnstillinger/DNS-endringer.
+- Håndtert MailerLite sin automatiske "Getting started"-e-post (så ekte ut
+  som phishing pga. Outlook Safe Links-innpakkede lenker, men er en helt
+  vanlig, ufarlig onboarding-mail — Safe Links pakker inn *alle* lenker i
+  Outlook, ikke bare mistenkelige). Sjekket status direkte i
+  MailerLite-dashbordet i stedet for å klikke lenkene i selve mailen.
+- Commits denne økten: `449ef78`, `5b5aca7`, `dfcfb1d`, `eae262b`, `e36be18`.
+
+**Økt 2026-07-25:**
 - **Besøksstatistikk satt opp — Cloudflare Web Analytics** på alle 30 sider
   (15 norske + 15 engelske, inkl. de 6 nye Faglig-artiklene). Valgt fordi det
   er gratis, ikke bruker cookies/fingerprinting, og derfor ikke krever
@@ -428,6 +497,12 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
 1. Vurder FAQ-side (footer-lenken peker til `#` i dag).
 2. Vurder om telefonnummer skal legges til et sted på siden.
 3. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
+4. **MailerLite-trial går ut ~2026-08-10** (14 dager fra 2026-07-27) — sjekk
+   om Stavros har oppgradert til betalt plan før den tid, ellers stopper
+   nyhetsbrev-sending.
+5. Neste artikkel-kunngjøring: bruk den lagrede malen "Artikkel-teaser
+   (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
+   regel over), ikke engelsk.
 
 *(Video, flertall→entall, Web3Forms-skjema, e-post-skjuling og alle 6
 Faglig-artikler — tidligere de store gjenstående punktene — er alle ferdige
