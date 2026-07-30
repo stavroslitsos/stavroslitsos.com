@@ -167,9 +167,48 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-27**
+**Sist oppdatert: 2026-07-30**
 
-**Økt 2026-07-27 (nyeste – les denne først):**
+**Økt 2026-07-30 (nyeste – les denne først):**
+- **Ny fagartikkel publisert: «Smerte er ikke et skademåler» / EN: «Pain Is
+  Not a Damage Meter»** (`smerte-er-ikke-et-skademaler.html` + `en/`).
+  Egen norsk tekst (ikke oversatt fra kilder) om moderne smerteforskning –
+  IASPs reviderte smertedefinisjon (2020), hvorfor bildediagnostikk viser
+  anatomi og ikke smerte (med tall fra en stor systematisk oversikt om
+  symptomfrie personer), biopsykososiale faktorer, hvorfor kommunikasjon
+  om funn har betydning, og at bedring handler om mer enn å reparere vev.
+  Samme mal/struktur som tidligere artikler (eyebrow → H1 → ingress → 5
+  delkapitler → "Slik jobber jeg"-boks → CTA). Lagt inn øverst på
+  Faglig-siden og i forsidens 3-korts-visning (NO+EN), og i sitemap.xml.
+  Stavros ga eksplisitt positiv tilbakemelding på både tekst og bildevalg.
+- **Ny fast regel (fra Stavros): hver artikkel skal ha et helt nytt,
+  ubrukt thumbnail-bilde** — aldri gjenbruke et bilde som allerede vises
+  et annet sted på siden. Lagt inn som fast regel i minnesystemet.
+- **Grundig gjennomgang av hele `images/`-mappen** (alle rå kildebilder,
+  MD5-sjekket for duplikater, kryssjekket mot faktisk bruk i HTML-en).
+  Fant bl.a. at "Eksempel bilde.jpg" og "Stavros.jpg" er identiske filer,
+  og full oversikt over hvilke rå kildebilder som allerede er brukt.
+  **Viktig presisering fra Stavros underveis:** *alt* i `images/`-mappen
+  (unntatt `images/web/`, som er "allerede brukt"-markøren) skal regnes
+  som fritt tilgjengelig råmateriale – også bilder med gammel
+  arbeidsgiver-logo (MAGNAT, Under Armour, "Nesbru Fysio- og
+  Manuellterapi AS") eller video-stillbilder. De skal renskes opp
+  (logofjerning/beskjæring) og brukes, ikke ekskluderes. Full,
+  detaljert oversikt over hvert enkelt bilde og status ligger i
+  minnesystemet (`article_thumbnail_image_rule.md`), ikke gjengitt her
+  siden den endrer seg raskt.
+- **Fikset feil bilde på McKenzie-artikkelen:** kortet for
+  "McKenzie-metoden for rygg- og nakkeplager" (09.07.2026) brukte et
+  trykkbølgebehandlings-bilde (feil metode). Byttet først til et
+  nakkebehandlings-bilde, og deretter til `images/mcKenzie metoden.jpg`
+  (et bilde Stavros selv valgte og la i mappen – hender som gir manuelt
+  trykk på korsryggen), beskåret fra bredformat til sidens 3:2-mal.
+  Endelig bilde: `images/web/aktuelt-8.jpg`, med oppdatert alt-tekst
+  (NO+EN) på forsiden og Faglig-siden.
+- Commits denne økten: `b093e5b` (ny artikkel), `800d774` (McKenzie-bilde
+  v1), `cfa904c` (McKenzie-bilde v2, Stavros' eget valg).
+
+**Økt 2026-07-27:**
 - **Nyhetsbrev-abonnement satt opp via MailerLite (gratis, 14-dagers trial —
   se "viktig" under).** Stavros opprettet selv MailerLite-kontoen (Claude kan
   ikke opprette kontoer for brukeren, kun styre selve oppsettet etterpå).
