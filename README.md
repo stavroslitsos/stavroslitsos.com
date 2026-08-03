@@ -542,6 +542,22 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
 5. Neste artikkel-kunngjøring: bruk den lagrede malen "Artikkel-teaser
    (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
    regel over), ikke engelsk.
+6. **Kommende fagartikler (ønsket av Stavros 2026-07-30, i ingen bestemt
+   rekkefølge — spør Stavros hvilken han vil starte med når det blir
+   aktuelt):**
+   - Meniskskader – rehabilitering vs. operasjon
+   - Frossen skulder
+   - Tennisalbue
+   - Plantar fasciitt
+   - Hoppekne (jumper's knee / patellar tendinopati)
+   - Trochanter bursitt (hoftebursitt)
+
+   Husk fast regel: hver artikkel skal ha et helt nytt, ubrukt
+   thumbnail-bilde (se `article_thumbnail_image_rule.md` i minnesystemet
+   for oversikt over tilgjengelige bilder i `images/`), skrives på norsk
+   med egen engelsk versjon, og legges øverst på Faglig-siden + i
+   forsidens 3-korts-visning (NO+EN) + sitemap.xml, etter samme mal som
+   `smerte-er-ikke-et-skademaler.html`.
 
 *(Video, flertall→entall, Web3Forms-skjema, e-post-skjuling og alle 6
 Faglig-artikler — tidligere de store gjenstående punktene — er alle ferdige
