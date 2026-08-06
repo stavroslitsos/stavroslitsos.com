@@ -233,6 +233,16 @@ Sun m.fl. *AJSM* 2017;45(9):2171–2179 · Coombes m.fl. *JAMA*
 m.fl. *Scand J Med Sci Sports* 2015;25(3):e292–e300 · Li m.fl. *Heliyon*
 2024;10(21):e39171 · Mellor m.fl. *BMJ* 2018;361:k1662 (LEAP).
 
+**Én ærlig nyansering som er bevisst bevart i teksten:** Stavros' kliniske
+innspill var at PRP virker der kortison ikke gjør det, for *både*
+tennisalbue og plantar fasciitt. Forskningen støtter dette godt for
+tennisalbue, men er svakere for plantar fasciitt – der slår PRP kortison
+ved 3 og 6 måneder, men uten sikker forskjell ved 1 og 12 måneder.
+Plantar fasciitt-artikkelen sier dette rett ut framfor å overselge, siden
+siden leses av leger og kritiske kolleger.
+
+- Commit denne økten: `d587519`.
+
 **Økt 2026-07-30:**
 - **Ny fagartikkel publisert: «Smerte er ikke et skademåler» / EN: «Pain Is
   Not a Damage Meter»** (`smerte-er-ikke-et-skademaler.html` + `en/`).
