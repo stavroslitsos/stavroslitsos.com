@@ -167,9 +167,73 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-07-30**
+**Sist oppdatert: 2026-08-06**
 
-**Økt 2026-07-30 (nyeste – les denne først):**
+**Økt 2026-08-06 (nyeste – les denne først):**
+- **Hero-teksten endret (NO+EN):** overskriften er nå kun
+  **MANUELLTERAPEUT** på én linje, med *«Fagansvarlig hos House of Health»*
+  som undertekst (EN: *MANUAL THERAPIST* / «Lead therapist at House of
+  Health»). Tidligere sto «FAGANSVARLIG MANUELLTERAPEUT» over to linjer.
+- **6 nye fagartikler skrevet (NO+EN = 12 sider) – ALLE SOM SKJULTE
+  UTKAST**, se «Publiseringskø» under. Meniskskade, frossen skulder,
+  tennisalbue, plantar fasciitt, hoppekne og trochanter bursitt.
+- **TRE NYE FASTE REGLER gitt av Stavros denne økten** (også lagret i
+  Claudes minnesystem, `article_sourcing_and_seo_rules.md`):
+  1. **Gradvis publisering.** Ikke alt som er ferdigskrevet skal ut med én
+     gang. Ferdige, ikke-publiserte artikler ligger som *skjulte utkast*:
+     HTML-fila finnes i repoet, men er (a) ikke lenket fra `aktuelt.html`,
+     `en/aktuelt.html` eller forsidene, (b) ikke i `sitemap.xml`, og (c)
+     har `<meta name="robots" content="noindex, nofollow">`. Stavros
+     slipper ut ca. **én i måneden**.
+  2. **Kun anerkjente tidsskrifter.** Alle artikler skal bygge på forskning
+     fra BMJ, Nature, Frontiers, NEJM, JAMA, Lancet, Cochrane o.l., pluss
+     Stavros' egne kliniske innspill som han spesifiserer. **Aldri gjett
+     på en referanse** – forfatter, tidsskrift, årstall og tall skal
+     verifiseres med websøk før de skrives inn. Siden leses av leger og
+     kritiske kolleger; en oppdiktet referanse ville vært skadelig.
+  3. **Emneord på alle artikler.** Implementert som en synlig
+     «Emneord»-rad med nøkkelord-chips nederst i artikkelen + `keywords`
+     i JSON-LD. Bevisst **ikke** bokstavelige `#hashtags` – de gir ingen
+     Google-effekt og ser uprofesjonelt ut på en klinisk side. Retrofittet
+     på alle 8 allerede publiserte artikler (16 filer, NO+EN).
+- **6 nye thumbnails prosessert** til `images/web/aktuelt-9.jpg` t.o.m.
+  `aktuelt-14.jpg` (3:2, 1400×933, exif_transpose først). Ingen av disse
+  er lenket noe sted ennå siden artiklene er skjult.
+- Alle 12 nye sider er verifisert lokalt: gyldig JSON-LD, `noindex` til
+  stede, emneord + kildeliste + språkbytte på plass, ikke i sitemap, ikke
+  lenket noe sted.
+
+### Publiseringskø (skjulte utkast – ferdig skrevet, ikke publisert)
+
+Alle seks ligger klare i repoet med `noindex`. **Slik publiserer du én:**
+(1) fjern `<meta name="robots" content="noindex, nofollow">` fra både
+NO- og EN-fila, (2) legg inn artikkelkortet øverst i `aktuelt.html` og
+`en/aktuelt.html` med riktig dato og bilde, (3) bytt inn i forsidens
+3-korts-visning i `index.html` + `en/index.html`, (4) legg til begge
+URL-ene i `sitemap.xml`, (5) kryss av under.
+
+| # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
+|---|---|---|---|---|
+| 1 | Meniskskade – rehabilitering eller operasjon? | `meniskskade-rehabilitering-eller-operasjon` | `aktuelt-13.jpg` (PRP/ultralyd kne) | ☐ |
+| 2 | Frossen skulder – hvorfor timing av behandlingen avgjør | `frossen-skulder-behandling` | `aktuelt-10.jpg` (konsultasjon skulderanatomi) | ☐ |
+| 3 | Tennisalbue – hvorfor kortison sjelden er svaret | `tennisalbue-behandling` | `aktuelt-11.jpg` (trykkbølge albue) | ☐ |
+| 4 | Plantar fasciitt – hælsmerter som krever tålmodighet | `plantar-fasciitt-behandling` | `aktuelt-12.jpg` (gangbilde klinikk) | ☐ |
+| 5 | Hoppekne – senen som trenger belastning, ikke hvile | `hoppekne-patellar-tendinopati` | `aktuelt-9.jpg` (ultralyd kne) | ☐ |
+| 6 | Smerter på utsiden av hoften – ikke alltid «slimposebetennelse» | `trochanter-bursitt-hoftesmerter` | `aktuelt-14.jpg` (hoftemobilisering) | ☐ |
+
+Bildeforslagene er ikke låst – bytt gjerne. Alle seks bildene ligger
+allerede ferdig beskåret i `images/web/`.
+
+**Verifiserte kilder brukt i de seks artiklene** (alle sjekket mot
+PubMed/tidsskrift denne økten): Kise m.fl. *BMJ* 2016;354:i3740 · Berg
+m.fl. *BJSM* 2025;59(2):91–98 · Rangan m.fl. *Lancet*
+2020;396(10256):977–989 (UK FROST) · Aly m.fl. *BJSM* 2015;49(16):1042–9 ·
+Sun m.fl. *AJSM* 2017;45(9):2171–2179 · Coombes m.fl. *JAMA*
+2013;309(5):461–469 · Xu m.fl. *AJSM* 2024;52(10):2646–2656 · Rathleff
+m.fl. *Scand J Med Sci Sports* 2015;25(3):e292–e300 · Li m.fl. *Heliyon*
+2024;10(21):e39171 · Mellor m.fl. *BMJ* 2018;361:k1662 (LEAP).
+
+**Økt 2026-07-30:**
 - **Ny fagartikkel publisert: «Smerte er ikke et skademåler» / EN: «Pain Is
   Not a Damage Meter»** (`smerte-er-ikke-et-skademaler.html` + `en/`).
   Egen norsk tekst (ikke oversatt fra kilder) om moderne smerteforskning –
@@ -542,21 +606,13 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
 5. Neste artikkel-kunngjøring: bruk den lagrede malen "Artikkel-teaser
    (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
    regel over), ikke engelsk.
-6. **Kommende fagartikler (ønsket av Stavros 2026-07-30, i ingen bestemt
-   rekkefølge — spør Stavros hvilken han vil starte med når det blir
-   aktuelt):**
-   - Meniskskader – rehabilitering vs. operasjon
-   - Frossen skulder
-   - Tennisalbue
-   - Plantar fasciitt
-   - Hoppekne (jumper's knee / patellar tendinopati)
-   - Trochanter bursitt (hoftebursitt)
-
-   Husk fast regel: hver artikkel skal ha et helt nytt, ubrukt
-   thumbnail-bilde (se `article_thumbnail_image_rule.md` i minnesystemet
-   for oversikt over tilgjengelige bilder i `images/`), skrives på norsk
-   med egen engelsk versjon, og legges øverst på Faglig-siden + i
-   forsidens 3-korts-visning (NO+EN) + sitemap.xml, etter samme mal som
+6. **Publisér én artikkel fra køen ca. hver måned** – se «Publiseringskø»
+   i statusdelen over. Alle seks er ferdig skrevet og ligger klare som
+   skjulte utkast; det gjenstår kun å slå dem synlige.
+7. Nye artikler utover de seks: husk de faste reglene – nytt, ubrukt
+   thumbnail-bilde (se `article_thumbnail_image_rule.md`), kilder fra
+   anerkjente tidsskrifter som **verifiseres med websøk**, emneord-rad
+   nederst, norsk hovedversjon med egen engelsk versjon, og samme mal som
    `smerte-er-ikke-et-skademaler.html`.
 
 *(Video, flertall→entall, Web3Forms-skjema, e-post-skjuling og alle 6
