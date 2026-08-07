@@ -167,9 +167,29 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-08-06**
+**Sist oppdatert: 2026-08-07**
 
-**Økt 2026-08-06 (nyeste – les denne først):**
+**Økt 2026-08-07 (nyeste – les denne først):**
+- **ALLE 6 artiklene fra publiseringskøen er nå PUBLISERT** (Stavros sa det
+  var greit å slippe alle på én gang). For hver: fjernet
+  `<meta robots noindex>` (NO+EN), lagt inn artikkelkort øverst på
+  `aktuelt.html` + `en/aktuelt.html` (dato **06.08.2026**, bilde per køtabell),
+  og lagt begge URL-ene i `sitemap.xml`. Forsidens 3-korts-teaser (NO+EN)
+  viser nå de tre nyeste: Meniskskade, Frossen skulder, Tennisalbue.
+- **Sitemap-hull fikset underveis:** de 6 artiklene fra 25.07-batchen
+  (hva-er-manuellterapi, mckenzie, muskel-og-skjelett, prp, diagnostikk,
+  blood-flow) manglet i `sitemap.xml`. La inn alle 12 (NO+EN) samtidig, så
+  sitemap nå er komplett med alle 14 artiklene × 2 språk.
+- Verifisert lokalt: alle 12 nye artikkelsider svarer HTTP 200 (NO+EN), alle
+  thumbnails (aktuelt-9 t.o.m. -14) laster, Faglig-siden og forsiden rendrer
+  riktig. Ingen reelle konsollfeil (kun Cloudflare-beacon som alltid
+  blokkeres på localhost + favicon 404 som eksisterte fra før).
+- **Faglig-siden viser nå 14 artikler.** Neste gang du skriver en ny artikkel:
+  følg fortsatt de faste reglene (nytt ubrukt thumbnail, verifiserte kilder,
+  emneord-rad, NO+EN). Gradvis-publisering-regelen gjelder fremover for
+  *nye* artikler – de seks som lå i kø er nå ute.
+
+**Økt 2026-08-06 (les denne nest):**
 - **Hero-teksten endret (NO+EN):** overskriften er nå kun
   **MANUELLTERAPEUT** på én linje, med *«Fagansvarlig hos House of Health»*
   som undertekst (EN: *MANUAL THERAPIST* / «Lead therapist at House of
@@ -203,26 +223,19 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   stede, emneord + kildeliste + språkbytte på plass, ikke i sitemap, ikke
   lenket noe sted.
 
-### Publiseringskø (skjulte utkast – ferdig skrevet, ikke publisert)
+### Publiseringskø – FERDIG, alle publisert 2026-08-07
 
-Alle seks ligger klare i repoet med `noindex`. **Slik publiserer du én:**
-(1) fjern `<meta name="robots" content="noindex, nofollow">` fra både
-NO- og EN-fila, (2) legg inn artikkelkortet øverst i `aktuelt.html` og
-`en/aktuelt.html` med riktig dato og bilde, (3) bytt inn i forsidens
-3-korts-visning i `index.html` + `en/index.html`, (4) legg til begge
-URL-ene i `sitemap.xml`, (5) kryss av under.
+Alle seks er nå ute (se øktnotat 2026-08-07 over). Tabellen beholdes som
+historikk over hva som ble sluppet, med bildet hver artikkel bruker:
 
-| # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
+| # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Meniskskade – rehabilitering eller operasjon? | `meniskskade-rehabilitering-eller-operasjon` | `aktuelt-13.jpg` (PRP/ultralyd kne) | ☐ |
-| 2 | Frossen skulder – hvorfor timing av behandlingen avgjør | `frossen-skulder-behandling` | `aktuelt-10.jpg` (konsultasjon skulderanatomi) | ☐ |
-| 3 | Tennisalbue – hvorfor kortison sjelden er svaret | `tennisalbue-behandling` | `aktuelt-11.jpg` (trykkbølge albue) | ☐ |
-| 4 | Plantar fasciitt – hælsmerter som krever tålmodighet | `plantar-fasciitt-behandling` | `aktuelt-12.jpg` (gangbilde klinikk) | ☐ |
-| 5 | Hoppekne – senen som trenger belastning, ikke hvile | `hoppekne-patellar-tendinopati` | `aktuelt-9.jpg` (ultralyd kne) | ☐ |
-| 6 | Smerter på utsiden av hoften – ikke alltid «slimposebetennelse» | `trochanter-bursitt-hoftesmerter` | `aktuelt-14.jpg` (hoftemobilisering) | ☐ |
-
-Bildeforslagene er ikke låst – bytt gjerne. Alle seks bildene ligger
-allerede ferdig beskåret i `images/web/`.
+| 1 | Meniskskade – rehabilitering eller operasjon? | `meniskskade-rehabilitering-eller-operasjon` | `aktuelt-13.jpg` (PRP/ultralyd kne) | ☑ 07.08 |
+| 2 | Frossen skulder – hvorfor timing av behandlingen avgjør | `frossen-skulder-behandling` | `aktuelt-10.jpg` (konsultasjon skulderanatomi) | ☑ 07.08 |
+| 3 | Tennisalbue – hvorfor kortison sjelden er svaret | `tennisalbue-behandling` | `aktuelt-11.jpg` (trykkbølge albue) | ☑ 07.08 |
+| 4 | Plantar fasciitt – hælsmerter som krever tålmodighet | `plantar-fasciitt-behandling` | `aktuelt-12.jpg` (gangbilde klinikk) | ☑ 07.08 |
+| 5 | Hoppekne – senen som trenger belastning, ikke hvile | `hoppekne-patellar-tendinopati` | `aktuelt-9.jpg` (ultralyd kne) | ☑ 07.08 |
+| 6 | Smerter på utsiden av hoften – ikke alltid «slimposebetennelse» | `trochanter-bursitt-hoftesmerter` | `aktuelt-14.jpg` (hoftemobilisering) | ☑ 07.08 |
 
 **Verifiserte kilder brukt i de seks artiklene** (alle sjekket mot
 PubMed/tidsskrift denne økten): Kise m.fl. *BMJ* 2016;354:i3740 · Berg
