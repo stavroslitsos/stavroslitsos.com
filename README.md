@@ -153,8 +153,10 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
    `INPAINT_TELEA` er brukt så langt – se tidligere bilder som mal).
 5. **Bump CSS-versjonen ved CSS-endringer:** alle sider lenker til
    `style.css?v=N`. GitHub Pages cacher i 10 min, så uten versjonsbump tror
-   Stavros at endringen "ikke slo inn". Øk N (f.eks. `?v=4`) på **alle 16
-   sider** (8 norske + 8 i `en/`) hver gang `style.css` endres.
+   Stavros at endringen "ikke slo inn". Øk N på **alle 44 HTML-filer**
+   (22 norske + 22 i `en/` – kjernesider + artikler) hver gang `style.css`
+   endres. Er nå på `?v=7` (per 2026-08-07). Enkel oppdatering:
+   `for f in *.html en/*.html; do perl -pi -e 's/style\.css\?v=N/style.css?v=M/g' "$f"; done`.
 6. **EXIF-ORIENTERING ved bildebehandling (bug rettet 2026-07-24):** Når du
    åpner et kildebilde med PIL (`Image.open`), **bruk alltid først**
    `PIL.ImageOps.exif_transpose(im)` før crop/resize. Mange kamerabilder
@@ -169,7 +171,32 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-07**
 
-**Økt 2026-08-07 (nyeste – les denne først):**
+**Økt 2026-08-07 del 2 (nyeste – les denne først):**
+- **Kilder er nå KOLLAPSBARE på alle 14 artiklene** (Stavros' ønske:
+  pasienter bryr seg ikke om kildene, kun fagfolk – så de skal være skjult
+  men tilgjengelige uten å måtte spørre). Løst med `<details class="article-sources">`
+  + `<summary>Kilder</summary>` (EN: `Sources`). Skjult som standard, klikk
+  «Vis kilder» for å utvide. Delt stil ligger i `style.css` (`.article-sources`),
+  ikke inline. **Konvensjon for framtidige artikler:** legg alltid kildelista i
+  denne `<details>`-blokka rett før Emneord-seksjonen.
+- **8 artikler manglet kilder helt** (sammenligning, smerte, hva-er-
+  manuellterapi, McKenzie, muskel-/skjelett-rehab, PRP, diagnostikk, BFR) –
+  disse har nå fått kildeliste. **Alle referanser verifisert med websøk mot
+  tidsskrift/PubMed** (BMJ, Lancet, JAMA, BJSM, JOSPT, Pain, Front Physiol,
+  Man Ther) + norske regulatoriske kilder (Prop. 236 L (2020–2021),
+  Helsedirektoratet, helsepersonelloven/Lovdata) for sammenligningsartikkelen.
+  De 6 nye hadde kilder fra før; kun gjort kollapsbare.
+- **Ærlig nyanse bevart i PRP-artikkelen:** kildene er Mishra 2014 (AJSM –
+  PRP virker for tennisalbue) *og* Bennell 2021 (RESTORE, JAMA – PRP ikke
+  bedre enn placebo ved kneartrose). Balansert, siden leger leser siden.
+- **CSS-versjon bumpet til `?v=7`** på alle 44 HTML-filer (22 NO + 22 EN).
+- **Fikset:** den kursive nyhetsbrev-noten («Har du forslag til temaer?…»)
+  var venstrestilt fordi `max-width: 60ch` gjorde boksen for bred – satt til
+  `none` så den sentreres. Gjelder `aktuelt.html`, `index.html`, `en/aktuelt.html`.
+- Verifisert i nettleser: `<details>` skjuler kildene når lukket
+  (`checkVisibility()` = false) og viser dem ved klikk. Commit: `96383a5`.
+
+**Økt 2026-08-07 del 1:**
 - **ALLE 6 artiklene fra publiseringskøen er nå PUBLISERT** (Stavros sa det
   var greit å slippe alle på én gang). For hver: fjernet
   `<meta robots noindex>` (NO+EN), lagt inn artikkelkort øverst på
