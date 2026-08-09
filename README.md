@@ -196,9 +196,23 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   3. `get-export-formats`, så `export-design` med
      `{type:"jpg", quality:92, width:1400, height:933, export_quality:"pro"}`
   4. `curl` ned den signerte URL-en til `images/`
+  5. **SLETT DET MIDLERTIDIGE DESIGNET – OBLIGATORISK.** Stavros' beskjed
+     (09.08.2026): siden dette skjer i den ekte arbeidskontoen, er
+     opprydding Claudes ansvar hver eneste gang, rett etter nedlasting.
+     Connectoren har **ingen** slettefunksjon, så gjør det i Chrome:
+     **File → Move to Bin → bekreft**. Verifiser med `search-designs` at
+     ingen «Untitled design» ligger igjen. Kun til papirkurv – aldri tøm
+     papirkurven.
   Gir eksakt 1400×933, uten vannmerke, i full kvalitet – ingen lokal
   beskjæring nødvendig. **Ikke** skrap `marketplace.canva.com`-URL-ene:
   de maks-er på 550×367 og omgår lisensflyten.
+  **Hvorfor ikke bare ta skjermbilde?** Testet og forkastet: Canva leverer
+  kun en 550×367 preview til nettleseren – fulloppløsningen når aldri
+  siden. Et skjermbilde blir derfor ~640–735 px bredt uansett zoom, mot
+  1400×933 som trengs, og ville sett synlig uskarpt ut. Stockbilder har
+  heller ingen nedlastingsknapp i det hele tatt, kun «Use in a design».
+  Design→eksport er altså ikke en omvei, men eneste kanal med full
+  oppløsning.
   Testet med `images/canva-nakkebehandling-fysioterapi.jpg` (1400×933, 142 KB).
   Detaljert oppskrift ligger i `article_thumbnail_image_rule.md` i minnet.
 
