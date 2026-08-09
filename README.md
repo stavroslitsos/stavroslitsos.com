@@ -178,12 +178,13 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
      uferdig/uplassert kø holdes som en **markdown-tabell** i README (se
      «Publiseringskø» under) – ikke prosetekst – slik at enhver økt/maskin
      kan se køen på et blikk.
-  2. **Nyhetsbrev per artikkel («som avtalt»).** Hver gang en fagartikkel
-     publiseres, skal den umiddelbart sendes til abonnenter. **NB – dette
-     står i konflikt** med en tidligere beskjed (økt 2026-08-07) om å vente
-     med nyhetsbrev til abonnentlista er større. Ikke løst ennå – se åpent
-     spørsmål i `article_sourcing_and_seo_rules.md` (minnesystemet). Spør
-     Stavros direkte neste gang temaet er aktuelt, ikke anta et av svarene.
+  2. **Nyhetsbrev per artikkel — AVKLART.** Den faste regelen er at hver
+     publiserte fagartikkel skal sendes som nyhetsbrev. I praksis: Stavros
+     har foreløpig kun **1 abonnent**, så han sier selv ifra når en konkret
+     utsending skal skje — ingen automatikk, ingen sending uten hans
+     eksplisitte beskjed per gang. Når abonnenttallet vokser kan dette endre
+     seg, men reglen i seg selv (send ved publisering) er nå bekreftet
+     stående.
 - **Testartikkel: bilder/tabell inni artikkelteksten (ikke bare
   kortbilde).** Stavros ba om en test på om det er mer brukervennlig å ha
   visuelt innhold *inni* artikkelen, ikke bare som kortbilde øverst på
@@ -763,12 +764,16 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    abonnenttallet nærmer seg grensen.
 5. Neste artikkel-kunngjøring: bruk den lagrede malen "Artikkel-teaser
    (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
-   regel over), ikke engelsk. Stavros avventer utsending til han har flere
-   abonnenter.
-6. **Publiseringskøen er TOM** – alle seks artiklene ble sluppet ut
-   2026-08-07. Gradvis-publisering-regelen gjelder fortsatt for *nye*
-   artikler som skrives fremover: de skal legges inn som skjulte utkast
-   (`noindex`, ikke lenket, ikke i sitemap) og slippes ut når Stavros vil.
+   regel over), ikke engelsk. Fast regel: nyhetsbrev sendes ved hver
+   publisering, men Stavros gir eksplisitt beskjed per gang før noe
+   faktisk sendes (kun 1 abonnent per 2026-08-09, se «Faste regler»-punktet
+   over).
+6. **Publiseringskøen har 1 skjult utkast** («Bursitt – som oftest
+   sekundært til overbelastning av senen», se tabellen «Publiseringskø –
+   aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
+   fortsatt for *nye* artikler som skrives fremover: legg dem inn som
+   skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til
+   i kø-tabellen, publiser når Stavros sier fra.
 7. Nye artikler fremover: husk de faste reglene – nytt, ubrukt
    thumbnail-bilde (se `article_thumbnail_image_rule.md`), kilder fra
    anerkjente tidsskrifter som **verifiseres med websøk**, kildelista i
