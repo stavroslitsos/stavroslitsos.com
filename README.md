@@ -186,6 +186,21 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   kontaktveier for mennesker, ikke strukturerte data. **Spør før du
   eventuelt fjerner dette også.**
 - MailerLite-trialen avklart – gratisplanen holder, se «Neste steg» pkt. 4.
+- **NY ARBEIDSFLYT: hente artikkelbilder fra Canva Pro (verifisert virker).**
+  Canva-connectoren er autorisert, men har **ikke** stockbildesøk. Løsningen
+  er en firetrinns kjede som følger Canvas Pro-lisens («use this media in a
+  Canva design» – stockbilder har ingen nedlastingsknapp):
+  1. Søk i Chrome på `canva.com/photos/search/<søkeord>/`
+  2. Klikk bildet → *Use in a design* → **Custom size 1400 × 933** →
+     *Create new design*. Design-ID står i URL-en.
+  3. `get-export-formats`, så `export-design` med
+     `{type:"jpg", quality:92, width:1400, height:933, export_quality:"pro"}`
+  4. `curl` ned den signerte URL-en til `images/`
+  Gir eksakt 1400×933, uten vannmerke, i full kvalitet – ingen lokal
+  beskjæring nødvendig. **Ikke** skrap `marketplace.canva.com`-URL-ene:
+  de maks-er på 550×367 og omgår lisensflyten.
+  Testet med `images/canva-nakkebehandling-fysioterapi.jpg` (1400×933, 142 KB).
+  Detaljert oppskrift ligger i `article_thumbnail_image_rule.md` i minnet.
 
 **Økt 2026-08-07 del 2:**
 - **Kilder er nå KOLLAPSBARE på alle 14 artiklene** (Stavros' ønske:
