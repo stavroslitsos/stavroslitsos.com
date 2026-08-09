@@ -171,7 +171,57 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-09**
 
-**Økt 2026-08-09 (nyeste – les denne først):**
+**Økt 2026-08-09 del 2 (nyeste – les denne først):**
+- **TO NYE FASTE REGLER gitt av Stavros denne økten:**
+  1. **Gradvis publisering formalisert som tabell.** Fremtidige artikler
+     holdes skjule og publiseres maks **én i måneden**. Oversikt over
+     uferdig/uplassert kø holdes som en **markdown-tabell** i README (se
+     «Publiseringskø» under) – ikke prosetekst – slik at enhver økt/maskin
+     kan se køen på et blikk.
+  2. **Nyhetsbrev per artikkel («som avtalt»).** Hver gang en fagartikkel
+     publiseres, skal den umiddelbart sendes til abonnenter. **NB – dette
+     står i konflikt** med en tidligere beskjed (økt 2026-08-07) om å vente
+     med nyhetsbrev til abonnentlista er større. Ikke løst ennå – se åpent
+     spørsmål i `article_sourcing_and_seo_rules.md` (minnesystemet). Spør
+     Stavros direkte neste gang temaet er aktuelt, ikke anta et av svarene.
+- **Testartikkel: bilder/tabell inni artikkelteksten (ikke bare
+  kortbilde).** Stavros ba om en test på om det er mer brukervennlig å ha
+  visuelt innhold *inni* artikkelen, ikke bare som kortbilde øverst på
+  Faglig-siden. Skrev en ny artikkel som test:
+  `bursitt-symptom-ikke-egen-diagnose.html` (+ `en/`), **skjult utkast**
+  (`noindex`, ikke lenket, ikke i sitemap – se ny kø-tabell under).
+  Inneholder: (a) en ekte HTML-`<table>` som sammenligner primær vs.
+  sekundær bursitt, (b) et inline `<figure>`-bilde
+  (`bursitt-ultralydveiledet-injeksjon.jpg`, hentet fra Canva) midt i
+  teksten ved ultralyd-avsnittet, ikke bare kortbildet
+  (`aktuelt-15.jpg`, skulderrehab-foto). Begge verifisert lokalt: gyldig
+  JSON-LD, bildet laster i full 1400×933-oppløsning, tabellen og figuren
+  rendrer rent i nettleser (skjermbilde tatt). **Konklusjon foreløpig:**
+  formatet fungerer teknisk uten problemer og ser ryddig ut – opp til
+  Stavros å vurdere om det skal bli standard for fremtidige artikler.
+- **Tittelendring midtveis (Stavros' beskjed):** opprinnelig tittel
+  «Bursitt – et symptom, ikke en egen diagnose» ble endret til **«Bursitt –
+  som oftest sekundært til overbelastning av senen»** (EN: «Bursitis –
+  Usually Secondary to Tendon Overload»). Begrunnelse: bursitt *er* en
+  gyldig egendiagnose, det er bare sjelden at det er bursitt alene – den
+  forrige tittelen overdrev poenget. Selve brødteksten trengte ingen
+  endring, den sa allerede «som oftest sekundært» konsekvent.
+- **Kildene for testartikkelen** (alle verifisert mot PubMed/tidsskrift):
+  Klatte-Schulz m.fl. *Cells* 2022;11(4):663 · Lewis *Manual Therapy*
+  2016;23:57–68 · Mellor m.fl. *BMJ* 2018;361:k1662 (LEAP) · Blackwell m.fl.
+  *Shoulder & Elbow* 2014;6(3):182–190 · Aly m.fl. *BJSM*
+  2015;49(16):1042–1049.
+- **Ny regel bekreftet: eksterne lenker/inspirasjon fra Stavros skal
+  skrives om, aldri gjenbrukes.** Da Stavros sendte en Medscape-lenke om
+  bursitt som inspirasjon, ble den kun brukt som temapeker (Medscape var
+  uansett betalingssperret, WebFetch ga 402). Artikkelen er skrevet fra
+  bunnen med egne verifiserte kilder og Stavros' egen kliniske vinkling
+  (bursitt sekundært til tendinopati, avlastning før betennelsesdemping,
+  diagnostisk ultralyd, ultralydveiledet blokade/injeksjon,
+  symptomutvikling som utfallsmål). Gjelder alle fremtidige lenker/
+  inspirasjon han sender – lagret i `article_sourcing_and_seo_rules.md`.
+
+**Økt 2026-08-09 del 1:**
 - **E-postadressen er fjernet fra hele nettsiden.** Stavros ville ikke
   lenger vise e-post noe sted, siden kontaktskjemaet dekker behovet.
   Konkret: (a) hele «E-post»-blokka øverst på kontaktsiden er slettet
@@ -294,6 +344,17 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 - Alle 12 nye sider er verifisert lokalt: gyldig JSON-LD, `noindex` til
   stede, emneord + kildeliste + språkbytte på plass, ikke i sitemap, ikke
   lenket noe sted.
+
+### Publiseringskø – aktiv (skjulte utkast, ikke publisert)
+
+Skrevet, men holdes skjult til Stavros sier fra. Maks én publiseres i
+måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
+`noindex`, legg til artikkelkort på `aktuelt.html` + `en/aktuelt.html`,
+legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
+
+| # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
+|---|---|---|---|---|
+| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
 
 ### Publiseringskø – FERDIG, alle publisert 2026-08-07
 
