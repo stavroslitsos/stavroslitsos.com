@@ -98,12 +98,5 @@ if (contactForm) {
   });
 }
 
-// Obfuscated email links (keeps the address out of the raw HTML source)
-document.querySelectorAll('.mailto-link').forEach(link => {
-  const email = `${link.dataset.user}@${link.dataset.domain}`;
-  link.href = `mailto:${email}`;
-  link.textContent = email;
-});
-
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

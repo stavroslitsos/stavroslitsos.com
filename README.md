@@ -169,9 +169,25 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-08-07**
+**Sist oppdatert: 2026-08-09**
 
-**Økt 2026-08-07 del 2 (nyeste – les denne først):**
+**Økt 2026-08-09 (nyeste – les denne først):**
+- **E-postadressen er fjernet fra hele nettsiden.** Stavros ville ikke
+  lenger vise e-post noe sted, siden kontaktskjemaet dekker behovet.
+  Konkret: (a) hele «E-post»-blokka øverst på kontaktsiden er slettet
+  (NO+EN), (b) footerens «Vis e-post»-lenke er byttet mot **«Send melding»
+  → `kontakt.html`** på alle 44 sider, (c) den nå døde
+  `.mailto-link`-obfuskeringskoden er fjernet fra `script.js`.
+  **Kontaktveier som gjenstår:** kontaktskjemaet (Web3Forms) og
+  bookinglenkene. Ingen telefonnummer finnes på siden.
+- **Bevisst URØRT:** `"email"`-feltet i JSON-LD på alle 44 sider. Det er
+  ikke synlig for besøkende, kun for søkemotorer, og fjerning ville
+  svekket lokal SEO. Stavros' begrunnelse for å fjerne e-posten gjaldt
+  kontaktveier for mennesker, ikke strukturerte data. **Spør før du
+  eventuelt fjerner dette også.**
+- MailerLite-trialen avklart – gratisplanen holder, se «Neste steg» pkt. 4.
+
+**Økt 2026-08-07 del 2:**
 - **Kilder er nå KOLLAPSBARE på alle 14 artiklene** (Stavros' ønske:
   pasienter bryr seg ikke om kildene, kun fagfolk – så de skal være skjult
   men tilgjengelige uten å måtte spørre). Løst med `<details class="article-sources">`
@@ -650,20 +666,28 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
 1. Vurder FAQ-side (footer-lenken peker til `#` i dag).
 2. Vurder om telefonnummer skal legges til et sted på siden.
 3. (Valgfritt opprydding) slett de 2 ubrukelige alias-filene i `images/`.
-4. **MailerLite-trial går ut ~2026-08-10** (14 dager fra 2026-07-27) — sjekk
-   om Stavros har oppgradert til betalt plan før den tid, ellers stopper
-   nyhetsbrev-sending.
+4. **MailerLite-trialen gikk ut ~2026-08-10 – dette er AVKLART og krever
+   ingen handling.** Stavros bekreftet 2026-08-09 at gratisplanen dekker
+   det han bruker MailerLite til (opptil 250 abonnenter / 2 500 e-poster
+   pr. mnd). Ikke mas om oppgradering; ta det opp igjen først hvis
+   abonnenttallet nærmer seg grensen.
 5. Neste artikkel-kunngjøring: bruk den lagrede malen "Artikkel-teaser
    (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
-   regel over), ikke engelsk.
-6. **Publisér én artikkel fra køen ca. hver måned** – se «Publiseringskø»
-   i statusdelen over. Alle seks er ferdig skrevet og ligger klare som
-   skjulte utkast; det gjenstår kun å slå dem synlige.
-7. Nye artikler utover de seks: husk de faste reglene – nytt, ubrukt
+   regel over), ikke engelsk. Stavros avventer utsending til han har flere
+   abonnenter.
+6. **Publiseringskøen er TOM** – alle seks artiklene ble sluppet ut
+   2026-08-07. Gradvis-publisering-regelen gjelder fortsatt for *nye*
+   artikler som skrives fremover: de skal legges inn som skjulte utkast
+   (`noindex`, ikke lenket, ikke i sitemap) og slippes ut når Stavros vil.
+7. Nye artikler fremover: husk de faste reglene – nytt, ubrukt
    thumbnail-bilde (se `article_thumbnail_image_rule.md`), kilder fra
-   anerkjente tidsskrifter som **verifiseres med websøk**, emneord-rad
-   nederst, norsk hovedversjon med egen engelsk versjon, og samme mal som
+   anerkjente tidsskrifter som **verifiseres med websøk**, kildelista i
+   kollapsbar `<details class="article-sources">`, emneord-rad nederst,
+   norsk hovedversjon med egen engelsk versjon, og samme mal som
    `smerte-er-ikke-et-skademaler.html`.
+8. (Valgfritt) `images/web/aktuelt-2.jpg` er foreldreløs – ikke lenket noe
+   sted etter McKenzie-bildebyttet. Kan slettes, eller spares til en
+   eventuell artikkel om trykkbølgebehandling.
 
 *(Video, flertall→entall, Web3Forms-skjema, e-post-skjuling og alle 6
 Faglig-artikler — tidligere de store gjenstående punktene — er alle ferdige
