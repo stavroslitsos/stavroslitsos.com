@@ -171,6 +171,19 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-23**
 
+**Økt 2026-08-23 del 3 (nyeste – les denne først):**
+- **MailerLite-avmelding er nå satt til «Unsubscribe from all groups
+  (recommended)».** Innstillingen er lagret på den globale avmeldingssiden.
+  Fremtidige personer som melder seg av, skal dermed automatisk fjernes fra
+  alle grupper og samtidig beholdes med status `unsubscribed` som sperre mot
+  nye utsendelser.
+- Den eksisterende avmeldte mottakeren som utløste kontrollen, er manuelt
+  fjernet fra gruppen «Fagartikler». Verifisert i profilen: status er fortsatt
+  `unsubscribed`, og gruppestatus er «Not a member of any group».
+- **Fast regel:** Ikke slett/«forget» avmeldte adresser som vanlig opprydding.
+  Avmeldingsoppføringen er nødvendig for å hindre utilsiktet ny import og ny
+  utsendelse. Målet er: ingen grupper + beholdt global avmeldingssperre.
+
 **Økt 2026-08-23 del 2 (nyeste – les denne først):**
 - **Ny skjult fagartikkel skrevet fra den delte forskningsoppsummeringen om
   MSK-injeksjoner:** «Injeksjonsbehandling – presisjon, riktig dose og
