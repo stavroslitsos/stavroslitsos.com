@@ -452,6 +452,11 @@ måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
 `noindex`, legg til artikkelkort på `aktuelt.html` + `en/aktuelt.html`,
 legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 
+**Sist publisert:** «Diagnostisk usikkerhet – hvorfor presis diagnostikk og
+tydelig kommunikasjon endrer forløpet» den **23.08.2026** (nyhetsbrev sendt
+samme dag). **Neste ordinære publiseringsmåned: september 2026.** Køen under
+er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
+
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
