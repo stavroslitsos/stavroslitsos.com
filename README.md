@@ -204,13 +204,37 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   mappen selv siden sist) i stedet for å gå via Canva denne gangen, siden
   det allerede var nær riktig format og tema. Beskåret til 1400×933 →
   `images/web/aktuelt-16.jpg`. Ingen Canva-tid brukt.
-- **VIKTIG – ikke gjort ennå, venter på Stavros:** Stavros sa "neste steg
-  er å sende til abonnenter" for denne artikkelen. Draften er skrevet og
-  verifisert, men **verken publisert (fjernet noindex/lagt i sitemap) eller
-  sendt som nyhetsbrev ennå** — det krever hans eksplisitte "send nå" per
-  den bekreftede regelen om at reelle e-postutsendelser alltid trenger
-  bekreftelse per gang. Spør ham direkte om han vil publisere + sende nå,
-  før noen av delene gjøres.
+- **PUBLISERT OG NYHETSBREV SENDT (samme økt).** Stavros bekreftet
+  eksplisitt at "her har jeg bedt deg om å gjøre begge de tingene du
+  spør meg om" — så begge deler er nå fullført:
+  1. **Publisert:** fjernet `noindex` fra NO+EN, lagt artikkelkort øverst
+     på Faglig-siden (NO+EN), byttet inn i forsidens 3-korts-teaser
+     (NO+EN, erstattet Tennisalbue-kortet som eldste), lagt begge URL-ene
+     i `sitemap.xml`. Verifisert lokalt (200 OK, alle 4 sider viser
+     kortet) før push.
+  2. **Nyhetsbrev sendt:** brukte den lagrede "Artikkel-teaser
+     (bilde + tekst + knapp)"-malen i MailerLite — byttet tittel, bilde
+     (lastet opp `aktuelt-16.jpg` via URL-import, siden native
+     filopplasting ikke er styrbar fra nettleserautomatisering), teaser-
+     tekst og knapp-URL/-tekst til norsk og denne artikkelen. Kampanjenavn
+     "Faglig nyhetsbrev #2 – Diagnostisk usikkerhet", emne "Ny artikkel:
+     Diagnostisk usikkerhet i muskel- og skjelettplager", sendt til **alle
+     3 aktive abonnenter** (`stavros.litsos@gmail.com`,
+     `helenebjerke@yahoo.com`, og en ny — `juliemarie_dahl@hotmail.com`,
+     påmeldt 2026-08-08 — ikke tidligere sett i noen økt, men en ekte
+     bekreftet abonnent på lista). **Merk:** abonnenttallet har økt fra 1
+     til 3 siden 2026-08-09 — det gamle "kun 1 abonnent"-notatet i
+     minnesystemet er oppdatert.
+  3. Publiseringskø-tabellen under er oppdatert: rad 2 markert som
+     publisert.
+- **God feedback fra Stavros denne økten (husk fremover):** da jeg spurte
+  om bekreftelse for publisering + nyhetsbrev-sending etter at han allerede
+  hadde bedt om begge deler i klartekst ("sett i gang nå, så neste steg er
+  å sende til abonnenter"), svarte han at jeg alltid skal fullføre det han
+  har bedt om — å spørre på nytt var unødvendig siden instruksjonen
+  allerede dekket begge stegene. Lagret som fast regel i minnesystemet:
+  når Stavros sekvenserer flere steg i én beskjed, er det selve
+  autorisasjonen for alle stegene, ikke bare det første.
 
 **Økt 2026-08-09 del 2:**
 - **TO NYE FASTE REGLER gitt av Stavros denne økten:**
@@ -397,7 +421,12 @@ legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
-| 2 | Diagnostisk usikkerhet – hvorfor presis diagnostikk og tydelig kommunikasjon endrer forløpet | `diagnostisk-usikkerhet-muskel-skjelettplager` | `aktuelt-16.jpg` (manuell undersøkelse/behandling) | ☐ — **Stavros ba om at denne sendes til abonnenter så snart den er klar (se øktnotat), avventer hans endelige "send nå"** |
+
+### Publiseringskø – FERDIG, publisert 2026-08-23
+
+| # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
+|---|---|---|---|---|
+| 1 | Diagnostisk usikkerhet – hvorfor presis diagnostikk og tydelig kommunikasjon endrer forløpet | `diagnostisk-usikkerhet-muskel-skjelettplager` | `aktuelt-16.jpg` (manuell undersøkelse/behandling) | ☑ 23.08, nyhetsbrev sendt samme dag til 3 abonnenter |
 
 ### Publiseringskø – FERDIG, alle publisert 2026-08-07
 
@@ -808,8 +837,14 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    (bilde + tekst + knapp)" i MailerLite, **skriv den på norsk** (se fast
    regel over), ikke engelsk. Fast regel: nyhetsbrev sendes ved hver
    publisering, men Stavros gir eksplisitt beskjed per gang før noe
-   faktisk sendes (kun 1 abonnent per 2026-08-09, se «Faste regler»-punktet
-   over).
+   faktisk sendes. **3 aktive abonnenter per 2026-08-23** (opp fra 1 —
+   sjekk `dashboard.mailerlite.com/subscribers` for oppdatert tall, ikke
+   stol blindt på et tall skrevet ned i en tidligere økt). Prosessen er nå
+   kjørt en gang med suksess (se øktnotat 2026-08-23): mal → bytt
+   tittel/bilde/tekst/knapp-URL → **bildet må lastes opp via "Import from
+   URL" i MailerLites filbehandler** (den live URL-en til bildet på
+   stavroslitsos.com), siden native "My device"-filopplasting ikke lar
+   seg styre fra nettleserautomatisering.
 6. **Publiseringskøen har 1 skjult utkast** («Bursitt – som oftest
    sekundært til overbelastning av senen», se tabellen «Publiseringskø –
    aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
