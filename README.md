@@ -171,7 +171,19 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-23**
 
-**Økt 2026-08-23 del 4 (nyeste – les denne først):**
+**Økt 2026-08-23 del 5 (nyeste – les denne først):**
+- Alle de **8 mottakerne som på kontrolltidspunktet hadde status `bounced`**,
+  er fjernet samlet fra begge MailerLite-gruppene «Fagartikler» og «Faglig
+  nyhetsbrev».
+- Alle åtte profiler er kontrollert individuelt etterpå: samtlige finnes
+  fortsatt, har status `bounced` og viser «Not a member of any group».
+  Leveringssperren er dermed bevart, uten teknisk medlemskap i noen
+  utsendelsesgruppe.
+- **Fast regel for bounced-adresser:** Fjern dem fra alle grupper, men ikke
+  slett/«forget» profilen. Det hindrer at ugyldige eller avviste adresser blir
+  importert og forsøkt kontaktet på nytt.
+
+**Økt 2026-08-23 del 4:**
 - Alle de **7 mottakerne som på kontrolltidspunktet hadde status
   `unsubscribed`**, er fjernet samlet fra begge MailerLite-gruppene
   «Fagartikler» og «Faglig nyhetsbrev».
