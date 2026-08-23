@@ -182,6 +182,10 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 - **Fast regel for bounced-adresser:** Fjern dem fra alle grupper, men ikke
   slett/«forget» profilen. Det hindrer at ugyldige eller avviste adresser blir
   importert og forsøkt kontaktet på nytt.
+- **Økten er avsluttet og kontrollert.** Det gjenstår ingen handling for de
+  åtte bounced-adressene eller de sju avmeldte. Neste økt skal først hente
+  siste versjon fra GitHub/Dropbox og deretter fortsette fra artikkelkøen når
+  Stavros ber om det.
 
 **Økt 2026-08-23 del 4:**
 - Alle de **7 mottakerne som på kontrolltidspunktet hadde status
