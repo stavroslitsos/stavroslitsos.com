@@ -183,6 +183,9 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   fortsatt regelen for fremtidige avmeldinger. Ved senere kontroller skal
   eventuelle eldre avmeldte behandles på samme måte: fjern fra alle grupper,
   men ikke slett/«forget» selve avmeldingsoppføringen.
+- **Økten er avsluttet og synkronisert.** Neste økt skal starte med vanlig
+  oppdatering fra GitHub/Dropbox. Det gjenstår ingen handling for de sju
+  avmeldte; neste arbeid fortsetter fra artikkelkøen når Stavros ber om det.
 
 **Økt 2026-08-23 del 3:**
 - **MailerLite-avmelding er nå satt til «Unsubscribe from all groups
