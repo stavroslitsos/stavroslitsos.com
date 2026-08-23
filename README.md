@@ -171,7 +171,20 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-23**
 
-**Økt 2026-08-23 del 3 (nyeste – les denne først):**
+**Økt 2026-08-23 del 4 (nyeste – les denne først):**
+- Alle de **7 mottakerne som på kontrolltidspunktet hadde status
+  `unsubscribed`**, er fjernet samlet fra begge MailerLite-gruppene
+  «Fagartikler» og «Faglig nyhetsbrev».
+- Alle sju profiler er kontrollert individuelt etterpå: samtlige har fortsatt
+  status `unsubscribed` og viser «Not a member of any group». Dermed ligger
+  avmeldingssperren fortsatt aktiv, mens ingen av dem teknisk tilhører en
+  utsendelsesgruppe.
+- Den globale innstillingen «Unsubscribe from all groups (recommended)» er
+  fortsatt regelen for fremtidige avmeldinger. Ved senere kontroller skal
+  eventuelle eldre avmeldte behandles på samme måte: fjern fra alle grupper,
+  men ikke slett/«forget» selve avmeldingsoppføringen.
+
+**Økt 2026-08-23 del 3:**
 - **MailerLite-avmelding er nå satt til «Unsubscribe from all groups
   (recommended)».** Innstillingen er lagret på den globale avmeldingssiden.
   Fremtidige personer som melder seg av, skal dermed automatisk fjernes fra
