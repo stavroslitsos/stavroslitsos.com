@@ -169,9 +169,50 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-08-09**
+**Sist oppdatert: 2026-08-23**
 
-**Økt 2026-08-09 del 2 (nyeste – les denne først):**
+**Økt 2026-08-23 (nyeste – les denne først):**
+- **NY FAST REGEL: hovedkilde + 5–9 støttekilder på hver artikkel.** Stavros
+  ba om at hver artikkel fremover skal ha **én hovedartikkel** som
+  inspirasjon/utgangspunkt, pluss **5–9 selvstendig innhentede
+  støttekilder** som underbygger og utvider den. Ikke noe han skal be om
+  hver gang — standard fra nå av. Lagret i `article_sourcing_and_seo_rules.md`.
+- **NY STÅENDE VINKEL på tvers av artikler:** finn og vev inn forskning som
+  støtter at en **korrekt diagnose — både riktig stilt OG tydelig
+  formidlet** — har stor betydning for pasientens etterlevelse av tiltak,
+  forløp, suksessrate og frykt/bekymring rundt tilstanden. Ikke bare for
+  denne artikkelen, men en linse å ha i bakhodet på alle fremtidige
+  artikler der det passer naturlig. Lagret samme sted i minnet.
+- **Ny artikkel skrevet: «Diagnostisk usikkerhet – hvorfor presis
+  diagnostikk og tydelig kommunikasjon endrer forløpet»**
+  (`diagnostisk-usikkerhet-muskel-skjelettplager.html` + `en/`), **skjult
+  utkast** (`noindex`, ikke lenket, ikke i sitemap – lagt til som rad 2 i
+  publiseringskøen under). Inspirert av en fersk systematisk oversikt
+  Stavros sendte (Reeve m.fl. 2026, *Musculoskeletal Science and
+  Practice* — 26 kvalitative studier, 462 pasienter om pasienters
+  opplevelse av diagnostisk usikkerhet), skrevet fra bunnen i hans egen
+  stemme (jf. regel 4 – aldri gjenbrukt/gjenkjennelig fra kilden). 6
+  selvstendig verifiserte støttekilder dekker: kommunikasjon av
+  diagnostisk usikkerhet, effekten av diagnostiske merkelapper på frykt/
+  forventning, MR-«normal»-funn og falsk trygghet, terapeutisk allianse,
+  pasientforventning og faktisk etterlevelse/resultat ved korsryggsmerte,
+  og ultralyds treffsikkerhet ved rotator cuff-skade (kobler til Stavros'
+  egen ultralyd-modalitet, som alltid). Alle 7 kilder verifisert mot
+  PubMed/tidsskrift/forlag før bruk.
+- **Bilde:** brukte et allerede tilgjengelig, ubrukt rått bilde
+  (`images/behandling skulder manuelt.jpg` — Stavros hadde lagt det i
+  mappen selv siden sist) i stedet for å gå via Canva denne gangen, siden
+  det allerede var nær riktig format og tema. Beskåret til 1400×933 →
+  `images/web/aktuelt-16.jpg`. Ingen Canva-tid brukt.
+- **VIKTIG – ikke gjort ennå, venter på Stavros:** Stavros sa "neste steg
+  er å sende til abonnenter" for denne artikkelen. Draften er skrevet og
+  verifisert, men **verken publisert (fjernet noindex/lagt i sitemap) eller
+  sendt som nyhetsbrev ennå** — det krever hans eksplisitte "send nå" per
+  den bekreftede regelen om at reelle e-postutsendelser alltid trenger
+  bekreftelse per gang. Spør ham direkte om han vil publisere + sende nå,
+  før noen av delene gjøres.
+
+**Økt 2026-08-09 del 2:**
 - **TO NYE FASTE REGLER gitt av Stavros denne økten:**
   1. **Gradvis publisering formalisert som tabell.** Fremtidige artikler
      holdes skjule og publiseres maks **én i måneden**. Oversikt over
@@ -356,6 +397,7 @@ legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
+| 2 | Diagnostisk usikkerhet – hvorfor presis diagnostikk og tydelig kommunikasjon endrer forløpet | `diagnostisk-usikkerhet-muskel-skjelettplager` | `aktuelt-16.jpg` (manuell undersøkelse/behandling) | ☐ — **Stavros ba om at denne sendes til abonnenter så snart den er klar (se øktnotat), avventer hans endelige "send nå"** |
 
 ### Publiseringskø – FERDIG, alle publisert 2026-08-07
 
