@@ -171,6 +171,29 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 **Sist oppdatert: 2026-08-23**
 
+**Økt 2026-08-23 del 2 (nyeste – les denne først):**
+- **Ny skjult fagartikkel skrevet fra den delte forskningsoppsummeringen om
+  MSK-injeksjoner:** «Injeksjonsbehandling – presisjon, riktig dose og
+  rehabilitering avgjør»
+  (`injeksjonsbehandling-presisjon-dose-rehabilitering.html` + `en/`).
+  Artikkelen er pasientrettet og skrevet fra bunnen, ikke som en kopi av
+  «topp 10»-oppsummeringen. Hovedvinkelen er at en injeksjon ikke er et
+  behandlingsforløp alene: korrekt diagnose, ultralydpresisjon, laveste
+  effektive kortisondose, dokumentert PRP-sammensetning, riktig indikasjon og
+  aktiv rehabilitering avgjør resultatet.
+- **Kilder:** 2026-retningslinjen fra Benzon m.fl. i <em>Regional Anesthesia
+  & Pain Medicine</em> er hovedkilde, med syv verifiserte støttekilder. Teksten
+  beholder viktig faglig motvekt: en ny meta-analyse antyder bedre smerteutfall
+  av PRP + trening ved kneartrose, mens en god RCT fant trening alene like bra
+  eller bedre på sentrale utfall. Artikkelen overselger derfor ikke PRP.
+- **Nytt artikkelbilde:** `images/web/aktuelt-17.jpg` (1400×933), laget fra et
+  ubrukt, autentisk ultralydbilde i prosjektet. Bildet er beskåret til 3:2 og
+  renset for fremmed branding og identifiserende skjermtekst.
+- **Publiseringsstatus:** skjult utkast på begge språk (`noindex, nofollow`),
+  ikke lenket fra forsiden/Faglig, og ikke lagt i sitemap. Lagt til som rad 2 i
+  aktiv publiseringskø. Skal først publiseres og sendes som nyhetsbrev når
+  Stavros uttrykkelig ber om det.
+
 **Økt 2026-08-23 (nyeste – les denne først):**
 - **INVITASJONSKAMPANJE TIL NYHETSBREVABONNENTER — FULLFØRT.**
   - Ekstrahert **370 e-postadresser fra Physica-timeplanen** (alle møter med tilgjengelig e-post = samtykke per helsepersonelloven)
@@ -432,6 +455,7 @@ legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
+| 2 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
@@ -856,9 +880,10 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    URL" i MailerLites filbehandler** (den live URL-en til bildet på
    stavroslitsos.com), siden native "My device"-filopplasting ikke lar
    seg styre fra nettleserautomatisering.
-6. **Publiseringskøen har 1 skjult utkast** («Bursitt – som oftest
-   sekundært til overbelastning av senen», se tabellen «Publiseringskø –
-   aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
+6. **Publiseringskøen har 2 skjulte utkast** («Bursitt – som oftest
+   sekundært til overbelastning av senen» og «Injeksjonsbehandling –
+   presisjon, riktig dose og rehabilitering avgjør», se tabellen
+   «Publiseringskø – aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
    fortsatt for *nye* artikler som skrives fremover: legg dem inn som
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til
    i kø-tabellen, publiser når Stavros sier fra.

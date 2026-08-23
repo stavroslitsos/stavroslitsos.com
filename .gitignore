@@ -9,3 +9,8 @@
 images/*
 !images/web/
 images/web/.DS_Store
+
+# Klinisk arbeidslogg (Physica) - inneholder pasientrelatert info,
+# skal ALDRI pushes til det offentlige GitHub-repoet.
+physica-nyhetsbrev-logg.md
+mailerlite_import.csv
