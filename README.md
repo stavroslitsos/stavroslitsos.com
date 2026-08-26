@@ -148,8 +148,8 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
    `INPAINT_TELEA` er brukt så langt – se tidligere bilder som mal).
 5. **Bump CSS-versjonen ved CSS-endringer:** alle sider lenker til
    `style.css?v=N`. GitHub Pages cacher i 10 min, så uten versjonsbump tror
-   Stavros at endringen "ikke slo inn". Øk N på **alle 50 HTML-filer**
-   (25 norske + 25 i `en/` – kjernesider + artikler) hver gang `style.css`
+   Stavros at endringen "ikke slo inn". Øk N på **alle 52 HTML-filer**
+   (26 norske + 26 i `en/` – kjernesider + artikler) hver gang `style.css`
    endres. Er nå på `?v=7` (per 2026-08-07). Enkel oppdatering:
    `for f in *.html en/*.html; do perl -pi -e 's/style\.css\?v=N/style.css?v=M/g' "$f"; done`.
 6. **EXIF-ORIENTERING ved bildebehandling (bug rettet 2026-07-24):** Når du
@@ -166,6 +166,26 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-08-26**
 
+**Økt 2026-08-26 del 2 (nyeste – les denne først):**
+- Ny skjult fagartikkel skrevet på norsk og engelsk: **«Når PRP møter
+  hyaluronsyre – er kombinasjonen bedre ved kneartrose?»**
+  (`prp-hyaluronsyre-kombinasjonsbehandling-kneartrose.html` og
+  `en/prp-hyaluronic-acid-combination-treatment-knee-osteoarthritis.html`).
+- Artikkelen tar utgangspunkt i Ciapini m.fl. 2023 og bygger videre på sju
+  verifiserte støttekilder: nyere systematiske oversikter, en randomisert
+  studie, biologisk/rheologisk forskning og OARSI-retningslinjen. Den viktige
+  nyanseringen er bevart: kombinasjonen kan gi bedre effekt enn hyaluronsyre
+  alene, mens tilleggseffekten over PRP alene er usikker og i en 2025-analyse
+  lå under minste klinisk viktige forskjell.
+- Nytt, ubrukt artikkelbilde `images/web/aktuelt-18.jpg` (1400 × 933), laget
+  fra Stavros' autentiske bilde `images/ultralyd-kopi.jpg`. Motivet viser
+  diagnostisk ultralyd av kne uten fremmed logo eller identifiserende tekst.
+- Begge språkversjoner er skjulte utkast med `noindex, nofollow`, ikke lenket
+  fra forsiden/Faglig og ikke lagt i sitemap. Artikkelen er lagt som rad 3 i
+  aktiv publiseringskø og skal ikke publiseres før Stavros ber om det.
+- Prosjektet har nå 52 HTML-filer (26 NO + 26 EN). CSS er uendret og står
+  fortsatt på `style.css?v=7`.
+
 **Synk- og statuskontroll 2026-08-26 (nyeste – les denne først):**
 - Faktisk prosjektmappe er bekreftet som
   `Programmer/Claude/Claude Code prosjekter/stavroslitsos.com`. Det gamle
@@ -173,9 +193,8 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 - Lokal `main` og `origin/main` er kontrollert etter henting fra GitHub og er
   helt like (0 commits foran / 0 bak). Live-versjonen bygges fortsatt fra
   `main` og ligger på **https://stavroslitsos.com**.
-- Prosjektet har nå **50 HTML-filer** (25 NO + 25 EN). De eneste skjulte
-  utkastene med `noindex` er fortsatt bursitt-artikkelen og artikkelen om
-  injeksjonspresisjon; publiseringskøen under er dermed korrekt.
+- Prosjektet hadde på kontrolltidspunktet **50 HTML-filer** (25 NO + 25 EN).
+  Se nyere øktnotat over for artikkelen som senere ble lagt til.
 - Faste artikkel- og bilderegler er flyttet fra maskinlokalt «minne» til de
   versjonerte prosjektfilene `ARTICLE_RULES.md` og `IMAGE_RULES.md`. De skal
   leses før nye artikler eller bilder lages.
@@ -518,6 +537,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 |---|---|---|---|---|
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
 | 2 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
+| 3 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
