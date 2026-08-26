@@ -1,4 +1,4 @@
-# Oppstart for Claude – stavroslitsos.com
+# Oppstart for Codex – stavroslitsos.com
 
 Les `README.md` i sin helhet før arbeid starter. Nyeste status og aktiv
 publiseringskø står under «Status – hvor arbeidet ble stoppet sist».

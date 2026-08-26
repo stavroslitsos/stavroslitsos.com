@@ -1,28 +1,24 @@
 # Stavros nettside
 
-Statisk HTML/CSS/JS-nettside, ingen rammeverk. Designet er kopiert i
-layout/seksjonsoppsett/bildeplassering fra [jankristian.no](https://www.jankristian.no/)
-(referansenettside for en kiropraktor), men fargeskjemaet er endret fra
-rødt/bordeaux til **blått/hvitt**, og alt identifiserende innhold (firmanavn,
-bilder, kontaktinfo, sitater) er erstattet med tydelige plassholdere siden
-originalinnholdet tilhører en annen, reell virksomhet.
+Statisk, tospråklig HTML/CSS/JS-nettside uten rammeverk. Siden er ferdig
+publisert i blå/hvit profil med Stavros' eget innhold, bilder, fagartikler,
+kontaktskjema og nyhetsbrev-integrasjon.
 
-Dette prosjektet ligger i Dropbox (`Programmer/Claude/Claude Code prosjekter/Claude Stavros nettside`)
+Dette prosjektet ligger i Dropbox (`Programmer/Claude/Claude Code prosjekter/stavroslitsos.com`)
 og kan derfor åpnes og videreføres fra flere datamaskiner. Se
 ["Status – hvor arbeidet ble stoppet sist"](#status--hvor-arbeidet-ble-stoppet-sist)
 nederst i denne filen før du starter en ny økt.
 
 ## Filstruktur
 
-- `index.html` — hele siden (header/nav, hero, "hvem er vi"-seksjon, artikkelgrid, sitatkarusell, footer)
+- `index.html` — norsk forside; `en/index.html` — engelsk forside
 - `style.css` — designtokens øverst (`:root`), navy/hvit/lyseblå palett
 - `script.js` — header scroll-state, mobilmeny, sitatkarusell (autoplay + piler/dots)
-- `images/` — 18 bilder lastet inn (trolig fra en annen datamaskin, ikke ennå
-  committet til git eller koblet inn i `index.html`) + 2 macOS alias-filer
-  (`PrP behandling-alias`, `Promo-alias`) som er ødelagte snarveier til mapper
-  i en annen, delt Dropbox-plassering (`1. House of Health/Bilder og promo/…`)
-  — disse to kan trygt slettes, de peker ikke til noe som fungerer på tvers av
-  maskiner
+- `images/web/` — ferdigbehandlede bilder som brukes av nettsiden og er i Git
+- øvrige filer i `images/` — Dropbox-synkronisert råmateriale, ignorert av Git
+- `ARTICLE_RULES.md` — faste regler for research, skriving, SEO og publisering
+- `IMAGE_RULES.md` — faste regler for bildevalg og bildebehandling
+- `AGENTS.md` / `CLAUDE.md` — korte oppstartspekere for Codex og Claude
 
 **Seksjonsrekkefølge (identisk med referansen):**
 1. Fast/sticky header — transparent over hero, blir hvit med navy tekst ved scroll (`.is-scrolled`)
@@ -108,7 +104,7 @@ vises pent. `<head>`/SEO er bevisst urørt.
 **Kommandoer:**
 ```bash
 git checkout v2-house-of-health   # jobb videre på Versjon 2 (påvirker ikke live)
-git checkout main                 # tilbake til Versjon 1 (= live)
+git checkout main                 # tilbake til Versjon 2 (= live)
 git checkout v1-to-klinikker      # se det frosne øyeblikksbildet av Versjon 1
 ```
 
@@ -126,10 +122,9 @@ Versjon 1 kan alltid gjenopprettes byte for byte.
 
 ## Faste regler for Claude (gjelder på alle maskiner, uavhengig av økt)
 
-Disse reglene ligger normalt i Claude sitt minnesystem, men det er maskin-/
-installasjonsspesifikt. Siden dette prosjektet skal kunne videreføres fra
-flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
-økt/maskin følger samme standard uten at Stavros må forklare dem på nytt.
+Regler i en assistents lokale minne er maskin-/installasjonsspesifikke. Derfor
+er alle bindende prosjektregler skrevet i README og de versjonerte regel-filene,
+slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 1. **Når en økt avsluttes** ("nå avslutter jeg økten" e.l.), skal
    "Status"-seksjonen under **alltid** oppdateres med hva som ble gjort og
@@ -153,8 +148,8 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
    `INPAINT_TELEA` er brukt så langt – se tidligere bilder som mal).
 5. **Bump CSS-versjonen ved CSS-endringer:** alle sider lenker til
    `style.css?v=N`. GitHub Pages cacher i 10 min, så uten versjonsbump tror
-   Stavros at endringen "ikke slo inn". Øk N på **alle 44 HTML-filer**
-   (22 norske + 22 i `en/` – kjernesider + artikler) hver gang `style.css`
+   Stavros at endringen "ikke slo inn". Øk N på **alle 50 HTML-filer**
+   (25 norske + 25 i `en/` – kjernesider + artikler) hver gang `style.css`
    endres. Er nå på `?v=7` (per 2026-08-07). Enkel oppdatering:
    `for f in *.html en/*.html; do perl -pi -e 's/style\.css\?v=N/style.css?v=M/g' "$f"; done`.
 6. **EXIF-ORIENTERING ved bildebehandling (bug rettet 2026-07-24):** Når du
@@ -169,7 +164,24 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-08-23**
+**Sist oppdatert: 2026-08-26**
+
+**Synk- og statuskontroll 2026-08-26 (nyeste – les denne først):**
+- Faktisk prosjektmappe er bekreftet som
+  `Programmer/Claude/Claude Code prosjekter/stavroslitsos.com`. Det gamle
+  mappenavnet «Claude Stavros nettside» var utdatert dokumentasjon.
+- Lokal `main` og `origin/main` er kontrollert etter henting fra GitHub og er
+  helt like (0 commits foran / 0 bak). Live-versjonen bygges fortsatt fra
+  `main` og ligger på **https://stavroslitsos.com**.
+- Prosjektet har nå **50 HTML-filer** (25 NO + 25 EN). De eneste skjulte
+  utkastene med `noindex` er fortsatt bursitt-artikkelen og artikkelen om
+  injeksjonspresisjon; publiseringskøen under er dermed korrekt.
+- Faste artikkel- og bilderegler er flyttet fra maskinlokalt «minne» til de
+  versjonerte prosjektfilene `ARTICLE_RULES.md` og `IMAGE_RULES.md`. De skal
+  leses før nye artikler eller bilder lages.
+- `AGENTS.md` er lagt inn som Codex-oppstartsfil og versjoneres nå sammen med
+  prosjektet. README er fortsatt eneste kilde til løpende status.
+- Ingen nettsideinnhold eller live-visning ble endret i denne kontrollen.
 
 **Økt 2026-08-23 del 5 (nyeste – les denne først):**
 - Alle de **8 mottakerne som på kontrolltidspunktet hadde status `bounced`**,
@@ -255,7 +267,7 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   ba om at hver artikkel fremover skal ha **én hovedartikkel** som
   inspirasjon/utgangspunkt, pluss **5–9 selvstendig innhentede
   støttekilder** som underbygger og utvider den. Ikke noe han skal be om
-  hver gang — standard fra nå av. Lagret i `article_sourcing_and_seo_rules.md`.
+  hver gang — standard fra nå av. Lagret i `ARTICLE_RULES.md`.
 - **NY STÅENDE VINKEL på tvers av artikler:** finn og vev inn forskning som
   støtter at en **korrekt diagnose — både riktig stilt OG tydelig
   formidlet** — har stor betydning for pasientens etterlevelse av tiltak,
@@ -364,7 +376,7 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   (bursitt sekundært til tendinopati, avlastning før betennelsesdemping,
   diagnostisk ultralyd, ultralydveiledet blokade/injeksjon,
   symptomutvikling som utfallsmål). Gjelder alle fremtidige lenker/
-  inspirasjon han sender – lagret i `article_sourcing_and_seo_rules.md`.
+  inspirasjon han sender – lagret i `ARTICLE_RULES.md`.
 
 **Økt 2026-08-09 del 1:**
 - **E-postadressen er fjernet fra hele nettsiden.** Stavros ville ikke
@@ -409,7 +421,7 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
   Design→eksport er altså ikke en omvei, men eneste kanal med full
   oppløsning.
   Testet med `images/canva-nakkebehandling-fysioterapi.jpg` (1400×933, 142 KB).
-  Detaljert oppskrift ligger i `article_thumbnail_image_rule.md` i minnet.
+  Den varige oppskriften ligger i prosjektfilen `IMAGE_RULES.md`.
 
 **Økt 2026-08-07 del 2:**
 - **Kilder er nå KOLLAPSBARE på alle 14 artiklene** (Stavros' ønske:
@@ -464,8 +476,8 @@ flere datamaskiner via Dropbox, er reglene skrevet ned her også slik at en ny
 - **6 nye fagartikler skrevet (NO+EN = 12 sider) – ALLE SOM SKJULTE
   UTKAST**, se «Publiseringskø» under. Meniskskade, frossen skulder,
   tennisalbue, plantar fasciitt, hoppekne og trochanter bursitt.
-- **TRE NYE FASTE REGLER gitt av Stavros denne økten** (også lagret i
-  Claudes minnesystem, `article_sourcing_and_seo_rules.md`):
+- **TRE NYE FASTE REGLER gitt av Stavros denne økten** (nå lagret i
+  prosjektfilen `ARTICLE_RULES.md`):
   1. **Gradvis publisering.** Ikke alt som er ferdigskrevet skal ut med én
      gang. Ferdige, ikke-publiserte artikler ligger som *skjulte utkast*:
      HTML-fila finnes i repoet, men er (a) ikke lenket fra `aktuelt.html`,
@@ -571,8 +583,8 @@ siden leses av leger og kritiske kolleger.
   arbeidsgiver-logo (MAGNAT, Under Armour, "Nesbru Fysio- og
   Manuellterapi AS") eller video-stillbilder. De skal renskes opp
   (logofjerning/beskjæring) og brukes, ikke ekskluderes. Full,
-  detaljert oversikt over hvert enkelt bilde og status ligger i
-  minnesystemet (`article_thumbnail_image_rule.md`), ikke gjengitt her
+  varige regler for bildevalg og behandling ligger i prosjektfilen
+  `IMAGE_RULES.md`; den detaljerte råvareoversikten er ikke gjengitt her
   siden den endrer seg raskt.
 - **Fikset feil bilde på McKenzie-artikkelen:** kortet for
   "McKenzie-metoden for rygg- og nakkeplager" (09.07.2026) brukte et
@@ -938,7 +950,7 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til
    i kø-tabellen, publiser når Stavros sier fra.
 7. Nye artikler fremover: husk de faste reglene – nytt, ubrukt
-   thumbnail-bilde (se `article_thumbnail_image_rule.md`), kilder fra
+   thumbnail-bilde (se `IMAGE_RULES.md`), kilder fra
    anerkjente tidsskrifter som **verifiseres med websøk**, kildelista i
    kollapsbar `<details class="article-sources">`, emneord-rad nederst,
    norsk hovedversjon med egen engelsk versjon, og samme mal som
