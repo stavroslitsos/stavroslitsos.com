@@ -165,7 +165,19 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-08-26**
+**Sist oppdatert: 2026-08-28**
+
+**Migreringskontroll 2026-08-28 (nyeste – les denne først):**
+- Den nye aktive arbeidskopien under `Codex Projects` er kontrollert og klar
+  for videre arbeid. Git-statusen var ren, og lokal `main` var 0 commits foran
+  og 0 bak `origin/main`.
+- `origin` peker korrekt til det offentlige repositoryet
+  `stavroslitsos/stavroslitsos.com` for både henting og pushing.
+- Sensitive lokale filer og mapper (`mailerlite_import.csv`,
+  `physica-nyhetsbrev-logg.md` og `.claude/`) spores ikke av Git.
+- Ingen nettsideinnhold eller live-visning ble endret. Fremtidige oppgaver skal
+  opprettes under riktig prosjekt i Codex og utføres fra denne Git-baserte
+  arbeidskopien, ikke fra den gamle Dropbox-kopien.
 
 **Økt 2026-08-26 del 2 (nyeste – les denne først):**
 - Ny skjult fagartikkel skrevet på norsk og engelsk: **«Når PRP møter
