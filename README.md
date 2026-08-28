@@ -4,8 +4,9 @@ Statisk, tospråklig HTML/CSS/JS-nettside uten rammeverk. Siden er ferdig
 publisert i blå/hvit profil med Stavros' eget innhold, bilder, fagartikler,
 kontaktskjema og nyhetsbrev-integrasjon.
 
-Dette prosjektet ligger i Dropbox (`Programmer/Claude/Claude Code prosjekter/stavroslitsos.com`)
-og kan derfor åpnes og videreføres fra flere datamaskiner. Se
+Den aktive arbeidskopien ligger i `/Users/stavros/Codex Projects/stavroslitsos.com`
+og synkroniseres mellom maskiner via GitHub. Dropbox-originalen beholdes urørt
+som backup og kilde til råmateriale inntil Stavros selv rydder den. Se
 ["Status – hvor arbeidet ble stoppet sist"](#status--hvor-arbeidet-ble-stoppet-sist)
 nederst i denne filen før du starter en ny økt.
 
