@@ -14,6 +14,8 @@ Sist oppdatert: 2026-08-28
 - Råbilder/videoer, MailerLite-import, Physica-logg og lokale Claude-innstillinger
   er fortsatt ignorert og ble ikke kopiert fra Dropbox.
 - Dropbox-originalen står urørt.
+- Den nye clonen er registrert som Git-prosjekt i Codex, med hovedoppgaven
+  `stavroslitsos.com – Git-prosjektoversikt og status`.
 
 ## Operativ nettsidestatus
 
@@ -23,8 +25,7 @@ konkurrerende innholdsstatus.
 
 ## Neste migreringssteg
 
-1. Committe og pushe dokumentasjonsoppdateringen.
-2. Registrere den nye Git-mappen som prosjekt i Codex.
-3. Klone og teste prosjektet på Mac nummer 2.
+1. Klone og teste prosjektet på Mac nummer 2.
+2. Fortsette publiseringskøen i `README.md` når Stavros ber om det.
 
 Dropbox-originalen skal ikke flyttes, slettes, omdøpes eller ryddes av Codex.
