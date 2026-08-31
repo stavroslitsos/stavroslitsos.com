@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "project_name": "stavroslitsos.com",
+  "setup_on_new_machine": true,
+  "tasks": [
+    {
+      "title": "stavroslitsos.com – Nettside og publisering",
+      "purpose": "Utvikling, fagartikler, bilder, kvalitetssikring og publisering av stavroslitsos.com.",
+      "initial_prompt": "Les AGENTS.md og README.md i sin helhet før du begynner. Les ARTICLE_RULES.md før artikkelarbeid og IMAGE_RULES.md før bildearbeid. Kontroller Git-status og hent siste versjon før endringer. Følg publiseringskøen og statusen i README.md, og commit og push automatisk etter ferdig og kontrollert arbeid."
+    }
+  ]
+}
