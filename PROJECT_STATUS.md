@@ -1,6 +1,6 @@
 # Prosjektstatus
 
-Sist oppdatert: 2026-08-31
+Sist oppdatert: 2026-09-09
 
 ## Git-migrering
 
@@ -19,6 +19,10 @@ Sist oppdatert: 2026-08-31
   oppgavemanifest.
 
 ## Operativ nettsidestatus
+
+- Den selvstendige tjenestesiden **Nordlys Webstudio** er lagt under
+  `/nordlys-web/`, med eget visuelt merkenavn og kontaktskjema. Den erstatter
+  den tidligere offentlige plasseringen på bikerentaloslo.no.
 
 Detaljert status, publiseringskø og neste innholdsoppgaver ligger i `README.md`
 under «Status – hvor arbeidet ble stoppet sist». Denne filen skal ikke bli en
