@@ -1,6 +1,6 @@
 # Prosjektstatus
 
-Sist oppdatert: 2026-09-09
+Sist oppdatert: 2026-09-10
 
 ## Git-migrering
 
@@ -20,9 +20,10 @@ Sist oppdatert: 2026-09-09
 
 ## Operativ nettsidestatus
 
-- Den selvstendige tjenestesiden **Nordlys Webstudio** er lagt under
-  `/nordlys-web/`, med eget visuelt merkenavn og kontaktskjema. Den erstatter
-  den tidligere offentlige plasseringen på bikerentaloslo.no.
+- Den selvstendige tjenestesiden **Nordlys Webstudio** er flyttet ut av dette
+  repositoryet og publiseres midlertidig på
+  `https://bikerentaloslo.no/nordlys-web/`. Den gamle mappen `/nordlys-web/` er
+  fjernet fra StavrosLitsos.com for å unngå tilknytning til den personlige siden.
 
 Detaljert status, publiseringskø og neste innholdsoppgaver ligger i `README.md`
 under «Status – hvor arbeidet ble stoppet sist». Denne filen skal ikke bli en
