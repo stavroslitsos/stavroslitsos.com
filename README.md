@@ -166,14 +166,14 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-09-09**
+**Sist oppdatert: 2026-09-10**
 
-**Nordlys Webstudio 2026-09-09:**
-- Den selvstendige salgssiden for nettsidetjenester ligger nå under
-  `https://stavroslitsos.com/nordlys-web/`. Den beholder merkenavnet Nordlys
-  Webstudio og viser ikke Stavros-navnet inne på selve siden.
-- Den gamle offentlige kopien under bikerentaloslo.no skal fjernes, slik at
-  bare den nye adressen brukes i markedsføring.
+**Nordlys Webstudio 2026-09-10:**
+- Den selvstendige salgssiden er flyttet ut av StavrosLitsos.com og publiseres
+  midlertidig på `https://bikerentaloslo.no/nordlys-web/` inntil eget domene er
+  kjøpt.
+- Mappen `nordlys-web/` er fjernet fra dette repositoryet, slik at tjenesten
+  ikke lenger ligger under eller er direkte assosiert med den personlige siden.
 
 **Migreringskontroll 2026-08-28 (nyeste – les denne først):**
 - Den nye aktive arbeidskopien under `Codex Projects` er kontrollert og klar
