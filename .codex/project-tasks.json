@@ -1,5 +1,6 @@
 {
   "schema_version": 1,
+  "layout_version": 1,
   "project_name": "stavroslitsos.com",
   "setup_on_new_machine": true,
   "tasks": [

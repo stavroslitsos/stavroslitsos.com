@@ -36,3 +36,7 @@ Codex-oppgaver. Ved førstegangsoppsett etter kloning skal Codex registrere
 repositorymappen, lese manifestet og opprette bare oppgaver som mangler. Gamle
 Dropbox-oppgaver skal ikke kobles til den nye Git-arbeidskopien, og duplikater
 skal ikke opprettes.
+
+Samlet prosjekt- og oppgaverekkefølge står i
+`Work-automation/.codex/workspace-layout.json`. Ved endret oppgaveinndeling:
+oppdater og push begge manifestene etter kontroll av faktisk Codex-visning.

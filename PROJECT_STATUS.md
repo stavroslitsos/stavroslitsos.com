@@ -4,6 +4,9 @@ Sist oppdatert: 2026-09-10
 
 ## Git-migrering
 
+- 2026-09-13: Oppgavemanifestet er versjonert mot den felles Codex-oversikten
+  i Work-automation. Den eksisterende faste nettsideoppgaven er uendret.
+
 - Eksisterende repository og full Git-historikk er bevart.
 - Ny aktiv clone er opprettet under den lokale `Codex Projects`-mappen på Mac
   nummer 2 og registrert som Git-prosjekt i Codex.
