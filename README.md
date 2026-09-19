@@ -168,6 +168,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-19**
 
+**Nytt bildeforslag 2026-09-19:** Stavros ga flere autentiske ansikts- og
+klinikkbilder som referanser. En ny variant for den neste, skjulte artikkelen
+er laget fra hans ekte ultralydfoto `_K015288.JPG`, med de andre fotoene som
+identitetsreferanser. Resultat: `images/web/aktuelt-17-stavros-v2.jpg`
+(1400 × 933), med mer nøytralt lys og gjenkjennelig arbeidsstilling. Dette er
+fortsatt et KI-redigert bildeforslag: Stavros må vurdere ansiktslikhet, den
+synlige House of Health-logoen og klinisk troverdighet før bildet tas i bruk.
+Verken artikkelutkast, publiseringsstatus eller nyhetsbrev er endret.
+
 **Bildeutkast for neste artikkel 2026-09-19:** Til «Injeksjonsbehandling –
 presisjon, riktig dose og rehabilitering avgjør» er det laget et
 fotorealistisk, digitalt komposittbilde der Stavros er synlig ved
@@ -588,7 +597,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (nåværende); `aktuelt-17-stavros.jpg` (komposittforslag til godkjenning) | ☐ |
+| 1 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (nåværende); `aktuelt-17-stavros.jpg` og `aktuelt-17-stavros-v2.jpg` (bildeforslag til godkjenning) | ☐ |
 | 2 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
 | 3 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
 | 4 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
