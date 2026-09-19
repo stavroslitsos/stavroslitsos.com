@@ -168,6 +168,16 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-19**
 
+**Publisering 2026-09-19:** Bursitt-artikkelen er live på norsk og engelsk.
+Etter ønske fra Stavros er artikkelbildet byttet til et fotorealistisk
+komposittbilde basert på hans eget portrett og klinikkbildet. Ny fil:
+`images/web/aktuelt-15-stavros.jpg` (1400 × 933), brukt i artikkelkort,
+artikkel og delingsmetadata; tidligere `aktuelt-15.jpg` er bevart, men ikke
+lenger i bruk. Fremmede logoer er fjernet. Nyhetsbrev til alle aktive
+abonnenter er foreløpig ikke sendt; ved kontroll i MailerLite 2026-09-19 var
+det **350 aktive abonnenter**. Stavros har bekreftet utsending når nytt bilde
+er klart. Bruk malen «Artikkel-teaser (bilde + tekst + knapp)» på norsk.
+
 **Artikkelutkast 2026-09-19:**
 - Stavros presiserte at de fem etterfølgende videoene hver skulle ha sin egen artikkel. Den uønskede tilføyelsen om brusk og smerte i det eldre kneutkastet er derfor fjernet igjen. Fem selvstendige NO/EN-artikler er laget i oppgitt rekkefølge, hver med original tekst, seks selvstendig verifiserte fagkilder og eget ubrukt illustrasjonsbilde (`aktuelt-20.jpg`–`aktuelt-24.jpg`). Hypoteser og behandlingspåstander fra videoene er faglig nyansert. Alle ti sider er skjulte utkast; ingen nyhetsbrev er sendt.
 - Ny pasientrettet artikkel laget fra videoen «When the X-ray Says “Normal knee” — But the Knee Isn't»: «Normalt røntgenbilde, men vondt i kneet?» og egen engelsk versjon. Videoens budskap er kontrollert mot seks selvstendige fagkilder. Viktig korreksjon: BMJ-studien av røntgenfriske knær fant bruskforandringer på MR hos 69 %, ikke videoens cirka 80 %. MR-funn forekom også hos personer uten smerte. Påstanden om at osteofytter er et entydig beskyttende tegn er ikke gjengitt som etablert fakta.
@@ -575,7 +585,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☑ 19.09, nyhetsbrev ikke sendt ennå |
+| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15-stavros.jpg` (Stavros undersøker skulder) | ☑ 19.09, nyhetsbrev ikke sendt ennå |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
