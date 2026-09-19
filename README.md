@@ -166,7 +166,12 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-09-10**
+**Sist oppdatert: 2026-09-19**
+
+**Artikkelutkast 2026-09-19:**
+- Ny pasientrettet artikkel laget fra videoen «When the X-ray Says “Normal knee” — But the Knee Isn't»: «Normalt røntgenbilde, men vondt i kneet?» og egen engelsk versjon. Videoens budskap er kontrollert mot seks selvstendige fagkilder. Viktig korreksjon: BMJ-studien av røntgenfriske knær fant bruskforandringer på MR hos 69 %, ikke videoens cirka 80 %. MR-funn forekom også hos personer uten smerte. Påstanden om at osteofytter er et entydig beskyttende tegn er ikke gjengitt som etablert fakta.
+- Nytt illustrasjonsbilde `images/web/aktuelt-19.jpg` (1400 × 933), uten logoer eller personopplysninger.
+- Begge språkversjoner er skjulte utkast med `noindex, nofollow`, uten artikkelkort, forsidelenke eller sitemap-oppføring. Lagt nederst i den aktive publiseringskøen. Ingen nyhetsbrev er sendt.
 
 **Nordlys Webstudio 2026-09-10:**
 - Den selvstendige salgssiden er flyttet ut av StavrosLitsos.com og publiseres
@@ -559,6 +564,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
 | 2 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
 | 3 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
+| 4 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
