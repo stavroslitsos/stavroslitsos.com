@@ -169,6 +169,7 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 **Sist oppdatert: 2026-09-19**
 
 **Artikkelutkast 2026-09-19:**
+- Fem oppfølgingsvideoer er gjennomgått i oppgitt rekkefølge. Tre gjaldt kne; skulder- og setesmertevideoene ble ikke blandet inn i kneartikkelen. NO/EN-utkastet er supplert med en nøktern forklaring om smerte fra leddhinne og bein under brusken, kontrollert mot to ytterligere fagkilder (nå åtte selvstendige støttekilder). Påstander om at én MR-forandring alltid forklarer smerten eller at målrettede injeksjoner er overlegne, er ikke tatt inn. Artikkelen er fortsatt skjult utkast.
 - Ny pasientrettet artikkel laget fra videoen «When the X-ray Says “Normal knee” — But the Knee Isn't»: «Normalt røntgenbilde, men vondt i kneet?» og egen engelsk versjon. Videoens budskap er kontrollert mot seks selvstendige fagkilder. Viktig korreksjon: BMJ-studien av røntgenfriske knær fant bruskforandringer på MR hos 69 %, ikke videoens cirka 80 %. MR-funn forekom også hos personer uten smerte. Påstanden om at osteofytter er et entydig beskyttende tegn er ikke gjengitt som etablert fakta.
 - Nytt illustrasjonsbilde `images/web/aktuelt-19.jpg` (1400 × 933), uten logoer eller personopplysninger.
 - Begge språkversjoner er skjulte utkast med `noindex, nofollow`, uten artikkelkort, forsidelenke eller sitemap-oppføring. Lagt nederst i den aktive publiseringskøen. Ingen nyhetsbrev er sendt.
