@@ -21,3 +21,9 @@ velges eller behandles. Løpende status ligger i `README.md`.
    Canva-designet til papirkurven. Papirkurven skal ikke tømmes.
 7. Oppdater alt-tekst på både norsk og engelsk slik at den beskriver bildet
    korrekt og naturlig.
+8. Når Stavros vises med synlig T-skjorte eller poloskjorte i et redigert bilde,
+   skal skjorten ha en tydelig, korrekt House of Health-logo. Behold en ekte
+   logo som allerede finnes, eller bruk en verifisert logofil ved innsetting.
+   Ikke finn på eller feilstav en logo med bildegenerering. Hvis korrekt logo
+   ikke er tilgjengelig, avklar med Stavros før bildet publiseres. Dette gjelder
+   fremtidige bilder; eksisterende publiserte bilder endres ikke automatisk.

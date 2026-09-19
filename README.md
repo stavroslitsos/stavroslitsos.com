@@ -168,6 +168,12 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-19**
 
+**Ny fast bilderegel 2026-09-19:** På fremtidige redigerte bilder der Stavros
+har synlig T-skjorte/polo, skal korrekt House of Health-logo være på skjorten.
+Bruk verifisert logo, ikke AI-generert etterligning. Se `IMAGE_RULES.md`.
+Det nå publiserte bursitt-bildet er ikke endret i denne omgangen, og
+nyhetsbrevutkastet er fortsatt ikke sendt.
+
 **Publisering 2026-09-19:** Bursitt-artikkelen er live på norsk og engelsk.
 Etter ønske fra Stavros er artikkelbildet byttet til et fotorealistisk
 komposittbilde basert på hans eget portrett og klinikkbildet. Ny fil:
