@@ -171,22 +171,18 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 **Ny fast bilderegel 2026-09-19:** På fremtidige redigerte bilder der Stavros
 har synlig T-skjorte/polo, skal korrekt House of Health-logo være på skjorten.
 Bruk verifisert logo, ikke AI-generert etterligning. Se `IMAGE_RULES.md`.
-Det nå publiserte bursitt-bildet er ikke endret i denne omgangen, og
-nyhetsbrevutkastet er fortsatt ikke sendt.
+Det nå publiserte bursitt-bildet er ikke endret i denne omgangen.
 
 **Publisering 2026-09-19:** Bursitt-artikkelen er live på norsk og engelsk.
 Etter ønske fra Stavros er artikkelbildet byttet til et fotorealistisk
 komposittbilde basert på hans eget portrett og klinikkbildet. Ny fil:
 `images/web/aktuelt-15-stavros.jpg` (1400 × 933), brukt i artikkelkort,
 artikkel og delingsmetadata; tidligere `aktuelt-15.jpg` er bevart, men ikke
-lenger i bruk. Fremmede logoer er fjernet. Nyhetsbrev til alle aktive
-abonnenter er foreløpig ikke sendt; ved kontroll i MailerLite 2026-09-19 var
-det **350 aktive abonnenter**. Kampanjeutkastet «Ny artikkel: Bursitt –
-september 2026» er opprettet fra malen «Artikkel-teaser (bilde + tekst +
-knapp)», på norsk med nytt bilde, artikkellenke og alle 350 aktive mottakere.
-Kampanjen står på siste utsendingssteg, men **Send now er ikke trykket**;
-venter på handlingstidsbekreftelse fra Stavros. Kampanje-ID:
-`199075362491073711`.
+lenger i bruk. Fremmede logoer er fjernet. Nyhetsbrevet «Ny artikkel: Bursitt –
+september 2026» ble sendt via MailerLite **2026-09-19** til **350 mottakere**.
+Det brukte malen «Artikkel-teaser (bilde + tekst + knapp)», på norsk med nytt
+bilde og lenke til artikkelen. MailerLite bekreftet status «Sent» og
+«Recipients 350». Kampanje-ID: `199075362491073711`.
 
 **Artikkelutkast 2026-09-19:**
 - Stavros presiserte at de fem etterfølgende videoene hver skulle ha sin egen artikkel. Den uønskede tilføyelsen om brusk og smerte i det eldre kneutkastet er derfor fjernet igjen. Fem selvstendige NO/EN-artikler er laget i oppgitt rekkefølge, hver med original tekst, seks selvstendig verifiserte fagkilder og eget ubrukt illustrasjonsbilde (`aktuelt-20.jpg`–`aktuelt-24.jpg`). Hypoteser og behandlingspåstander fra videoene er faglig nyansert. Alle ti sider er skjulte utkast; ingen nyhetsbrev er sendt.
@@ -576,7 +572,7 @@ måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
 legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 
 **Sist publisert:** «Bursitt – som oftest sekundært til overbelastning av senen»
-den **19.09.2026**. Nyhetsbrevstatus oppdateres etter utsending.
+den **19.09.2026**. Nyhetsbrev sendt samme dag til 350 mottakere.
 **Neste ordinære publiseringsmåned: oktober 2026.** Køen under
 er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
@@ -595,7 +591,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15-stavros.jpg` (Stavros undersøker skulder) | ☑ 19.09, nyhetsbrev ikke sendt ennå |
+| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15-stavros.jpg` (Stavros undersøker skulder) | ☑ 19.09, nyhetsbrev sendt til 350 mottakere |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
