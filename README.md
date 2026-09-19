@@ -175,8 +175,12 @@ komposittbilde basert på hans eget portrett og klinikkbildet. Ny fil:
 artikkel og delingsmetadata; tidligere `aktuelt-15.jpg` er bevart, men ikke
 lenger i bruk. Fremmede logoer er fjernet. Nyhetsbrev til alle aktive
 abonnenter er foreløpig ikke sendt; ved kontroll i MailerLite 2026-09-19 var
-det **350 aktive abonnenter**. Stavros har bekreftet utsending når nytt bilde
-er klart. Bruk malen «Artikkel-teaser (bilde + tekst + knapp)» på norsk.
+det **350 aktive abonnenter**. Kampanjeutkastet «Ny artikkel: Bursitt –
+september 2026» er opprettet fra malen «Artikkel-teaser (bilde + tekst +
+knapp)», på norsk med nytt bilde, artikkellenke og alle 350 aktive mottakere.
+Kampanjen står på siste utsendingssteg, men **Send now er ikke trykket**;
+venter på handlingstidsbekreftelse fra Stavros. Kampanje-ID:
+`199075362491073711`.
 
 **Artikkelutkast 2026-09-19:**
 - Stavros presiserte at de fem etterfølgende videoene hver skulle ha sin egen artikkel. Den uønskede tilføyelsen om brusk og smerte i det eldre kneutkastet er derfor fjernet igjen. Fem selvstendige NO/EN-artikler er laget i oppgitt rekkefølge, hver med original tekst, seks selvstendig verifiserte fagkilder og eget ubrukt illustrasjonsbilde (`aktuelt-20.jpg`–`aktuelt-24.jpg`). Hypoteser og behandlingspåstander fra videoene er faglig nyansert. Alle ti sider er skjulte utkast; ingen nyhetsbrev er sendt.
