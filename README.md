@@ -169,7 +169,7 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 **Sist oppdatert: 2026-09-19**
 
 **Artikkelutkast 2026-09-19:**
-- Fem oppfølgingsvideoer er gjennomgått i oppgitt rekkefølge. Tre gjaldt kne; skulder- og setesmertevideoene ble ikke blandet inn i kneartikkelen. NO/EN-utkastet er supplert med en nøktern forklaring om smerte fra leddhinne og bein under brusken, kontrollert mot to ytterligere fagkilder (nå åtte selvstendige støttekilder). Påstander om at én MR-forandring alltid forklarer smerten eller at målrettede injeksjoner er overlegne, er ikke tatt inn. Artikkelen er fortsatt skjult utkast.
+- Stavros presiserte at de fem etterfølgende videoene hver skulle ha sin egen artikkel. Den uønskede tilføyelsen om brusk og smerte i det eldre kneutkastet er derfor fjernet igjen. Fem selvstendige NO/EN-artikler er laget i oppgitt rekkefølge, hver med original tekst, seks selvstendig verifiserte fagkilder og eget ubrukt illustrasjonsbilde (`aktuelt-20.jpg`–`aktuelt-24.jpg`). Hypoteser og behandlingspåstander fra videoene er faglig nyansert. Alle ti sider er skjulte utkast; ingen nyhetsbrev er sendt.
 - Ny pasientrettet artikkel laget fra videoen «When the X-ray Says “Normal knee” — But the Knee Isn't»: «Normalt røntgenbilde, men vondt i kneet?» og egen engelsk versjon. Videoens budskap er kontrollert mot seks selvstendige fagkilder. Viktig korreksjon: BMJ-studien av røntgenfriske knær fant bruskforandringer på MR hos 69 %, ikke videoens cirka 80 %. MR-funn forekom også hos personer uten smerte. Påstanden om at osteofytter er et entydig beskyttende tegn er ikke gjengitt som etablert fakta.
 - Nytt illustrasjonsbilde `images/web/aktuelt-19.jpg` (1400 × 933), uten logoer eller personopplysninger.
 - Begge språkversjoner er skjulte utkast med `noindex, nofollow`, uten artikkelkort, forsidelenke eller sitemap-oppføring. Lagt nederst i den aktive publiseringskøen. Ingen nyhetsbrev er sendt.
@@ -566,6 +566,11 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 2 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
 | 3 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
 | 4 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
+| 5 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
+| 6 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne) | ☐ |
+| 7 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
+| 8 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
+| 9 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
