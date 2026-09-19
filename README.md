@@ -555,22 +555,27 @@ måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
 `noindex`, legg til artikkelkort på `aktuelt.html` + `en/aktuelt.html`,
 legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 
-**Sist publisert:** «Diagnostisk usikkerhet – hvorfor presis diagnostikk og
-tydelig kommunikasjon endrer forløpet» den **23.08.2026** (nyhetsbrev sendt
-samme dag). **Neste ordinære publiseringsmåned: september 2026.** Køen under
+**Sist publisert:** «Bursitt – som oftest sekundært til overbelastning av senen»
+den **19.09.2026**. Nyhetsbrevstatus oppdateres etter utsending.
+**Neste ordinære publiseringsmåned: oktober 2026.** Køen under
 er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☐ |
-| 2 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
-| 3 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
-| 4 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
-| 5 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
-| 6 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne) | ☐ |
-| 7 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
-| 8 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
-| 9 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
+| 1 | Injeksjonsbehandling – presisjon, riktig dose og rehabilitering avgjør | `injeksjonsbehandling-presisjon-dose-rehabilitering` | `aktuelt-17.jpg` (ultralydundersøkelse av kne) | ☐ |
+| 2 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
+| 3 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
+| 4 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
+| 5 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne) | ☐ |
+| 6 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
+| 7 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
+| 8 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
+
+### Publiseringskø – FERDIG, publisert 2026-09-19
+
+| # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
+|---|---|---|---|---|
+| 1 | Bursitt – som oftest sekundært til overbelastning av senen | `bursitt-symptom-ikke-egen-diagnose` | `aktuelt-15.jpg` (skulderrehab) | ☑ 19.09, nyhetsbrev ikke sendt ennå |
 
 ### Publiseringskø – FERDIG, publisert 2026-08-23
 
@@ -995,9 +1000,7 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    URL" i MailerLites filbehandler** (den live URL-en til bildet på
    stavroslitsos.com), siden native "My device"-filopplasting ikke lar
    seg styre fra nettleserautomatisering.
-6. **Publiseringskøen har 2 skjulte utkast** («Bursitt – som oftest
-   sekundært til overbelastning av senen» og «Injeksjonsbehandling –
-   presisjon, riktig dose og rehabilitering avgjør», se tabellen
+6. **Publiseringskøen har 8 skjulte utkast** (se tabellen
    «Publiseringskø – aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
    fortsatt for *nye* artikler som skrives fremover: legg dem inn som
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til
