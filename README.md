@@ -168,6 +168,13 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-19**
 
+**Økten avsluttet 2026-09-19:** Bursitt-artikkelen er publisert med redigert
+bilde, og nyhetsbrevet er sendt til 350 mottakere. Neste artikkel i køen er
+injeksjonsartikkelen. Den har nå det godkjente bildeforslaget på begge språk,
+men er fortsatt et skjult utkast. Neste gang: kontroller logoen mot ekte
+House of Health-kilde før eventuell publisering; publiser og send nyhetsbrev
+først når Stavros uttrykkelig ber om det.
+
 **Bilde godkjent for skjult utkast 2026-09-19:** Stavros svarte «ok» på det
 nye bildeforslaget. `aktuelt-17-stavros-v2.jpg` er nå lagt inn i den norske
 og engelske injeksjonsartikkelen som synlig illustrasjon og som bilde i
@@ -181,9 +188,9 @@ klinikkbilder som referanser. En ny variant for den neste, skjulte artikkelen
 er laget fra hans ekte ultralydfoto `_K015288.JPG`, med de andre fotoene som
 identitetsreferanser. Resultat: `images/web/aktuelt-17-stavros-v2.jpg`
 (1400 × 933), med mer nøytralt lys og gjenkjennelig arbeidsstilling. Dette er
-fortsatt et KI-redigert bildeforslag: Stavros må vurdere ansiktslikhet, den
-synlige House of Health-logoen og klinisk troverdighet før bildet tas i bruk.
-Dette var først et bildeforslag; se godkjenning og innsetting over.
+fortsatt et KI-redigert bilde. Stavros godkjente forslaget for det skjulte
+utkastet; den synlige logoen må kontrolleres mot ekte House of Health-kilde
+før offentlig publisering.
 
 **Bildeutkast for neste artikkel 2026-09-19:** Til «Injeksjonsbehandling –
 presisjon, riktig dose og rehabilitering avgjør» er det laget et
