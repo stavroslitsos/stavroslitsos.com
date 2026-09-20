@@ -166,7 +166,21 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-09-19**
+**Sist oppdatert: 2026-09-20**
+
+**Bildekorrigering 2026-09-20:** Det feilplasserte kneinjeksjonsbildet er
+fjernet fra brødteksten i den publiserte bursitt-artikkelen på norsk og
+engelsk. To nye, originale KI-genererte skulderillustrasjoner viser
+ultralydveiledet injeksjon i slimposen og forholdet mellom probe, nål,
+slimpose, sene og knokkel. Bildene ligger i `images/web/` som
+`bursitt-skulder-bursa-ultralyd-illustrasjon.jpg` og
+`bursitt-skulder-bursa-ultralyd-snitt.jpg`. Bildetekstene merker dem som
+KI-genererte og lenker til faglige referanser. Vedleggene fra Mayo Clinic
+og Molini mfl. ble ikke kopiert fordi gjenbruksrett ikke var dokumentert.
+`IMAGE_RULES.md` beskriver nå Google-bildesøk som startpunkt for relevante
+bilder i artikkeltekst, med kontroll av opphav og bruksrett før gjenbruk.
+Publiseringskøen er uendret: injeksjonsartikkelen er neste, fortsatt skjult
+utkast. Denne rettelsen skal ikke utløse et nytt nyhetsbrev.
 
 **Økten avsluttet 2026-09-19:** Bursitt-artikkelen er publisert med redigert
 bilde, og nyhetsbrevet er sendt til 350 mottakere. Neste artikkel i køen er

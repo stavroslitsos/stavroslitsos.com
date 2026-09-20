@@ -27,3 +27,16 @@ velges eller behandles. Løpende status ligger i `README.md`.
    Ikke finn på eller feilstav en logo med bildegenerering. Hvis korrekt logo
    ikke er tilgjengelig, avklar med Stavros før bildet publiseres. Dette gjelder
    fremtidige bilder; eksisterende publiserte bilder endres ikke automatisk.
+9. For bilder lenger inne i artikkelteksten: start med et presist, relevant
+   Google-bildesøk etter artikkelens konkrete tema og anatomi. Gå videre til
+   den opprinnelige nettsiden, kontroller at motivet faktisk illustrerer
+   teksten, og undersøk bruksretten før bildet lastes opp. Et funn i Google
+   og en kildehenvisning gir ikke i seg selv rett til å kopiere bildet. Bruk
+   bare egne bilder, bilder med dokumentert passende lisens/tillatelse eller
+   en ny, original illustrasjon. Hvis originalen ikke kan gjenbrukes, kan
+   den lenkes som faglig kilde uten å kopieres.
+10. Gi hvert slikt bilde en kort, korrekt bildetekst rett under: hva det
+    viser, original kilde/lenke og opphavsperson/lisens når relevant. Merk
+    egen KI-generert illustrasjon tydelig som det; oppgi eventuelle faglige
+    referanser som referanser, ikke som eier av det nye bildet. Skriv
+    tilsvarende bildetekst og presis alt-tekst i begge språkversjoner.
