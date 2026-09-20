@@ -30,4 +30,7 @@ publiseringskø ligger i `README.md`.
    README. Nyhetsbrev sendes samme dag bare når Stavros har autorisert det.
 10. Nyhetsbrev er som standard på norsk. Gjenbruk MailerLite-malen
     «Artikkel-teaser (bilde + tekst + knapp)».
-
+11. Ikke legg «Se tjenester»/«Book time» (eller engelske ekvivalenter) som
+    egen knapperad etter «Slik jobber jeg» i fagartikler. Lesere finner
+    Tjenester og Booking i den faste toppmenyen. Dette gjelder også skjulte
+    utkast; behold vanlige navigasjonslenker i toppmeny og footer.

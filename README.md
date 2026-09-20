@@ -168,6 +168,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-20**
 
+**Roligere artikkelavslutning 2026-09-20:** Den avsluttende raden med «Se
+tjenester» og «Book time» er fjernet fra alle 24 norske og 24 engelske
+fagartikler, både publiserte innlegg og skjulte utkast. «Slik jobber jeg»
+og kildeseksjonen er beholdt; toppmenyens Tjenester/Booking og ordinær
+footer-navigasjon er urørt. `ARTICLE_RULES.md` presiserer at slike
+knapperader ikke skal legges til i fremtidige fagartikler. Ingen utkast er
+publisert og ingen nyhetsbrev er sendt. Den aktive publiseringskøen er
+uendret.
+
 **Bildekorrigering 2026-09-20:** Det feilplasserte kneinjeksjonsbildet er
 fjernet fra brødteksten i den publiserte bursitt-artikkelen på norsk og
 engelsk. To nye, originale KI-genererte skulderillustrasjoner viser
