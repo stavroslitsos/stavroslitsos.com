@@ -168,6 +168,13 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-20**
 
+**Biografiportrett korrigert 2026-09-20:** Den delvis avkuttede House of
+Health-logoen øverst til høyre er fjernet fra visningen ved et tettere
+stående utsnitt av Stavros' originalfoto. Nytt bilde:
+`images/web/biografi-portrett-utsnitt.jpg` (720 × 900), brukt på norsk og
+engelsk biografiside. Logoen på poloskjorten er bevart. Den tidligere
+bildefilen er beholdt, og øvrig innhold og publiseringskø er uendret.
+
 **Roligere artikkelavslutning 2026-09-20:** Den avsluttende raden med «Se
 tjenester» og «Book time» er fjernet fra alle 24 norske og 24 engelske
 fagartikler, både publiserte innlegg og skjulte utkast. «Slik jobber jeg»
