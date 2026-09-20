@@ -168,6 +168,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-09-20**
 
+**Biografiportrett midtstilt 2026-09-20:** Etter tilbakemelding fra Stavros
+er portrettet KI-redigert og justert til et litt romsligere, sentrert stående
+utsnitt med omtrent likt hvitt felt på begge sider. Den separate
+hjørnelogoen er fjernet; den ekte House of Health-logoen på poloskjorten
+er beholdt. Nytt bilde
+`images/web/biografi-portrett-midtstilt.jpg` (960 × 1200) brukes på norsk og
+engelsk biografiside. Forrige utsnitt er beholdt, og publiseringskøen er
+uendret.
+
 **Biografiportrett korrigert 2026-09-20:** Den delvis avkuttede House of
 Health-logoen øverst til høyre er fjernet fra visningen ved et tettere
 stående utsnitt av Stavros' originalfoto. Nytt bilde:
