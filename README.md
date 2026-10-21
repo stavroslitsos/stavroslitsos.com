@@ -166,7 +166,19 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-09-20**
+**Sist oppdatert: 2026-10-21**
+
+**Codex-oppgaver samlet 2026-10-21:** Prosjektmanifestet har nå fire faste
+oppgaver i denne rekkefølgen: `stavroslitsos.com – Nettside og publisering`,
+`House of Health - Side, App, Konsept`, `Nordlys Webstudio` og
+`Nordlys Journal`. Dette er en visuell og operativ samling under Codex-prosjektet
+`stavroslitsos.com`; kildefilene er ikke flyttet eller kopiert. House of Health
+beholder sin autoritative private Git-kilde i `App-HoH`, mens Nordlys Webstudio
+og Nordlys Journal beholder sine private kilder og tester i `Work-automation`
+og sine avgrensede offentlige publiseringsfiler i `stavroslitsos/nordlys-webstudio`.
+HouseOfHealth.no ligger fortsatt i Squarespace, ikke som nettsidekilde i Git.
+Ingen nettsideinnhold eller offentlig publisering ble endret under denne
+oppgaveavstemmingen.
 
 **Biografiportrett midtstilt 2026-09-20:** Etter tilbakemelding fra Stavros
 er portrettet KI-redigert og justert til et litt romsligere, sentrert stående
