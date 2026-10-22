@@ -168,6 +168,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-22**
 
+**Eget MailerLite-sporingsdomene 2026-10-22:** Etter at Outlook Safe Links
+blokkerte MailerLites delte `clicks.mlsend`-mellomlenke i oktoberutsendelsen,
+er domenejustering satt opp og aktivert for fremtidige kampanjer. Domeneshop
+har A-, MX- og TXT-oppføringer for `newsletter.stavroslitsos.com`, DNS er
+verifisert, og MailerLite viser grønn/aktiv «Domain alignment» på det
+autentiserte hoveddomenet. Fremtidige kampanjelenker og e-posthoder skal dermed
+bruke Stavros' eget underdomene i stedet for det delte MailerLite-domenet. Den
+allerede sendte kampanjen kan ikke omskrives hos mottakerne.
+
 **Publisering 2026-10-22:** «Injeksjonsbehandling – presisjon, riktig dose
 og rehabilitering avgjør» er publisert på norsk og engelsk. `noindex` er
 fjernet, begge språkversjonene er lagt på Faglig og i sitemap, og artikkelen
