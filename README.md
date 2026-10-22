@@ -168,6 +168,23 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-22**
 
+**Instagram Story 2026-10-22:** En ferdig 1080 × 1920-story for den nye
+injeksjonsartikkelen er planlagt i Metricool for automatisk publisering på
+Instagram-kontoen `@stavroslitsos` kl. 15.00 samme dag. Storyen bruker
+`images/web/social/injeksjonsbehandling-story-2026-10-22.jpg`, er registrert
+som Story med `autoPublish` aktivert og henviser til
+«stavroslitsos.com → Faglig» i selve grafikken. Metricool-post-ID:
+`403082686`.
+
+**Outlook-kontroll 2026-10-22:** «Les hele artikkelen» ble testet direkte fra
+den mottatte oktoberutsendelsen i Outlook på web. Outlook Safe Links viser
+fortsatt «Outlook has detected an unsafe link» fordi den allerede sendte
+e-posten peker via MailerLites gamle delte sporingsdomene
+`mbjayyg.clicks.mlsend.com`. Advarselen ble ikke omgått. Dette bekrefter at
+feilen gjelder mellomlenken i den eksisterende kampanjen; den kan ikke
+endres hos mottakerne i ettertid. Domenejusteringen nedenfor gjelder nye
+utsendelser.
+
 **Eget MailerLite-sporingsdomene 2026-10-22:** Etter at Outlook Safe Links
 blokkerte MailerLites delte `clicks.mlsend`-mellomlenke i oktoberutsendelsen,
 er domenejustering satt opp og aktivert for fremtidige kampanjer. Domeneshop
