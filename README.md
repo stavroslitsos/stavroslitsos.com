@@ -168,6 +168,17 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-22**
 
+**Korrigeringsutsendelse 2026-10-22:** Etter Outlook-advarselen ble en ny
+MailerLite-kampanje laget med emnet «Korrigert lenke: Ny fagartikkel om
+injeksjonsbehandling». Klikksporing er slått av, slik at artikkelknappen går
+direkte til `stavroslitsos.com` uten MailerLite-mellomlenke. En test ble sendt
+til `stav.li@hotmail.com` og kontrollert direkte i Outlook: knappen åpnet riktig
+artikkel uten sikkerhetsadvarsel, mens «View in browser» brukte
+`newsletter.stavroslitsos.com`. Kampanjen ble deretter startet mot alle **340
+aktive abonnenter**. MailerLite flyttet den til «Sent» og fjernet den fra
+utboksen, men rapporten viste fortsatt «Sending… 0 / 340» ved siste kontroll,
+uten feilmelding. Kampanje-ID: `202031555229517750`.
+
 **Instagram Story 2026-10-22:** En ferdig 1080 × 1920-story for den nye
 injeksjonsartikkelen er planlagt i Metricool for automatisk publisering på
 Instagram-kontoen `@stavroslitsos` kl. 15.00 samme dag. Storyen bruker
