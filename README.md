@@ -11,6 +11,10 @@ backup og kilde til råmateriale inntil Stavros selv rydder den. Se
 ["Status – hvor arbeidet ble stoppet sist"](#status--hvor-arbeidet-ble-stoppet-sist)
 nederst i denne filen før du starter en ny økt.
 
+Underchatter har varig kontekst i [UNDERCHATTER.md](UNDERCHATTER.md). Les
+registeret og relevant chatnotat ved oppstart. Løpende prosjektstatus og
+publiseringskø vedlikeholdes fortsatt bare i denne README-filen.
+
 ## Filstruktur
 
 - `index.html` — norsk forside; `en/index.html` — engelsk forside

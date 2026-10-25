@@ -40,3 +40,11 @@ skal ikke opprettes.
 Samlet prosjekt- og oppgaverekkefølge står i
 `Work-automation/.codex/workspace-layout.json`. Ved endret oppgaveinndeling:
 oppdater og push begge manifestene etter kontroll av faktisk Codex-visning.
+
+## Varig kontekst for underchatter
+
+Les `UNDERCHATTER.md` og relevant fil i `underchatter/` ved oppstart.
+Oppdater register og chatnotat ved nye beslutninger og før arbeidet avsluttes.
+README er fortsatt eneste kilde til løpende prosjektstatus; chatnotatene
+peker dit og dokumenterer avgrensning og beslutninger. Ingen hemmeligheter
+eller sensitive personopplysninger skal lagres i notatene.
