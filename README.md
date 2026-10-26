@@ -170,7 +170,19 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-22**
+**Sist oppdatert: 2026-10-26**
+
+**Nytt skjult artikkelutkast 2026-10-26:** «Vedvarende smerte – mer enn
+hjernen og nervesystemet» er skrevet på norsk og engelsk. Artikkelen tar
+utgangspunkt i Loggia sin oversiktsartikkel i *Pain* (2024) og bygger på sju
+verifiserte støttekilder om TSPO-PET, fibromyalgi, vedvarende korsryggsmerte,
+migrene, sentral sensitisering og IASP sin smertedefinisjon. Hovednyanseringen
+er tydelig: endret TSPO-signal er et forskningsfunn på gruppenivå, ikke en
+individuell diagnose eller bevis for at inflammasjon alene forårsaker smerte.
+Et nytt KI-generert illustrasjonsbilde ligger som `images/web/aktuelt-25.jpg`
+(1400 × 933), uten tekst eller logoer. Begge språkversjoner har `noindex,
+nofollow`, er ikke lenket fra Faglig/forsiden og står ikke i sitemap. Ingen
+publisering eller nyhetsbrev er gjort.
 
 **Korrigeringsutsendelse 2026-10-22:** Etter Outlook-advarselen ble en ny
 MailerLite-kampanje laget med emnet «Korrigert lenke: Ny fagartikkel om
@@ -723,6 +735,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 5 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
 | 6 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
 | 7 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
+| 8 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-22
 
@@ -1159,7 +1172,7 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    URL" i MailerLites filbehandler** (den live URL-en til bildet på
    stavroslitsos.com), siden native "My device"-filopplasting ikke lar
    seg styre fra nettleserautomatisering.
-6. **Publiseringskøen har 7 skjulte utkast** (se tabellen
+6. **Publiseringskøen har 8 skjulte utkast** (se tabellen
    «Publiseringskø – aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
    fortsatt for *nye* artikler som skrives fremover: legg dem inn som
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til

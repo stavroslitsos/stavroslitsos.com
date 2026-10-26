@@ -10,10 +10,11 @@
 - **Relevant kontekst og filer:** Les `AGENTS.md` og hele `README.md` ved
   oppstart, `ARTICLE_RULES.md` før artikkelarbeid og `IMAGE_RULES.md` før
   bildearbeid. README er autoritativ for status og kø; ikke dupliser køen her.
-- **Status:** Oppstartsreglene og README er lest. Git fetch gjennomført;
-  lokal `main` var lik `origin/main`. Eksisterende lokal endring i
-  `.codex/project-tasks.json` er bevart og holdt utenfor denne dokumentasjonsendringen.
-  Ingen artikkel, nettsideinnhold eller utsending er endret.
-- **Neste steg:** Utfør neste konkrete oppdrag med utgangspunkt i README.
-  Hent med `git pull --ff-only` når arbeidskopien er ren; bevar lokale endringer.
-- **Dato:** 2026-10-25.
+- **Status:** Ny artikkel om vedvarende smerte, immunrelaterte prosesser og
+  helhetlig smerteforståelse er laget på norsk og engelsk med åtte verifiserte
+  fagkilder og nytt KI-generert bilde. Begge sider er skjulte utkast med
+  `noindex, nofollow`; ingen publisering eller utsending er gjort. Den aktive
+  publiseringskøen i README har nå åtte artikler.
+- **Neste steg:** Følg prioriteringen i README. Publiser og send nyhetsbrev
+  først når Stavros uttrykkelig ber om det for den konkrete artikkelen.
+- **Dato:** 2026-10-26.
