@@ -170,7 +170,21 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-26**
+**Sist oppdatert: 2026-10-28**
+
+**Nytt skjult artikkelutkast 2026-10-28:** «Aktiv med hofteprotese – hvor
+forsiktig må du være?» er skrevet på norsk og engelsk. Artikkelen tar
+utgangspunkt i Jakob Vangen Nordbø og medarbeideres studie fra Nasjonalt
+Register for Leddproteser og Ahus sin norske formidling av funnene. Den bygger
+videre på nyere oversikter om aktivitet, retur til idrett og holdbarheten til
+moderne hofteproteser. Hovednyanseringen er tydelig: høy aktivitet var ikke
+forbundet med økt risiko for revisjon på grunn av aseptisk løsning, men den
+retrospektive observasjonsstudien beviser ikke at aktivitet beskytter protesen.
+30-årstallet på 92 prosent er en modellert ekstrapolasjon fra registerdata, ikke
+direkte 30-årsoppfølging av alle protesene. Et nytt KI-generert bilde ligger som
+`images/web/aktuelt-26.jpg` (1400 × 933), uten tekst eller logoer. Begge
+språkversjoner har `noindex, nofollow`, er ikke lenket fra Faglig/forsiden og
+står ikke i sitemap. Ingen publisering eller nyhetsbrev er gjort.
 
 **Nytt skjult artikkelutkast 2026-10-26:** «Vedvarende smerte – mer enn
 hjernen og nervesystemet» er skrevet på norsk og engelsk. Artikkelen tar
@@ -736,6 +750,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 6 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
 | 7 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
 | 8 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
+| 9 | Aktiv med hofteprotese – hvor forsiktig må du være? | `aktiv-med-hofteprotese-trening-og-proteselosning` | `aktuelt-26.jpg` (aktivitet med illustrert hofteprotese) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-22
 
