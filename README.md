@@ -170,7 +170,22 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-28**
+**Sist oppdatert: 2026-10-29**
+
+**Vedvarende-smerteutkast utvidet 2026-10-29:** Det skjulte norske og engelske
+utkastet «Vedvarende smerte – mer enn hjernen og nervesystemet» er supplert med
+Hodges og medarbeideres nye fagartikkel om terminologien rundt sentral
+sensitisering og en systematisk oversikt over spørreskjemaer. Ny tekst skiller
+tydelig mellom fysiologisk mekanisme, klinisk arbeidshypotese og nociplastisk
+smerte, og presiserer at sentral sensitisering ikke er en klinisk diagnose.
+Indirekte smertetester og Central Sensitization Inventory beskrives med sine
+begrensninger. Relevante innvendinger fra den vedlagte Facebook-diskusjonen er
+anonymisert og presentert som kliniske perspektiver, ikke som forskningsbelegg.
+«Slik jobber jeg» er utvidet med systematisk utredning og revurdering før en
+sentral mekanisme eventuelt brukes som arbeidshypotese. Artikkelen har nå ti
+kontrollerte fagkilder. Begge språkversjoner beholder `noindex, nofollow`, er
+fortsatt ikke lenket fra Faglig/forsiden og står ikke i sitemap. Køplasseringen
+er uendret, og ingen publisering eller nyhetsbrev er gjort.
 
 **Nytt skjult artikkelutkast 2026-10-28:** «Aktiv med hofteprotese – hvor
 forsiktig må du være?» er skrevet på norsk og engelsk. Artikkelen tar
