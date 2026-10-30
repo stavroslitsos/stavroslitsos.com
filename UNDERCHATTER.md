@@ -8,7 +8,7 @@ synkronisering eller gjenoppretting av Codex sin chatvisning.
 
 | Navn | Formål | Kontekst | Status | Dato |
 |---|---|---|---|---|
-| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | Ny PRP-artikkel laget som skjult NO/EN-utkast; køen har 10 artikler | 2026-10-30 |
+| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | Artikkel 4 om rask kneartrose er faglig utvidet som skjult NO/EN-utkast; køen har 10 artikler | 2026-10-30 |
 
 Andre faste oppgaver er registrert i `.codex/project-tasks.json`.
 Deres faglige kontekst skal beholdes i de respektive hovedrepositoryene.

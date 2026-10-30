@@ -172,6 +172,20 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-30**
 
+**Kneartroseutkast utvidet 2026-10-30:** Artikkel nummer 4 i køen,
+«Hvorfor utvikler noen knær artrose raskere?», er vesentlig utvidet på norsk
+og engelsk. Den bygger nå på nyere systematiske oversikter og metaanalyser om
+risikofaktorer gjennom livsløpet, artrose etter kneskade, meniskrot og
+ekstrusjon, leddakse og belastning, knestrekkerstyrke og fritidsaktivitet.
+Teksten skiller risiko for at artrose oppstår fra faktorer som kan påvirke
+progresjon, og presiserer at gruppesammenhenger ikke kan forutsi ett
+individuelt forløp. Det eksisterende `images/web/aktuelt-21.jpg` er lagt inn i
+brødteksten med merking som en skjematisk, KI-generert illustrasjon som ikke
+viser en nødvendig lineær utvikling. «Slik jobber jeg» er utvidet med
+systematisk tidslinje, funksjonsundersøkelse, målrettet bildediagnostikk og
+revurdering. Begge språkversjoner beholder `noindex, nofollow`, køplasseringen
+er uendret og ingen publisering eller nyhetsbrev er gjort.
+
 **Nytt skjult PRP-utkast 2026-10-30:** «PRP i muskel- og
 skjelettbehandling – når virker det?» er skrevet på norsk og engelsk. Den nye
 internasjonale Delphi-konsensusen om ortobiologiske behandlinger er
@@ -776,7 +790,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 1 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
 | 2 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
 | 3 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
-| 4 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne) | ☐ |
+| 4 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne; lagt inn i artikkelen) | ☐ |
 | 5 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
 | 6 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
 | 7 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
