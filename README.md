@@ -170,7 +170,23 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-29**
+**Sist oppdatert: 2026-10-30**
+
+**Nytt skjult PRP-utkast 2026-10-30:** «PRP i muskel- og
+skjelettbehandling – når virker det?» er skrevet på norsk og engelsk. Den nye
+internasjonale Delphi-konsensusen om ortobiologiske behandlinger er
+hovedkilde, og Litsos, Diamantopoulos og Molund sin fagfellevurderte narrative
+PRP-oversikt i *Frontiers in Medicine* er et sentralt faglig fundament.
+Artikkelen skiller ekspertkonsensus fra effektstudier og beskriver PRP som et
+mulig andrelinjealternativ ved utvalgte diagnoser etter utilstrekkelig respons
+på strukturert førstelinjebehandling. Ultralydveiledning, preparatinnhold,
+dosering, trening, etterlevelse og systematisk revurdering er integrert, mens
+nullfunn ved blant annet akillestendinopati, ankelartrose og
+placebo-kontrollert lateral epikondylalgi er tydelig omtalt. Et nytt
+KI-generert hovedbilde ligger som `images/web/aktuelt-27.jpg` (1400 × 933),
+uten tekst eller logoer. Begge språkversjoner har `noindex, nofollow`, er ikke
+lenket fra Faglig/forsiden og står ikke i sitemap. Utkastet er lagt som nummer
+10 i publiseringskøen. Ingen publisering eller nyhetsbrev er gjort.
 
 **Vedvarende-smerteutkast utvidet 2026-10-29:** Det skjulte norske og engelske
 utkastet «Vedvarende smerte – mer enn hjernen og nervesystemet» er supplert med
@@ -766,6 +782,7 @@ er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 | 7 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
 | 8 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
 | 9 | Aktiv med hofteprotese – hvor forsiktig må du være? | `aktiv-med-hofteprotese-trening-og-proteselosning` | `aktuelt-26.jpg` (aktivitet med illustrert hofteprotese) | ☐ |
+| 10 | PRP i muskel- og skjelettbehandling – når virker det? | `prp-muskel-skjelettbehandling-nar-virker-det` | `aktuelt-27.jpg` (ultralydveiledet PRP og rehabilitering) | ☐ |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-22
 
@@ -1202,7 +1219,7 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    URL" i MailerLites filbehandler** (den live URL-en til bildet på
    stavroslitsos.com), siden native "My device"-filopplasting ikke lar
    seg styre fra nettleserautomatisering.
-6. **Publiseringskøen har 8 skjulte utkast** (se tabellen
+6. **Publiseringskøen har 10 skjulte utkast** (se tabellen
    «Publiseringskø – aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
    fortsatt for *nye* artikler som skrives fremover: legg dem inn som
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til
