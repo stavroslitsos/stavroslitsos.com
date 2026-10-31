@@ -8,7 +8,7 @@ synkronisering eller gjenoppretting av Codex sin chatvisning.
 
 | Navn | Formål | Kontekst | Status | Dato |
 |---|---|---|---|---|
-| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | Kneartroseartikkelen publiseres 31.10; køen har 9 skjulte utkast; nyhetsbrev er autorisert | 2026-10-31 |
+| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | Kneartroseartikkelen er publisert; nyhetsbrev sendt til 334; køen har 9 skjulte utkast | 2026-10-31 |
 
 Andre faste oppgaver er registrert i `.codex/project-tasks.json`.
 Deres faglige kontekst skal beholdes i de respektive hovedrepositoryene.

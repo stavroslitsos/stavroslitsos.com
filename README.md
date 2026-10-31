@@ -173,14 +173,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-31**
 
-**Publisering startet 2026-10-31:** «Hvorfor utvikler noen knær artrose
-raskere?» er klargjort for offentlig publisering på norsk og engelsk etter
-uttrykkelig beskjed fra Stavros. `noindex` er fjernet, artikkelen er lagt
-øverst på Faglig og i de tre forsideteaserne på begge språk, og begge URL-er
-er lagt i sitemap. Artikkelen er tatt ut av den aktive køen. Nyhetsbrev på
-norsk til alle aktive abonnenter er autorisert og sendes først etter at den
-nye nettsideversjonen er kontrollert live; endelig mottakertall og
-kampanjestatus føres inn etter utsending.
+**Publisert og sendt 2026-10-31:** «Hvorfor utvikler noen knær artrose
+raskere?» er offentlig publisert på norsk og engelsk etter uttrykkelig beskjed
+fra Stavros. `noindex` er fjernet, artikkelen ligger øverst på Faglig og i de
+tre forsideteaserne på begge språk, og begge URL-er er lagt i sitemap.
+Live-versjonen og GitHub Pages-utrullingen er kontrollert. Nyhetsbrevet «Ny
+artikkel: Hvorfor utvikler noen knær artrose raskere? – oktober 2026» ble sendt
+med MailerLite til alle 334 aktive abonnenter. MailerLite-kampanje
+`202868186587071611` står som vellykket sendt, med tom utboks. Artikkelen er
+tatt ut av den aktive køen, som nå har ni skjulte utkast.
 
 **Masterstandard og Dropbox-medieflyt 2026-10-31:** Det er opprettet en ny
 overordnet veileder, `WEBSITE_GUIDE.md`, som samler oppstart, artikkelflyt,
@@ -827,7 +828,7 @@ annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
 |---|---|---|---|---|
-| 1 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (skjematisk illustrasjon av ulike forløp ved kneartrose) | ☑ 31.10, nyhetsbrev autorisert |
+| 1 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (skjematisk illustrasjon av ulike forløp ved kneartrose) | ☑ 31.10, nyhetsbrev sendt til 334 mottakere |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-22
 
