@@ -2,7 +2,8 @@
 
 Denne filen følger prosjektet via Dropbox og GitHub og skal leses før nye
 artikler skrives, publiseres eller sendes som nyhetsbrev. Løpende status og
-publiseringskø ligger i `README.md`.
+publiseringskø ligger i `README.md`. Den samlede arbeidsflyten står i
+`WEBSITE_GUIDE.md`; mediebruk følger `IMAGE_RULES.md`.
 
 1. Skriv originalt fra bunnen. Eksterne lenker og artikler Stavros sender er
    inspirasjon og temapekere, aldri tekst som skal kopieres eller omskrives

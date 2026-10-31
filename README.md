@@ -22,8 +22,9 @@ publiseringskø vedlikeholdes fortsatt bare i denne README-filen.
 - `script.js` — header scroll-state, mobilmeny, sitatkarusell (autoplay + piler/dots)
 - `images/web/` — ferdigbehandlede bilder som brukes av nettsiden og er i Git
 - øvrige filer i `images/` — Dropbox-synkronisert råmateriale, ignorert av Git
+- `WEBSITE_GUIDE.md` — masterstandard og samlet arbeidsflyt for nettsiden
 - `ARTICLE_RULES.md` — faste regler for research, skriving, SEO og publisering
-- `IMAGE_RULES.md` — faste regler for bildevalg og bildebehandling
+- `IMAGE_RULES.md` — faste regler for bilde, video og Dropbox-medieflyt
 - `AGENTS.md` / `CLAUDE.md` — korte oppstartspekere for Codex og Claude
 
 **Seksjonsrekkefølge (identisk med referansen):**
@@ -170,7 +171,21 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-30**
+**Sist oppdatert: 2026-10-31**
+
+**Masterstandard og Dropbox-medieflyt 2026-10-31:** Det er opprettet en ny
+overordnet veileder, `WEBSITE_GUIDE.md`, som samler oppstart, artikkelflyt,
+medievalg, publiseringskontroll, Git og avslutning. `ARTICLE_RULES.md` og
+`IMAGE_RULES.md` er fortsatt de detaljerte fagveilederne. Dropbox-plasseringen
+`/1. stavroslitsos.com/Bilde og Video Content/` er kontrollert og inneholder
+`Kan Brukes/` og `Er Brukt/`. Fremtidige artikler skal først vurdere relevant
+personlig materiale i `Kan Brukes/`; når en fil faktisk er satt inn i begge
+språkversjoner, kontrollert og committet, flyttes originalen til `Er Brukt/`.
+Filer som bare vurderes skal ikke flyttes. Ferdige webkopier lagres fortsatt i
+`images/web/`, mens råfiler aldri committes til det offentlige repositoryet.
+Det er også lagt inn faste krav for video, tilgjengelighet, KI-merking,
+personvern og kontroll på mobil/desktop. `Kan Brukes/` var tom ved kontrollen,
+så ingen Dropbox-filer ble flyttet og ingen nettsideinnhold ble publisert.
 
 **Kneartroseutkast utvidet 2026-10-30:** Artikkel nummer 4 i køen,
 «Hvorfor utvikler noen knær artrose raskere?», er vesentlig utvidet på norsk
