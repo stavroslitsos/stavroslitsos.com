@@ -173,6 +173,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-10-31**
 
+**Publisering startet 2026-10-31:** «Hvorfor utvikler noen knær artrose
+raskere?» er klargjort for offentlig publisering på norsk og engelsk etter
+uttrykkelig beskjed fra Stavros. `noindex` er fjernet, artikkelen er lagt
+øverst på Faglig og i de tre forsideteaserne på begge språk, og begge URL-er
+er lagt i sitemap. Artikkelen er tatt ut av den aktive køen. Nyhetsbrev på
+norsk til alle aktive abonnenter er autorisert og sendes først etter at den
+nye nettsideversjonen er kontrollert live; endelig mottakertall og
+kampanjestatus føres inn etter utsending.
+
 **Masterstandard og Dropbox-medieflyt 2026-10-31:** Det er opprettet en ny
 overordnet veileder, `WEBSITE_GUIDE.md`, som samler oppstart, artikkelflyt,
 medievalg, publiseringskontroll, Git og avslutning. `ARTICLE_RULES.md` og
@@ -795,23 +804,30 @@ måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
 `noindex`, legg til artikkelkort på `aktuelt.html` + `en/aktuelt.html`,
 legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 
-**Sist publisert:** «Injeksjonsbehandling – presisjon, riktig dose og
-rehabilitering avgjør» den **22.10.2026**. Nyhetsbrev sendt samme dag til
-342 mottakere. **Neste ordinære publiseringsmåned: november 2026.** Køen under
-er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
+**Sist publisert:** «Hvorfor utvikler noen knær artrose raskere?» den
+**31.10.2026**, valgt uttrykkelig av Stavros foran den ordinære kørekkefølgen.
+Nyhetsbrev er autorisert og sendes etter kontroll av live-versjonen; endelig
+status føres inn samme dag. **Neste ordinære publiseringsmåned: november
+2026.** Køen under er prioritert ovenfra og ned, med mindre Stavros velger en
+annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
 | 1 | Når PRP møter hyaluronsyre – er kombinasjonen bedre ved kneartrose? | `prp-hyaluronsyre-kombinasjonsbehandling-kneartrose` | `aktuelt-18.jpg` (diagnostisk ultralyd av kne) | ☐ |
 | 2 | Normalt røntgenbilde, men vondt i kneet? | `normalt-rontgenbilde-knesmerter` | `aktuelt-19.jpg` (medisinsk kneillustrasjon) | ☐ |
 | 3 | Kalk i skuldersenen – hva betyr funnet for behandlingen? | `kalk-i-skuldersenen-ultralyd-behandling` | `aktuelt-20.jpg` (kalk ved skuldersene) | ☐ |
-| 4 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (ulike forløp i kne; lagt inn i artikkelen) | ☐ |
-| 5 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
-| 6 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
-| 7 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
-| 8 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
-| 9 | Aktiv med hofteprotese – hvor forsiktig må du være? | `aktiv-med-hofteprotese-trening-og-proteselosning` | `aktuelt-26.jpg` (aktivitet med illustrert hofteprotese) | ☐ |
-| 10 | PRP i muskel- og skjelettbehandling – når virker det? | `prp-muskel-skjelettbehandling-nar-virker-det` | `aktuelt-27.jpg` (ultralydveiledet PRP og rehabilitering) | ☐ |
+| 4 | Bruskslitasje og knesmerter – hvorfor er ikke bildet hele svaret? | `bruskslitasje-og-knesmerter` | `aktuelt-22.jpg` (brusk, bein og leddhinne) | ☐ |
+| 5 | Kneinjeksjoner og menisksmerter – treffer vi riktig problem? | `kneinjeksjon-menisk-og-smertested` | `aktuelt-23.jpg` (klinisk kneillustrasjon) | ☐ |
+| 6 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
+| 7 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
+| 8 | Aktiv med hofteprotese – hvor forsiktig må du være? | `aktiv-med-hofteprotese-trening-og-proteselosning` | `aktuelt-26.jpg` (aktivitet med illustrert hofteprotese) | ☐ |
+| 9 | PRP i muskel- og skjelettbehandling – når virker det? | `prp-muskel-skjelettbehandling-nar-virker-det` | `aktuelt-27.jpg` (ultralydveiledet PRP og rehabilitering) | ☐ |
+
+### Publiseringskø – FERDIG, publisert 2026-10-31
+
+| # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
+|---|---|---|---|---|
+| 1 | Hvorfor utvikler noen knær artrose raskere? | `hvorfor-utvikler-noen-kneartrose-raskt` | `aktuelt-21.jpg` (skjematisk illustrasjon av ulike forløp ved kneartrose) | ☑ 31.10, nyhetsbrev autorisert |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-22
 
