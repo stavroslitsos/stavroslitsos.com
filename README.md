@@ -171,7 +171,15 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-10-31**
+**Sist oppdatert: 2026-11-20**
+
+**Publisering 2026-11-20:** «PRP i muskel- og skjelettbehandling – når
+virker det?» er publisert på norsk og engelsk etter uttrykkelig beskjed fra
+Stavros. `noindex` er fjernet, artikkelen ligger øverst på Faglig og i de tre
+forsideteaserne på begge språk, og begge URL-er er lagt i sitemap. Artikkelen
+er tatt ut av den aktive køen, som nå har åtte skjulte utkast. Nyhetsbrev er
+uttrykkelig autorisert for denne artikkelen og sendes etter kontroll av
+live-versjonen; endelig utsendingsstatus føres inn samme dag.
 
 **Publisert og sendt 2026-10-31:** «Hvorfor utvikler noen knær artrose
 raskere?» er offentlig publisert på norsk og engelsk etter uttrykkelig beskjed
@@ -805,12 +813,11 @@ måneden (fast regel, se øktnotat 2026-08-09 over). Publisering = fjern
 `noindex`, legg til artikkelkort på `aktuelt.html` + `en/aktuelt.html`,
 legg URL-ene i `sitemap.xml`, og send nyhetsbrev til abonnenter samme dag.
 
-**Sist publisert:** «Hvorfor utvikler noen knær artrose raskere?» den
-**31.10.2026**, valgt uttrykkelig av Stavros foran den ordinære kørekkefølgen.
-Nyhetsbrev er autorisert og sendes etter kontroll av live-versjonen; endelig
-status føres inn samme dag. **Neste ordinære publiseringsmåned: november
-2026.** Køen under er prioritert ovenfra og ned, med mindre Stavros velger en
-annen rekkefølge.
+**Sist publisert:** «PRP i muskel- og skjelettbehandling – når virker det?» den
+**20.11.2026**, valgt uttrykkelig av Stavros som nummer 9 i køen. Nyhetsbrev
+er autorisert og sendes etter kontroll av live-versjonen; endelig status føres
+inn samme dag. **Neste ordinære publiseringsmåned: desember 2026.** Køen under
+er prioritert ovenfra og ned, med mindre Stavros velger en annen rekkefølge.
 
 | # | Artikkel (NO) | Fil (slug) | Foreslått bilde | Publisert |
 |---|---|---|---|---|
@@ -822,7 +829,12 @@ annen rekkefølge.
 | 6 | Setesmerter når du sitter – hvorfor er ikke MR alene nok? | `setesmerter-nar-du-sitter` | `aktuelt-24.jpg` (sitting og seteregion) | ☐ |
 | 7 | Vedvarende smerte – mer enn hjernen og nervesystemet | `vedvarende-smerte-immunsystem-helhetlig-forstaelse` | `aktuelt-25.jpg` (nervesystem, immunprosesser og samtale) | ☐ |
 | 8 | Aktiv med hofteprotese – hvor forsiktig må du være? | `aktiv-med-hofteprotese-trening-og-proteselosning` | `aktuelt-26.jpg` (aktivitet med illustrert hofteprotese) | ☐ |
-| 9 | PRP i muskel- og skjelettbehandling – når virker det? | `prp-muskel-skjelettbehandling-nar-virker-det` | `aktuelt-27.jpg` (ultralydveiledet PRP og rehabilitering) | ☐ |
+
+### Publiseringskø – FERDIG, publisert 2026-11-20
+
+| # | Artikkel (NO) | Fil (slug) | Bilde | Publisert |
+|---|---|---|---|---|
+| 1 | PRP i muskel- og skjelettbehandling – når virker det? | `prp-muskel-skjelettbehandling-nar-virker-det` | `aktuelt-27.jpg` (ultralydveiledet PRP og rehabilitering) | ☑ 20.11, nyhetsbrev autorisert |
 
 ### Publiseringskø – FERDIG, publisert 2026-10-31
 
@@ -1265,7 +1277,7 @@ Messenger sin mobilapp. **Dette kan ikke fikses i koden.**
    URL" i MailerLites filbehandler** (den live URL-en til bildet på
    stavroslitsos.com), siden native "My device"-filopplasting ikke lar
    seg styre fra nettleserautomatisering.
-6. **Publiseringskøen har 10 skjulte utkast** (se tabellen
+6. **Publiseringskøen har 8 skjulte utkast** (se tabellen
    «Publiseringskø – aktiv» over). Gradvis-publisering-regelen (maks én i måneden) gjelder
    fortsatt for *nye* artikler som skrives fremover: legg dem inn som
    skjulte utkast (`noindex`, ikke lenket, ikke i sitemap) og legg dem til

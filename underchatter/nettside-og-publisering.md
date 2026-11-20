@@ -11,11 +11,10 @@
   oppstart. Les også `WEBSITE_GUIDE.md`, `ARTICLE_RULES.md` før artikkelarbeid
   og `IMAGE_RULES.md` før bilde- eller videoarbeid. README er autoritativ for
   status og kø; ikke dupliser køen her.
-- **Status:** «Hvorfor utvikler noen knær artrose raskere?» ble publisert på
-  norsk og engelsk 31.10.2026 etter uttrykkelig beskjed fra Stavros.
-  Live-versjonen ble kontrollert, og MailerLite-kampanjen ble sendt vellykket
-  til alle 334 aktive abonnenter. Artikkelen er tatt ut av køen, som nå har ni
-  skjulte utkast.
+- **Status:** «PRP i muskel- og skjelettbehandling – når virker det?» ble
+  publisert på norsk og engelsk 20.11.2026 etter uttrykkelig beskjed fra
+  Stavros. Nyhetsbrev er autorisert for samme dag. Artikkelen er tatt ut av
+  køen, som nå har åtte skjulte utkast.
 - **Neste steg:** Fortsett med første artikkel i den aktive publiseringskøen
   når Stavros gir uttrykkelig beskjed om neste publisering.
-- **Dato:** 2026-10-31.
+- **Dato:** 2026-11-20.
