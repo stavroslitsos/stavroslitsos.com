@@ -171,7 +171,16 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 ## Status – hvor arbeidet ble stoppet sist
 
-**Sist oppdatert: 2026-11-20**
+**Sist oppdatert: 2026-11-22**
+
+**Kontroll og gjenopptak 2026-11-22:** Siste versjon er hentet med
+`git pull --ff-only`. PRP-artikkelen fra 20.11 er bekreftet live på begge
+språk med HTTP 200, uten `noindex`, lenket fra begge forsider og Faglig-sider
+og inkludert i sitemap. Artikkelbildet svarer HTTP 200. Det som gjenstår er
+å kontrollere MailerLite for eventuell allerede sendt eller påbegynt kampanje
+og fullføre den tidligere autoriserte utsendingen uten dobbeltsending.
+MailerLite viser innloggingssiden på denne maskinen; utsendingsstatus er
+derfor ikke bekreftet, og ingen ny e-post er sendt i denne økten.
 
 **Publisering 2026-11-20:** «PRP i muskel- og skjelettbehandling – når
 virker det?» er publisert på norsk og engelsk etter uttrykkelig beskjed fra

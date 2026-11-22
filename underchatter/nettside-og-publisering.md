@@ -15,6 +15,7 @@
   publisert på norsk og engelsk 20.11.2026 etter uttrykkelig beskjed fra
   Stavros. Nyhetsbrev er autorisert for samme dag. Artikkelen er tatt ut av
   køen, som nå har åtte skjulte utkast.
-- **Neste steg:** Fortsett med første artikkel i den aktive publiseringskøen
-  når Stavros gir uttrykkelig beskjed om neste publisering.
-- **Dato:** 2026-11-20.
+- **Neste steg:** Se README-status 22.11.2026. Logg inn i MailerLite, kontroller
+  om PRP-kampanjen allerede er sendt, og fullfør autorisert utsending uten
+  dobbeltsending. Nettsidepubliseringen er bekreftet live.
+- **Dato:** 2026-11-22.

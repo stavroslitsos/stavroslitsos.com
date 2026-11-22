@@ -8,7 +8,7 @@ synkronisering eller gjenoppretting av Codex sin chatvisning.
 
 | Navn | Formål | Kontekst | Status | Dato |
 |---|---|---|---|---|
-| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | PRP-artikkelen publiseres 20.11; nyhetsbrev autorisert; køen har 8 skjulte utkast | 2026-11-20 |
+| Nettside og publisering | Vedlikeholde personlig nettside og publiseringskø | [Chatnotat](underchatter/nettside-og-publisering.md) | PRP bekreftet live; MailerLite-innlogging trengs for utsendingskontroll | 2026-11-22 |
 
 Andre faste oppgaver er registrert i `.codex/project-tasks.json`.
 Deres faglige kontekst skal beholdes i de respektive hovedrepositoryene.
