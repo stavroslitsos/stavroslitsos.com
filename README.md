@@ -173,22 +173,22 @@ slik at en ny økt eller maskin følger samme standard uten ny forklaring.
 
 **Sist oppdatert: 2026-11-22**
 
-**Kontroll og gjenopptak 2026-11-22:** Siste versjon er hentet med
-`git pull --ff-only`. PRP-artikkelen fra 20.11 er bekreftet live på begge
-språk med HTTP 200, uten `noindex`, lenket fra begge forsider og Faglig-sider
-og inkludert i sitemap. Artikkelbildet svarer HTTP 200. Det som gjenstår er
-å kontrollere MailerLite for eventuell allerede sendt eller påbegynt kampanje
-og fullføre den tidligere autoriserte utsendingen uten dobbeltsending.
-MailerLite viser innloggingssiden på denne maskinen; utsendingsstatus er
-derfor ikke bekreftet, og ingen ny e-post er sendt i denne økten.
+**PRP-nyhetsbrev fullført 2026-11-22:** MailerLite ble åpnet gjennom den
+lokale Chrome-utvidelsen etter at brukeren installerte/aktiverte den. Før
+utsending viste kontoen null novemberutsendinger, ett PRP-utkast og tom
+utboks. Det eksisterende utkastet ble kontrollert med norsk tekst, bilde,
+riktig artikkellenke og 330 aktive abonnenter som mottakere, og sendt én gang.
+Kampanje `204657311673747274` viser nå «Sent on 2026-11-22», og utboksen er
+tom. Leveringsstatistikken viste fortsatt null ved siste kontroll og kan
+oppdateres senere; kampanjen skal ikke sendes på nytt. Nettsideartikkelen er
+bekreftet live på begge språk, lenket fra forsidene og Faglig og i sitemap.
+Ingen Dropbox-filer er flyttet. Ingen ny artikkel er publisert i denne økten.
 
 **Publisering 2026-11-20:** «PRP i muskel- og skjelettbehandling – når
 virker det?» er publisert på norsk og engelsk etter uttrykkelig beskjed fra
 Stavros. `noindex` er fjernet, artikkelen ligger øverst på Faglig og i de tre
 forsideteaserne på begge språk, og begge URL-er er lagt i sitemap. Artikkelen
-er tatt ut av den aktive køen, som nå har åtte skjulte utkast. Nyhetsbrev er
-uttrykkelig autorisert for denne artikkelen og sendes etter kontroll av
-live-versjonen; endelig utsendingsstatus føres inn samme dag.
+er tatt ut av den aktive køen, som nå har åtte skjulte utkast. Nyhetsbrevet ble fullført 22.11.2026; se status over.
 
 **Publisert og sendt 2026-10-31:** «Hvorfor utvikler noen knær artrose
 raskere?» er offentlig publisert på norsk og engelsk etter uttrykkelig beskjed
